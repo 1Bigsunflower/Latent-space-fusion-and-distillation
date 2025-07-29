@@ -25,7 +25,21 @@ This repository provides training scripts and configurations for two widely used
 │       ├── megnet_emb/run_megnet_emb.sh  
 │       └── megnet_hm/run_megnet_hm.sh            
 ├── Embedding_weight_orig/
-│   └── (One folder per model)             # Saved extracted embeddings
+├── Picture/                               # paper figures
+│   ├── Fig1/
+│   │   └── 1D_order.py                    # Generates Figure 1
+│   ├── Fig3-4/
+│   │   ├── CGCNN_Bar_Chart.py            # Generates Figure 3
+│   │   └── MEGNet_Bar_Chart.py           # Generates Figure 4
+│   ├── Fig5/
+│   │   ├── RF_composition.py             # Random Forest regression results
+│   │   ├── R2_for_best_dummy.py          # R2 scores of leaderboard & dummy models
+│   │   └── Fig5_rf.py                    # Generates Figure 5
+│   └── Fig6/
+│       ├── Embedding_analysis.py         # Computes embedding structure metrics
+│       ├── norm_mae.py                   # Normalizes MAEs for each task
+│       └── Correlation_Matrix_Heatmap.py # Correlation analysis and heatmap for Fig 6
+├── Element with mpnn/                    
 └── ...
 ```
 ## 🔧 Environment Setup
@@ -83,3 +97,26 @@ For example:
   ```
 
 Extracted embeddings are saved in `Embedding_weight_orig/`.
+
+## 📊 Paper Figures
+
+Scripts used to generate figures in the paper are located in the `Picture/` and `Element with mpnn/` directories:
+
+- **Figure 1** (`Picture/Fig1/`):  
+  Run `1D_order.py` to generate the ordering visualization.
+
+- **Figures 3 & 4** (`Picture/Fig3-4/`):  
+  - Run `CGCNN_Bar_Chart.py` for Figure 3  
+  - Run `MEGNet_Bar_Chart.py` for Figure 4
+
+- **Figure 5** (`Picture/Fig5/`):  
+  1. Run `RF_composition.py` to compute random forest regression results  
+  2. Run `R2_for_best_dummy.py` for leaderboard and dummy R² scores  
+  3. Run `Fig5_rf.py` to generate the final plot
+
+- **Figure 6** (`Picture/Fig6/`):  
+  1. Run `Embedding_analysis.py` to calculate various embedding structure metrics  
+  2. Run `norm_mae.py` to normalize MAE for each task  
+  3. Run `Correlation_Matrix_Heatmap.py` to compute correlations and plot the heatmap
+
+
