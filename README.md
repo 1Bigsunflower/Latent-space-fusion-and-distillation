@@ -1,5 +1,6 @@
 This repository provides training scripts and configurations for two widely used material property prediction models: CGCNN and MEGNet. It supports training with different types of embeddings, including different dimensions, nn.Embedding, and human knowledge-based embeddings.
-
+<!--
+## This section is hidden
 ## 📁 Project Structure
 
 ```
@@ -42,6 +43,7 @@ This repository provides training scripts and configurations for two widely used
 ├── Element with mpnn/                    
 └── ...
 ```
+-->
 ## 🔧 Environment Setup
 
 We recommend using [Conda](https://docs.conda.io/) to manage the environment. The project requires **Python 3.10**.
@@ -118,5 +120,50 @@ Scripts used to generate figures in the paper are located in the `Picture/` and 
   1. Run `Embedding_analysis.py` to calculate various embedding structure metrics  
   2. Run `norm_mae.py` to normalize MAE for each task  
   3. Run `Correlation_Matrix_Heatmap.py` to compute correlations and plot the heatmap
+
+`Element with mpnn/` contains scripts for analyzing how element embeddings evolve across message passing layers in both CGCNN and MEGNet architectures.
+
+To extract embeddings at each message passing layer, run the following scripts:
+
+```bash
+# CGCNN - nn.Embedding
+cd Element with mpnn/CGCNN-emb
+bash run_cgcnn_emb.sh
+
+# CGCNN - Human Knowledge
+cd ../CGCNN-human
+bash run_cgcnn_hm.sh
+
+# MEGNet - nn.Embedding
+cd ../MEGNet-emb
+bash run_megnet_emb.sh
+
+# MEGNet - Human Knowledge
+cd ../MEGNet-human
+bash run_megnet_hm.sh
+```
+
+These scripts save intermediate embeddings for each model configuration, which are later used for visualization and clustering analysis.
+
+`Element with mpnn/ari_score.sh`: Computes Adjusted Rand Index (ARI) between learned embeddings and traditional element groups.
+
+`Element with mpnn/s_score.sh`: Computes silhouette scores for cluster separation.
+
+`Element with mpnn/kmeans.sh`: Performs k-means clustering on the embeddings.
+  
+- **Figure 7**(`Element with mpnn/Fig7/`):  
+  - Run `run_picture.sh` to generate 2D projections (t-SNE) of element embeddings across message passing layers.
+
+- **Figure 8**(`Element with mpnn/Fig8/ari/`):  
+  - Run `Fig8.py` to plot how the ARI scores change across message passing layers for different tasks.
+
+- **Figure 9**:(`Element with mpnn/`)
+  - Run `GA_cluster.py` to perform multi-task clustering using a genetic algorithm, producing a **general-purpose periodic table-based clustering**.
+  - Results are saved in the `GA_cluster_result/` folder.
+  - Visualize the generalized clustering by running:
+
+  ```bash
+  python Fig_p_table.py
+  ```
 
 
