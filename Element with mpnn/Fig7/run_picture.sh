@@ -21,7 +21,7 @@ for task in "${task_names[@]}"; do
   for fold in "${folds[@]}"; do
     for dim in "${dims[@]}"; do
       echo "Running task=$task fold=$fold dim=$dim"
-      python Fig7.py --task_name "$task" --fold "$fold" --dim "$dim" &
+      python 2D_tsne.py --task_name "$task" --fold "$fold" --dim "$dim" &
 
        ((job_count++))
 
