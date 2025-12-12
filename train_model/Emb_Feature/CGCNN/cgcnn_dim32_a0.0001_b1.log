@@ -1,0 +1,311 @@
+Seed set to 42
+2025-12-11 21:06:38 INFO     Initialized benchmark 'matbench_v0.1' with 1 tasks: 
+['matbench_phonons']
+2025-12-11 21:06:38 INFO     Loading dataset 'matbench_phonons'...
+2025-12-11 21:06:39 INFO     Dataset 'matbench_phonons loaded.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3080') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+2025-12-11 21:06:41.392317: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-12-11 21:06:41.427354: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-12-11 21:06:42.117728: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.769
+Metric val_MAE improved by 0.335 >= min_delta = 0.0. New best score: 0.435
+Metric val_MAE improved by 0.013 >= min_delta = 0.0. New best score: 0.421
+Metric val_MAE improved by 0.054 >= min_delta = 0.0. New best score: 0.367
+Metric val_MAE improved by 0.033 >= min_delta = 0.0. New best score: 0.334
+Metric val_MAE improved by 0.044 >= min_delta = 0.0. New best score: 0.290
+Metric val_MAE improved by 0.087 >= min_delta = 0.0. New best score: 0.203
+Metric val_MAE improved by 0.022 >= min_delta = 0.0. New best score: 0.181
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.179
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 0.163
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.156
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 0.146
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.144
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.143
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.139
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.132
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.126
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.121
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.121
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.104. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     83.69215393066406     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold1_dim32 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 1.299
+Metric val_MAE improved by 0.607 >= min_delta = 0.0. New best score: 0.692
+Metric val_MAE improved by 0.141 >= min_delta = 0.0. New best score: 0.550
+Metric val_MAE improved by 0.261 >= min_delta = 0.0. New best score: 0.289
+Metric val_MAE improved by 0.108 >= min_delta = 0.0. New best score: 0.181
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.173
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 0.158
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.154
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.148
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.146
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.139
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.139
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.133
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.124
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.120
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.120
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.117
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.117
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.112
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.112. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    52.488861083984375     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold2_dim32 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.814
+Metric val_MAE improved by 0.275 >= min_delta = 0.0. New best score: 0.539
+Metric val_MAE improved by 0.024 >= min_delta = 0.0. New best score: 0.516
+Metric val_MAE improved by 0.184 >= min_delta = 0.0. New best score: 0.331
+Metric val_MAE improved by 0.029 >= min_delta = 0.0. New best score: 0.302
+Metric val_MAE improved by 0.024 >= min_delta = 0.0. New best score: 0.278
+Metric val_MAE improved by 0.028 >= min_delta = 0.0. New best score: 0.250
+Metric val_MAE improved by 0.023 >= min_delta = 0.0. New best score: 0.227
+Metric val_MAE improved by 0.033 >= min_delta = 0.0. New best score: 0.194
+Metric val_MAE improved by 0.026 >= min_delta = 0.0. New best score: 0.168
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.163
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.157
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.151
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.147
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.141
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.140
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.140
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.140. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     71.2511978149414      │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold3_dim32 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.584
+Metric val_MAE improved by 0.050 >= min_delta = 0.0. New best score: 0.534
+Metric val_MAE improved by 0.086 >= min_delta = 0.0. New best score: 0.448
+Metric val_MAE improved by 0.053 >= min_delta = 0.0. New best score: 0.395
+Metric val_MAE improved by 0.062 >= min_delta = 0.0. New best score: 0.334
+Metric val_MAE improved by 0.044 >= min_delta = 0.0. New best score: 0.289
+Metric val_MAE improved by 0.105 >= min_delta = 0.0. New best score: 0.184
+Metric val_MAE improved by 0.030 >= min_delta = 0.0. New best score: 0.153
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.153
+Metric val_MAE improved by 0.013 >= min_delta = 0.0. New best score: 0.141
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.137
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.137
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.135
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.134
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.134
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.133
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.129
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.127
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.125
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.124
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.123
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.123
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.122
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.122
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.121
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.120
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.119
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.119. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     63.42792510986328     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold4_dim32 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.706
+Metric val_MAE improved by 0.319 >= min_delta = 0.0. New best score: 0.388
+Metric val_MAE improved by 0.168 >= min_delta = 0.0. New best score: 0.220
+Metric val_MAE improved by 0.052 >= min_delta = 0.0. New best score: 0.168
+Metric val_MAE improved by 0.017 >= min_delta = 0.0. New best score: 0.151
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.143
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.137
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.134
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.129
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.126
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.124
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.119
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.119
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.108
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.108. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     70.9666519165039      │
+└───────────────────────────┴───────────────────────────┘

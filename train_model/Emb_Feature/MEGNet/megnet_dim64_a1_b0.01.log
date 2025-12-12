@@ -1,0 +1,932 @@
+Seed set to 42
+2025-12-12 05:11:50 INFO     Initialized benchmark 'matbench_v0.1' with 1 tasks: 
+['matbench_phonons']
+2025-12-12 05:11:50 INFO     Loading dataset 'matbench_phonons'...
+2025-12-12 05:11:51 INFO     Dataset 'matbench_phonons loaded.
+  0%|          | 0/1012 [00:00<?, ?it/s] 16%|█▌        | 162/1012 [00:00<00:00, 1613.19it/s] 33%|███▎      | 335/1012 [00:00<00:00, 1679.87it/s] 50%|████▉     | 503/1012 [00:00<00:00, 1679.46it/s] 67%|██████▋   | 674/1012 [00:00<00:00, 1689.06it/s] 83%|████████▎ | 843/1012 [00:00<00:00, 1093.24it/s]100%|██████████| 1012/1012 [00:00<00:00, 1347.48it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3080') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+[rank: 0] Seed set to 42
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+2025-12-12 05:11:52.870319: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-12-12 05:11:52.915102: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-12-12 05:11:53.547213: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name  | Type              | Params
+--------------------------------------------
+0 | model | MEGNet            | 197 K 
+1 | mae   | MeanAbsoluteError | 0     
+2 | rmse  | MeanSquaredError  | 0     
+--------------------------------------------
+187 K     Trainable params
+9.3 K     Non-trainable params
+197 K     Total params
+0.789     Total estimated model params size (MB)
+Metric val_MAE improved. New best score: 570.409
+Metric val_MAE improved by 0.142 >= min_delta = 0.0. New best score: 570.267
+Metric val_MAE improved by 0.331 >= min_delta = 0.0. New best score: 569.935
+Metric val_MAE improved by 0.774 >= min_delta = 0.0. New best score: 569.161
+Metric val_MAE improved by 2.170 >= min_delta = 0.0. New best score: 566.991
+Metric val_MAE improved by 10.172 >= min_delta = 0.0. New best score: 556.820
+Metric val_MAE improved by 95.025 >= min_delta = 0.0. New best score: 461.795
+Metric val_MAE improved by 182.079 >= min_delta = 0.0. New best score: 279.716
+Metric val_MAE improved by 10.216 >= min_delta = 0.0. New best score: 269.500
+Metric val_MAE improved by 9.474 >= min_delta = 0.0. New best score: 260.026
+Metric val_MAE improved by 24.297 >= min_delta = 0.0. New best score: 235.729
+Metric val_MAE improved by 8.597 >= min_delta = 0.0. New best score: 227.132
+Metric val_MAE improved by 16.283 >= min_delta = 0.0. New best score: 210.849
+Metric val_MAE improved by 5.778 >= min_delta = 0.0. New best score: 205.070
+Metric val_MAE improved by 6.524 >= min_delta = 0.0. New best score: 198.546
+Metric val_MAE improved by 5.062 >= min_delta = 0.0. New best score: 193.484
+Metric val_MAE improved by 6.693 >= min_delta = 0.0. New best score: 186.790
+Metric val_MAE improved by 13.473 >= min_delta = 0.0. New best score: 173.318
+Metric val_MAE improved by 8.999 >= min_delta = 0.0. New best score: 164.318
+Metric val_MAE improved by 2.501 >= min_delta = 0.0. New best score: 161.818
+Metric val_MAE improved by 12.068 >= min_delta = 0.0. New best score: 149.749
+Metric val_MAE improved by 0.046 >= min_delta = 0.0. New best score: 149.703
+Metric val_MAE improved by 2.465 >= min_delta = 0.0. New best score: 147.238
+Metric val_MAE improved by 10.406 >= min_delta = 0.0. New best score: 136.832
+Metric val_MAE improved by 4.573 >= min_delta = 0.0. New best score: 132.260
+Metric val_MAE improved by 1.590 >= min_delta = 0.0. New best score: 130.670
+Metric val_MAE improved by 3.444 >= min_delta = 0.0. New best score: 127.226
+Metric val_MAE improved by 2.097 >= min_delta = 0.0. New best score: 125.129
+Metric val_MAE improved by 0.529 >= min_delta = 0.0. New best score: 124.601
+Metric val_MAE improved by 0.345 >= min_delta = 0.0. New best score: 124.256
+Metric val_MAE improved by 1.288 >= min_delta = 0.0. New best score: 122.967
+Metric val_MAE improved by 1.237 >= min_delta = 0.0. New best score: 121.730
+Metric val_MAE improved by 0.193 >= min_delta = 0.0. New best score: 121.537
+Metric val_MAE improved by 0.578 >= min_delta = 0.0. New best score: 120.958
+Metric val_MAE improved by 1.946 >= min_delta = 0.0. New best score: 119.012
+Metric val_MAE improved by 1.562 >= min_delta = 0.0. New best score: 117.451
+Metric val_MAE improved by 0.872 >= min_delta = 0.0. New best score: 116.578
+Metric val_MAE improved by 2.263 >= min_delta = 0.0. New best score: 114.315
+Metric val_MAE improved by 2.343 >= min_delta = 0.0. New best score: 111.972
+Metric val_MAE improved by 2.855 >= min_delta = 0.0. New best score: 109.117
+Metric val_MAE improved by 6.981 >= min_delta = 0.0. New best score: 102.136
+Metric val_MAE improved by 2.143 >= min_delta = 0.0. New best score: 99.993
+Metric val_MAE improved by 3.060 >= min_delta = 0.0. New best score: 96.934
+Metric val_MAE improved by 6.008 >= min_delta = 0.0. New best score: 90.926
+Metric val_MAE improved by 0.742 >= min_delta = 0.0. New best score: 90.184
+Metric val_MAE improved by 2.558 >= min_delta = 0.0. New best score: 87.627
+Metric val_MAE improved by 1.452 >= min_delta = 0.0. New best score: 86.175
+Metric val_MAE improved by 0.873 >= min_delta = 0.0. New best score: 85.302
+Metric val_MAE improved by 1.411 >= min_delta = 0.0. New best score: 83.891
+Metric val_MAE improved by 0.353 >= min_delta = 0.0. New best score: 83.538
+Metric val_MAE improved by 1.635 >= min_delta = 0.0. New best score: 81.903
+Metric val_MAE improved by 1.530 >= min_delta = 0.0. New best score: 80.372
+Metric val_MAE improved by 0.714 >= min_delta = 0.0. New best score: 79.659
+Metric val_MAE improved by 1.059 >= min_delta = 0.0. New best score: 78.600
+Metric val_MAE improved by 3.305 >= min_delta = 0.0. New best score: 75.295
+Metric val_MAE improved by 0.742 >= min_delta = 0.0. New best score: 74.552
+Metric val_MAE improved by 0.216 >= min_delta = 0.0. New best score: 74.336
+Metric val_MAE improved by 1.516 >= min_delta = 0.0. New best score: 72.820
+Metric val_MAE improved by 0.582 >= min_delta = 0.0. New best score: 72.238
+Metric val_MAE improved by 0.943 >= min_delta = 0.0. New best score: 71.295
+Metric val_MAE improved by 1.185 >= min_delta = 0.0. New best score: 70.110
+Metric val_MAE improved by 1.206 >= min_delta = 0.0. New best score: 68.904
+Metric val_MAE improved by 0.724 >= min_delta = 0.0. New best score: 68.180
+Metric val_MAE improved by 1.585 >= min_delta = 0.0. New best score: 66.596
+Metric val_MAE improved by 1.131 >= min_delta = 0.0. New best score: 65.465
+Metric val_MAE improved by 0.376 >= min_delta = 0.0. New best score: 65.089
+Metric val_MAE improved by 0.523 >= min_delta = 0.0. New best score: 64.566
+Metric val_MAE improved by 2.396 >= min_delta = 0.0. New best score: 62.170
+Metric val_MAE improved by 1.227 >= min_delta = 0.0. New best score: 60.943
+Metric val_MAE improved by 3.232 >= min_delta = 0.0. New best score: 57.712
+Metric val_MAE improved by 0.114 >= min_delta = 0.0. New best score: 57.598
+Metric val_MAE improved by 2.538 >= min_delta = 0.0. New best score: 55.059
+Metric val_MAE improved by 0.801 >= min_delta = 0.0. New best score: 54.259
+Metric val_MAE improved by 1.839 >= min_delta = 0.0. New best score: 52.419
+Metric val_MAE improved by 0.043 >= min_delta = 0.0. New best score: 52.376
+Metric val_MAE improved by 1.044 >= min_delta = 0.0. New best score: 51.332
+Metric val_MAE improved by 2.161 >= min_delta = 0.0. New best score: 49.172
+Metric val_MAE improved by 0.722 >= min_delta = 0.0. New best score: 48.450
+Metric val_MAE improved by 0.214 >= min_delta = 0.0. New best score: 48.235
+Metric val_MAE improved by 0.272 >= min_delta = 0.0. New best score: 47.964
+Metric val_MAE improved by 0.647 >= min_delta = 0.0. New best score: 47.317
+Metric val_MAE improved by 0.460 >= min_delta = 0.0. New best score: 46.858
+Metric val_MAE improved by 0.511 >= min_delta = 0.0. New best score: 46.347
+Metric val_MAE improved by 0.131 >= min_delta = 0.0. New best score: 46.216
+Metric val_MAE improved by 0.831 >= min_delta = 0.0. New best score: 45.385
+Metric val_MAE improved by 0.089 >= min_delta = 0.0. New best score: 45.296
+Metric val_MAE improved by 0.624 >= min_delta = 0.0. New best score: 44.672
+Metric val_MAE improved by 0.247 >= min_delta = 0.0. New best score: 44.425
+Metric val_MAE improved by 0.218 >= min_delta = 0.0. New best score: 44.206
+Metric val_MAE improved by 0.323 >= min_delta = 0.0. New best score: 43.884
+Metric val_MAE improved by 0.926 >= min_delta = 0.0. New best score: 42.958
+Metric val_MAE improved by 0.386 >= min_delta = 0.0. New best score: 42.572
+Metric val_MAE improved by 0.063 >= min_delta = 0.0. New best score: 42.509
+Metric val_MAE improved by 0.118 >= min_delta = 0.0. New best score: 42.391
+Metric val_MAE improved by 0.147 >= min_delta = 0.0. New best score: 42.244
+Metric val_MAE improved by 0.142 >= min_delta = 0.0. New best score: 42.102
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 42.094
+Metric val_MAE improved by 0.294 >= min_delta = 0.0. New best score: 41.801
+Metric val_MAE improved by 0.544 >= min_delta = 0.0. New best score: 41.257
+Metric val_MAE improved by 0.309 >= min_delta = 0.0. New best score: 40.948
+Metric val_MAE improved by 0.123 >= min_delta = 0.0. New best score: 40.825
+Metric val_MAE improved by 0.947 >= min_delta = 0.0. New best score: 39.878
+Metric val_MAE improved by 0.156 >= min_delta = 0.0. New best score: 39.722
+Metric val_MAE improved by 1.281 >= min_delta = 0.0. New best score: 38.441
+Metric val_MAE improved by 0.322 >= min_delta = 0.0. New best score: 38.119
+Metric val_MAE improved by 1.163 >= min_delta = 0.0. New best score: 36.957
+Metric val_MAE improved by 0.073 >= min_delta = 0.0. New best score: 36.883
+Metric val_MAE improved by 0.280 >= min_delta = 0.0. New best score: 36.603
+Metric val_MAE improved by 0.077 >= min_delta = 0.0. New best score: 36.526
+Metric val_MAE improved by 0.380 >= min_delta = 0.0. New best score: 36.146
+Metric val_MAE improved by 0.913 >= min_delta = 0.0. New best score: 35.233
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 35.233. Signaling Trainer to stop.
+  0%|          | 0/253 [00:00<?, ?it/s]  2%|▏         | 5/253 [00:00<00:06, 37.28it/s]  4%|▍         | 11/253 [00:00<00:06, 38.23it/s]  6%|▌         | 15/253 [00:00<00:06, 36.44it/s]  8%|▊         | 20/253 [00:00<00:05, 39.40it/s]  9%|▉         | 24/253 [00:00<00:06, 34.04it/s] 11%|█         | 28/253 [00:00<00:07, 31.22it/s] 13%|█▎        | 32/253 [00:00<00:07, 29.18it/s] 14%|█▍        | 36/253 [00:01<00:07, 30.44it/s] 16%|█▌        | 40/253 [00:01<00:06, 32.25it/s] 17%|█▋        | 44/253 [00:01<00:07, 26.66it/s] 19%|█▊        | 47/253 [00:01<00:07, 27.22it/s] 21%|██        | 52/253 [00:01<00:06, 31.59it/s] 22%|██▏       | 56/253 [00:01<00:06, 31.26it/s] 24%|██▍       | 61/253 [00:01<00:05, 34.60it/s] 26%|██▌       | 65/253 [00:01<00:05, 35.71it/s] 28%|██▊       | 70/253 [00:02<00:04, 38.58it/s] 30%|██▉       | 75/253 [00:02<00:04, 39.47it/s] 32%|███▏      | 80/253 [00:02<00:04, 35.96it/s] 33%|███▎      | 84/253 [00:02<00:04, 36.40it/s] 35%|███▌      | 89/253 [00:02<00:04, 38.13it/s] 37%|███▋      | 93/253 [00:02<00:04, 33.83it/s] 39%|███▊      | 98/253 [00:02<00:04, 36.93it/s] 40%|████      | 102/253 [00:03<00:04, 34.72it/s] 42%|████▏     | 106/253 [00:03<00:04, 35.04it/s] 43%|████▎     | 110/253 [00:03<00:04, 31.76it/s] 45%|████▌     | 114/253 [00:03<00:04, 31.65it/s] 47%|████▋     | 118/253 [00:03<00:05, 26.36it/s] 48%|████▊     | 121/253 [00:03<00:05, 24.60it/s] 50%|████▉     | 126/253 [00:03<00:04, 27.17it/s] 51%|█████     | 129/253 [00:04<00:04, 27.38it/s] 53%|█████▎    | 133/253 [00:04<00:04, 29.25it/s] 54%|█████▍    | 137/253 [00:04<00:03, 30.04it/s] 56%|█████▌    | 141/253 [00:04<00:03, 30.97it/s] 57%|█████▋    | 145/253 [00:04<00:03, 27.33it/s] 59%|█████▉    | 150/253 [00:04<00:03, 29.78it/s] 61%|██████▏   | 155/253 [00:04<00:02, 33.51it/s] 63%|██████▎   | 159/253 [00:04<00:03, 31.05it/s] 64%|██████▍   | 163/253 [00:05<00:02, 30.68it/s] 66%|██████▌   | 167/253 [00:05<00:03, 27.01it/s] 68%|██████▊   | 172/253 [00:05<00:02, 31.63it/s] 70%|██████▉   | 176/253 [00:05<00:02, 27.86it/s] 71%|███████   | 180/253 [00:05<00:02, 26.94it/s] 72%|███████▏  | 183/253 [00:05<00:02, 27.43it/s] 74%|███████▍  | 187/253 [00:05<00:02, 28.83it/s] 76%|███████▌  | 192/253 [00:06<00:01, 33.19it/s] 77%|███████▋  | 196/253 [00:06<00:01, 30.84it/s] 79%|███████▉  | 201/253 [00:06<00:01, 34.36it/s] 81%|████████▏ | 206/253 [00:06<00:01, 37.39it/s] 83%|████████▎ | 210/253 [00:06<00:01, 34.11it/s] 85%|████████▍ | 214/253 [00:06<00:01, 32.86it/s] 86%|████████▌ | 218/253 [00:06<00:01, 28.64it/s] 88%|████████▊ | 222/253 [00:07<00:01, 29.22it/s] 90%|████████▉ | 227/253 [00:07<00:00, 32.44it/s] 92%|█████████▏| 233/253 [00:07<00:00, 37.77it/s] 94%|█████████▎| 237/253 [00:07<00:00, 35.72it/s] 95%|█████████▌| 241/253 [00:07<00:00, 32.54it/s] 97%|█████████▋| 245/253 [00:07<00:00, 30.76it/s] 98%|█████████▊| 249/253 [00:07<00:00, 29.05it/s]100%|██████████| 253/253 [00:08<00:00, 28.26it/s]100%|██████████| 253/253 [00:08<00:00, 31.54it/s]
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    36.345664978027344     │
+│         test_RMSE         │     72.2098159790039      │
+│      test_Total_Loss      │    36.345664978027344     │
+└───────────────────────────┴───────────────────────────┘
+  0%|          | 0/1012 [00:00<?, ?it/s]  1%|          | 6/1012 [00:00<00:19, 51.43it/s]  1%|          | 12/1012 [00:00<00:17, 55.94it/s]  2%|▏         | 18/1012 [00:00<00:21, 46.18it/s]  2%|▏         | 23/1012 [00:00<00:24, 39.59it/s]  3%|▎         | 28/1012 [00:00<00:28, 34.37it/s]  3%|▎         | 33/1012 [00:00<00:26, 37.20it/s]  4%|▎         | 37/1012 [00:00<00:27, 36.09it/s]  4%|▍         | 44/1012 [00:01<00:22, 43.06it/s]  5%|▍         | 50/1012 [00:01<00:21, 45.08it/s]  5%|▌         | 55/1012 [00:01<00:22, 43.14it/s]  6%|▌         | 60/1012 [00:01<00:22, 43.24it/s]  6%|▋         | 65/1012 [00:01<00:27, 34.98it/s]  7%|▋         | 69/1012 [00:01<00:30, 31.29it/s]  7%|▋         | 73/1012 [00:01<00:29, 32.01it/s]  8%|▊         | 77/1012 [00:02<00:32, 28.58it/s]  8%|▊         | 81/1012 [00:02<00:31, 29.73it/s]  8%|▊         | 86/1012 [00:02<00:27, 33.56it/s]  9%|▉         | 90/1012 [00:02<00:26, 34.83it/s]  9%|▉         | 94/1012 [00:02<00:29, 31.65it/s] 10%|▉         | 98/1012 [00:02<00:30, 30.09it/s] 10%|█         | 102/1012 [00:02<00:29, 30.77it/s] 10%|█         | 106/1012 [00:03<00:31, 28.60it/s] 11%|█         | 109/1012 [00:03<00:34, 25.84it/s] 11%|█         | 113/1012 [00:03<00:30, 29.01it/s] 12%|█▏        | 117/1012 [00:03<00:30, 29.62it/s] 12%|█▏        | 121/1012 [00:03<00:29, 30.52it/s] 12%|█▏        | 125/1012 [00:03<00:28, 30.81it/s] 13%|█▎        | 129/1012 [00:03<00:32, 27.07it/s] 13%|█▎        | 134/1012 [00:03<00:28, 31.28it/s] 14%|█▎        | 138/1012 [00:04<00:26, 32.43it/s] 14%|█▍        | 143/1012 [00:04<00:26, 32.86it/s] 15%|█▍        | 147/1012 [00:04<00:26, 32.09it/s] 15%|█▍        | 151/1012 [00:04<00:30, 28.28it/s] 15%|█▌        | 154/1012 [00:04<00:31, 27.33it/s] 16%|█▌        | 157/1012 [00:04<00:34, 24.87it/s] 16%|█▌        | 161/1012 [00:04<00:31, 26.91it/s] 16%|█▋        | 165/1012 [00:05<00:30, 28.17it/s] 17%|█▋        | 171/1012 [00:05<00:23, 35.74it/s] 17%|█▋        | 175/1012 [00:05<00:27, 29.98it/s] 18%|█▊        | 180/1012 [00:05<00:24, 33.62it/s] 18%|█▊        | 184/1012 [00:05<00:24, 34.37it/s] 19%|█▊        | 188/1012 [00:05<00:24, 33.44it/s] 19%|█▉        | 192/1012 [00:05<00:26, 30.94it/s] 19%|█▉        | 196/1012 [00:05<00:26, 30.88it/s] 20%|█▉        | 200/1012 [00:06<00:25, 32.41it/s] 20%|██        | 205/1012 [00:06<00:23, 34.44it/s] 21%|██        | 211/1012 [00:06<00:19, 40.88it/s] 21%|██▏       | 216/1012 [00:06<00:19, 40.21it/s] 22%|██▏       | 221/1012 [00:06<00:20, 39.37it/s] 22%|██▏       | 226/1012 [00:06<00:19, 41.09it/s] 23%|██▎       | 236/1012 [00:06<00:14, 53.05it/s] 24%|██▍       | 242/1012 [00:06<00:14, 52.45it/s] 25%|██▍       | 248/1012 [00:07<00:16, 45.78it/s] 25%|██▌       | 254/1012 [00:07<00:16, 46.76it/s] 26%|██▌       | 259/1012 [00:07<00:16, 46.19it/s] 26%|██▌       | 265/1012 [00:07<00:15, 48.75it/s] 27%|██▋       | 272/1012 [00:07<00:15, 49.01it/s] 27%|██▋       | 277/1012 [00:07<00:17, 42.40it/s] 28%|██▊       | 282/1012 [00:07<00:18, 39.11it/s] 28%|██▊       | 287/1012 [00:08<00:19, 36.69it/s] 29%|██▉       | 291/1012 [00:08<00:21, 33.68it/s] 29%|██▉       | 296/1012 [00:08<00:21, 32.92it/s] 30%|██▉       | 300/1012 [00:08<00:21, 32.98it/s] 30%|███       | 307/1012 [00:08<00:17, 40.64it/s] 31%|███       | 312/1012 [00:08<00:18, 38.81it/s] 31%|███▏      | 318/1012 [00:08<00:16, 41.34it/s] 32%|███▏      | 324/1012 [00:08<00:15, 45.36it/s] 33%|███▎      | 329/1012 [00:09<00:18, 37.69it/s] 33%|███▎      | 334/1012 [00:09<00:20, 33.83it/s] 33%|███▎      | 338/1012 [00:09<00:19, 33.74it/s] 34%|███▍      | 342/1012 [00:09<00:20, 32.68it/s] 34%|███▍      | 346/1012 [00:09<00:21, 30.78it/s] 35%|███▍      | 350/1012 [00:09<00:21, 31.41it/s] 35%|███▌      | 355/1012 [00:10<00:20, 31.43it/s] 36%|███▌      | 360/1012 [00:10<00:18, 34.42it/s] 36%|███▌      | 365/1012 [00:10<00:18, 34.07it/s] 37%|███▋      | 371/1012 [00:10<00:16, 38.38it/s] 37%|███▋      | 376/1012 [00:10<00:16, 37.94it/s] 38%|███▊      | 380/1012 [00:10<00:17, 36.09it/s] 38%|███▊      | 384/1012 [00:10<00:18, 34.72it/s] 38%|███▊      | 388/1012 [00:10<00:17, 34.85it/s] 39%|███▉      | 393/1012 [00:11<00:16, 37.49it/s] 39%|███▉      | 397/1012 [00:11<00:18, 33.19it/s] 40%|███▉      | 404/1012 [00:11<00:15, 39.45it/s] 40%|████      | 409/1012 [00:11<00:16, 36.22it/s] 41%|████      | 413/1012 [00:11<00:17, 34.07it/s] 41%|████▏     | 418/1012 [00:11<00:17, 34.53it/s] 42%|████▏     | 422/1012 [00:11<00:17, 33.99it/s] 42%|████▏     | 426/1012 [00:12<00:17, 33.35it/s] 42%|████▏     | 430/1012 [00:12<00:18, 30.78it/s] 43%|████▎     | 434/1012 [00:12<00:19, 29.16it/s] 43%|████▎     | 437/1012 [00:12<00:20, 27.81it/s] 44%|████▎     | 441/1012 [00:12<00:21, 26.96it/s] 44%|████▍     | 444/1012 [00:12<00:22, 24.79it/s] 44%|████▍     | 448/1012 [00:12<00:21, 26.74it/s] 45%|████▍     | 451/1012 [00:13<00:21, 26.08it/s] 45%|████▍     | 454/1012 [00:13<00:21, 25.58it/s] 45%|████▌     | 457/1012 [00:13<00:21, 25.43it/s] 45%|████▌     | 460/1012 [00:13<00:21, 25.21it/s] 46%|████▌     | 463/1012 [00:13<00:21, 25.93it/s] 46%|████▌     | 467/1012 [00:13<00:19, 28.27it/s] 47%|████▋     | 471/1012 [00:13<00:18, 28.73it/s] 47%|████▋     | 474/1012 [00:13<00:19, 27.57it/s] 47%|████▋     | 477/1012 [00:13<00:20, 26.53it/s] 48%|████▊     | 481/1012 [00:14<00:19, 27.90it/s] 48%|████▊     | 484/1012 [00:14<00:21, 24.92it/s] 48%|████▊     | 488/1012 [00:14<00:21, 24.59it/s] 49%|████▊     | 492/1012 [00:14<00:19, 26.05it/s] 49%|████▉     | 495/1012 [00:14<00:22, 23.20it/s] 49%|████▉     | 498/1012 [00:14<00:21, 23.48it/s] 50%|████▉     | 501/1012 [00:15<00:22, 23.16it/s] 50%|████▉     | 504/1012 [00:15<00:21, 23.56it/s] 50%|█████     | 507/1012 [00:15<00:21, 23.89it/s] 50%|█████     | 510/1012 [00:15<00:20, 23.98it/s] 51%|█████     | 513/1012 [00:15<00:20, 24.57it/s] 51%|█████     | 516/1012 [00:15<00:20, 24.69it/s] 51%|█████▏    | 520/1012 [00:15<00:18, 27.04it/s] 52%|█████▏    | 524/1012 [00:15<00:16, 29.54it/s] 52%|█████▏    | 527/1012 [00:15<00:16, 29.62it/s] 52%|█████▏    | 530/1012 [00:16<00:17, 28.23it/s] 53%|█████▎    | 533/1012 [00:16<00:17, 27.00it/s] 53%|█████▎    | 536/1012 [00:16<00:17, 27.78it/s] 53%|█████▎    | 539/1012 [00:16<00:17, 26.84it/s] 54%|█████▎    | 543/1012 [00:16<00:16, 28.68it/s] 54%|█████▍    | 548/1012 [00:16<00:14, 31.75it/s] 55%|█████▍    | 552/1012 [00:16<00:15, 29.78it/s] 55%|█████▍    | 555/1012 [00:16<00:18, 25.08it/s] 55%|█████▌    | 558/1012 [00:17<00:17, 25.27it/s] 56%|█████▌    | 562/1012 [00:17<00:17, 25.35it/s] 56%|█████▌    | 565/1012 [00:17<00:17, 25.23it/s] 56%|█████▌    | 569/1012 [00:17<00:16, 27.16it/s] 57%|█████▋    | 573/1012 [00:17<00:15, 28.95it/s] 57%|█████▋    | 577/1012 [00:17<00:14, 30.04it/s] 57%|█████▋    | 581/1012 [00:17<00:15, 28.54it/s] 58%|█████▊    | 584/1012 [00:18<00:15, 27.39it/s] 58%|█████▊    | 588/1012 [00:18<00:14, 28.89it/s] 58%|█████▊    | 591/1012 [00:18<00:14, 28.85it/s] 59%|█████▊    | 594/1012 [00:18<00:15, 27.72it/s] 59%|█████▉    | 597/1012 [00:18<00:15, 26.63it/s] 59%|█████▉    | 600/1012 [00:18<00:15, 26.13it/s] 60%|█████▉    | 604/1012 [00:18<00:14, 28.09it/s] 60%|██████    | 608/1012 [00:18<00:15, 26.24it/s] 61%|██████    | 613/1012 [00:19<00:13, 29.68it/s] 61%|██████    | 617/1012 [00:19<00:13, 28.58it/s] 61%|██████▏   | 621/1012 [00:19<00:12, 31.07it/s] 62%|██████▏   | 627/1012 [00:19<00:10, 38.24it/s] 62%|██████▏   | 632/1012 [00:19<00:10, 36.90it/s] 63%|██████▎   | 637/1012 [00:19<00:09, 37.94it/s] 64%|██████▎   | 643/1012 [00:19<00:08, 43.29it/s] 64%|██████▍   | 648/1012 [00:19<00:08, 41.49it/s] 65%|██████▍   | 653/1012 [00:20<00:08, 42.12it/s] 65%|██████▌   | 658/1012 [00:20<00:09, 37.87it/s] 65%|██████▌   | 662/1012 [00:20<00:09, 36.64it/s] 66%|██████▌   | 666/1012 [00:20<00:11, 31.24it/s] 66%|██████▌   | 670/1012 [00:20<00:10, 31.37it/s] 67%|██████▋   | 674/1012 [00:20<00:13, 25.32it/s] 67%|██████▋   | 677/1012 [00:20<00:13, 25.28it/s] 67%|██████▋   | 681/1012 [00:21<00:12, 27.31it/s] 68%|██████▊   | 686/1012 [00:21<00:10, 30.51it/s] 68%|██████▊   | 690/1012 [00:21<00:09, 32.71it/s] 69%|██████▊   | 694/1012 [00:21<00:10, 30.14it/s] 69%|██████▉   | 698/1012 [00:21<00:11, 26.65it/s] 69%|██████▉   | 702/1012 [00:21<00:10, 28.20it/s] 70%|██████▉   | 705/1012 [00:21<00:11, 27.09it/s] 70%|██████▉   | 708/1012 [00:22<00:11, 26.45it/s] 70%|███████   | 712/1012 [00:22<00:10, 29.50it/s] 71%|███████   | 717/1012 [00:22<00:09, 31.13it/s] 71%|███████   | 721/1012 [00:22<00:09, 29.48it/s] 72%|███████▏  | 725/1012 [00:22<00:09, 31.68it/s] 72%|███████▏  | 729/1012 [00:22<00:08, 32.18it/s] 72%|███████▏  | 733/1012 [00:22<00:09, 30.02it/s] 73%|███████▎  | 737/1012 [00:22<00:10, 27.17it/s] 73%|███████▎  | 740/1012 [00:23<00:10, 24.77it/s] 73%|███████▎  | 743/1012 [00:23<00:10, 24.65it/s] 74%|███████▍  | 747/1012 [00:23<00:09, 27.95it/s] 74%|███████▍  | 750/1012 [00:23<00:09, 27.15it/s] 75%|███████▍  | 754/1012 [00:23<00:09, 28.54it/s] 75%|███████▍  | 757/1012 [00:23<00:09, 27.07it/s] 75%|███████▌  | 761/1012 [00:23<00:08, 29.72it/s] 76%|███████▌  | 765/1012 [00:24<00:09, 26.63it/s] 76%|███████▌  | 769/1012 [00:24<00:08, 29.47it/s] 76%|███████▋  | 773/1012 [00:24<00:08, 27.84it/s] 77%|███████▋  | 777/1012 [00:24<00:08, 29.19it/s] 77%|███████▋  | 781/1012 [00:24<00:08, 28.26it/s] 78%|███████▊  | 785/1012 [00:24<00:07, 29.81it/s] 78%|███████▊  | 789/1012 [00:24<00:07, 30.90it/s] 78%|███████▊  | 794/1012 [00:24<00:06, 34.45it/s] 79%|███████▉  | 798/1012 [00:25<00:06, 34.21it/s] 79%|███████▉  | 802/1012 [00:25<00:06, 32.66it/s] 80%|███████▉  | 806/1012 [00:25<00:06, 31.97it/s] 80%|████████  | 810/1012 [00:25<00:07, 27.29it/s] 80%|████████  | 814/1012 [00:25<00:06, 28.73it/s] 81%|████████  | 817/1012 [00:25<00:07, 27.61it/s] 81%|████████  | 820/1012 [00:25<00:07, 26.97it/s] 81%|████████▏ | 823/1012 [00:25<00:07, 26.32it/s] 82%|████████▏ | 827/1012 [00:26<00:06, 27.97it/s] 82%|████████▏ | 834/1012 [00:26<00:04, 37.58it/s] 83%|████████▎ | 838/1012 [00:26<00:04, 35.54it/s] 83%|████████▎ | 842/1012 [00:26<00:04, 34.97it/s] 84%|████████▎ | 847/1012 [00:26<00:04, 34.77it/s] 84%|████████▍ | 851/1012 [00:26<00:04, 33.29it/s] 85%|████████▍ | 859/1012 [00:26<00:03, 42.46it/s] 85%|████████▌ | 864/1012 [00:27<00:03, 39.46it/s] 86%|████████▌ | 869/1012 [00:27<00:03, 39.55it/s] 86%|████████▋ | 874/1012 [00:27<00:03, 35.28it/s] 87%|████████▋ | 878/1012 [00:27<00:04, 30.37it/s] 87%|████████▋ | 882/1012 [00:27<00:04, 28.59it/s] 88%|████████▊ | 886/1012 [00:27<00:04, 27.83it/s] 88%|████████▊ | 889/1012 [00:27<00:04, 28.19it/s] 88%|████████▊ | 893/1012 [00:28<00:04, 27.45it/s] 89%|████████▊ | 897/1012 [00:28<00:03, 28.91it/s] 89%|████████▉ | 901/1012 [00:28<00:03, 31.46it/s] 89%|████████▉ | 905/1012 [00:28<00:03, 27.67it/s] 90%|████████▉ | 909/1012 [00:28<00:03, 29.43it/s] 90%|█████████ | 913/1012 [00:28<00:03, 31.80it/s] 91%|█████████ | 919/1012 [00:28<00:02, 36.48it/s] 92%|█████████▏| 926/1012 [00:28<00:02, 42.09it/s] 92%|█████████▏| 931/1012 [00:29<00:01, 42.51it/s] 92%|█████████▏| 936/1012 [00:29<00:02, 29.59it/s] 93%|█████████▎| 943/1012 [00:29<00:01, 35.61it/s] 94%|█████████▎| 948/1012 [00:29<00:01, 32.92it/s] 94%|█████████▍| 952/1012 [00:29<00:01, 32.34it/s] 94%|█████████▍| 956/1012 [00:29<00:01, 30.57it/s] 95%|█████████▍| 960/1012 [00:30<00:01, 32.32it/s] 95%|█████████▌| 964/1012 [00:30<00:01, 33.80it/s] 96%|█████████▌| 968/1012 [00:30<00:01, 31.34it/s] 96%|█████████▌| 972/1012 [00:30<00:01, 30.26it/s] 96%|█████████▋| 976/1012 [00:30<00:01, 32.26it/s] 97%|█████████▋| 980/1012 [00:30<00:01, 28.45it/s] 97%|█████████▋| 984/1012 [00:30<00:00, 29.58it/s] 98%|█████████▊| 988/1012 [00:31<00:00, 28.24it/s] 98%|█████████▊| 991/1012 [00:31<00:00, 25.33it/s] 98%|█████████▊| 994/1012 [00:31<00:00, 25.02it/s] 99%|█████████▊| 998/1012 [00:31<00:00, 27.42it/s] 99%|█████████▉| 1002/1012 [00:31<00:00, 27.20it/s]100%|█████████▉| 1007/1012 [00:31<00:00, 31.79it/s]100%|█████████▉| 1011/1012 [00:31<00:00, 32.08it/s]100%|██████████| 1012/1012 [00:31<00:00, 31.78it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name  | Type              | Params
+--------------------------------------------
+0 | model | MEGNet            | 197 K 
+1 | mae   | MeanAbsoluteError | 0     
+2 | rmse  | MeanSquaredError  | 0     
+--------------------------------------------
+187 K     Trainable params
+9.3 K     Non-trainable params
+197 K     Total params
+0.789     Total estimated model params size (MB)
+Metric val_MAE improved. New best score: 607.155
+Metric val_MAE improved by 0.128 >= min_delta = 0.0. New best score: 607.026
+Metric val_MAE improved by 0.306 >= min_delta = 0.0. New best score: 606.721
+Metric val_MAE improved by 0.787 >= min_delta = 0.0. New best score: 605.934
+Metric val_MAE improved by 2.213 >= min_delta = 0.0. New best score: 603.721
+Metric val_MAE improved by 11.668 >= min_delta = 0.0. New best score: 592.053
+Metric val_MAE improved by 135.122 >= min_delta = 0.0. New best score: 456.932
+Metric val_MAE improved by 167.764 >= min_delta = 0.0. New best score: 289.168
+Metric val_MAE improved by 6.889 >= min_delta = 0.0. New best score: 282.279
+Metric val_MAE improved by 7.436 >= min_delta = 0.0. New best score: 274.843
+Metric val_MAE improved by 8.290 >= min_delta = 0.0. New best score: 266.553
+Metric val_MAE improved by 10.043 >= min_delta = 0.0. New best score: 256.510
+Metric val_MAE improved by 7.981 >= min_delta = 0.0. New best score: 248.529
+Metric val_MAE improved by 8.845 >= min_delta = 0.0. New best score: 239.684
+Metric val_MAE improved by 6.408 >= min_delta = 0.0. New best score: 233.276
+Metric val_MAE improved by 9.142 >= min_delta = 0.0. New best score: 224.134
+Metric val_MAE improved by 7.937 >= min_delta = 0.0. New best score: 216.197
+Metric val_MAE improved by 9.438 >= min_delta = 0.0. New best score: 206.759
+Metric val_MAE improved by 6.853 >= min_delta = 0.0. New best score: 199.907
+Metric val_MAE improved by 6.456 >= min_delta = 0.0. New best score: 193.450
+Metric val_MAE improved by 3.129 >= min_delta = 0.0. New best score: 190.322
+Metric val_MAE improved by 13.656 >= min_delta = 0.0. New best score: 176.666
+Metric val_MAE improved by 1.017 >= min_delta = 0.0. New best score: 175.649
+Metric val_MAE improved by 11.113 >= min_delta = 0.0. New best score: 164.536
+Metric val_MAE improved by 4.410 >= min_delta = 0.0. New best score: 160.126
+Metric val_MAE improved by 2.163 >= min_delta = 0.0. New best score: 157.963
+Metric val_MAE improved by 0.073 >= min_delta = 0.0. New best score: 157.891
+Metric val_MAE improved by 1.881 >= min_delta = 0.0. New best score: 156.010
+Metric val_MAE improved by 1.432 >= min_delta = 0.0. New best score: 154.578
+Metric val_MAE improved by 3.937 >= min_delta = 0.0. New best score: 150.641
+Metric val_MAE improved by 0.490 >= min_delta = 0.0. New best score: 150.151
+Metric val_MAE improved by 8.192 >= min_delta = 0.0. New best score: 141.959
+Metric val_MAE improved by 1.702 >= min_delta = 0.0. New best score: 140.256
+Metric val_MAE improved by 0.357 >= min_delta = 0.0. New best score: 139.899
+Metric val_MAE improved by 0.356 >= min_delta = 0.0. New best score: 139.544
+Metric val_MAE improved by 0.194 >= min_delta = 0.0. New best score: 139.350
+Metric val_MAE improved by 0.056 >= min_delta = 0.0. New best score: 139.294
+Metric val_MAE improved by 1.678 >= min_delta = 0.0. New best score: 137.616
+Metric val_MAE improved by 2.430 >= min_delta = 0.0. New best score: 135.186
+Metric val_MAE improved by 0.667 >= min_delta = 0.0. New best score: 134.519
+Metric val_MAE improved by 1.498 >= min_delta = 0.0. New best score: 133.021
+Metric val_MAE improved by 2.455 >= min_delta = 0.0. New best score: 130.566
+Metric val_MAE improved by 1.045 >= min_delta = 0.0. New best score: 129.521
+Metric val_MAE improved by 0.751 >= min_delta = 0.0. New best score: 128.770
+Metric val_MAE improved by 0.166 >= min_delta = 0.0. New best score: 128.605
+Metric val_MAE improved by 1.186 >= min_delta = 0.0. New best score: 127.419
+Metric val_MAE improved by 0.981 >= min_delta = 0.0. New best score: 126.438
+Metric val_MAE improved by 1.548 >= min_delta = 0.0. New best score: 124.891
+Metric val_MAE improved by 2.439 >= min_delta = 0.0. New best score: 122.451
+Metric val_MAE improved by 4.365 >= min_delta = 0.0. New best score: 118.086
+Metric val_MAE improved by 0.103 >= min_delta = 0.0. New best score: 117.983
+Metric val_MAE improved by 2.953 >= min_delta = 0.0. New best score: 115.030
+Metric val_MAE improved by 6.254 >= min_delta = 0.0. New best score: 108.776
+Metric val_MAE improved by 0.193 >= min_delta = 0.0. New best score: 108.583
+Metric val_MAE improved by 5.102 >= min_delta = 0.0. New best score: 103.482
+Metric val_MAE improved by 2.852 >= min_delta = 0.0. New best score: 100.630
+Metric val_MAE improved by 1.001 >= min_delta = 0.0. New best score: 99.628
+Metric val_MAE improved by 1.691 >= min_delta = 0.0. New best score: 97.937
+Metric val_MAE improved by 4.739 >= min_delta = 0.0. New best score: 93.198
+Metric val_MAE improved by 6.729 >= min_delta = 0.0. New best score: 86.469
+Metric val_MAE improved by 4.135 >= min_delta = 0.0. New best score: 82.334
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 82.331
+Metric val_MAE improved by 1.882 >= min_delta = 0.0. New best score: 80.449
+Metric val_MAE improved by 0.279 >= min_delta = 0.0. New best score: 80.170
+Metric val_MAE improved by 0.286 >= min_delta = 0.0. New best score: 79.884
+Metric val_MAE improved by 0.545 >= min_delta = 0.0. New best score: 79.339
+Metric val_MAE improved by 2.614 >= min_delta = 0.0. New best score: 76.725
+Metric val_MAE improved by 1.387 >= min_delta = 0.0. New best score: 75.338
+Metric val_MAE improved by 1.132 >= min_delta = 0.0. New best score: 74.207
+Metric val_MAE improved by 1.618 >= min_delta = 0.0. New best score: 72.588
+Metric val_MAE improved by 1.357 >= min_delta = 0.0. New best score: 71.231
+Metric val_MAE improved by 0.739 >= min_delta = 0.0. New best score: 70.492
+Metric val_MAE improved by 0.343 >= min_delta = 0.0. New best score: 70.149
+Metric val_MAE improved by 0.443 >= min_delta = 0.0. New best score: 69.706
+Metric val_MAE improved by 1.398 >= min_delta = 0.0. New best score: 68.308
+Metric val_MAE improved by 2.253 >= min_delta = 0.0. New best score: 66.055
+Metric val_MAE improved by 1.339 >= min_delta = 0.0. New best score: 64.716
+Metric val_MAE improved by 0.139 >= min_delta = 0.0. New best score: 64.578
+Metric val_MAE improved by 1.517 >= min_delta = 0.0. New best score: 63.061
+Metric val_MAE improved by 0.354 >= min_delta = 0.0. New best score: 62.707
+Metric val_MAE improved by 0.676 >= min_delta = 0.0. New best score: 62.031
+Metric val_MAE improved by 1.859 >= min_delta = 0.0. New best score: 60.172
+Metric val_MAE improved by 1.255 >= min_delta = 0.0. New best score: 58.917
+Metric val_MAE improved by 0.302 >= min_delta = 0.0. New best score: 58.615
+Metric val_MAE improved by 1.822 >= min_delta = 0.0. New best score: 56.793
+Metric val_MAE improved by 0.622 >= min_delta = 0.0. New best score: 56.171
+Metric val_MAE improved by 0.700 >= min_delta = 0.0. New best score: 55.471
+Metric val_MAE improved by 0.684 >= min_delta = 0.0. New best score: 54.787
+Metric val_MAE improved by 0.376 >= min_delta = 0.0. New best score: 54.412
+Metric val_MAE improved by 0.390 >= min_delta = 0.0. New best score: 54.022
+Metric val_MAE improved by 0.204 >= min_delta = 0.0. New best score: 53.818
+Metric val_MAE improved by 0.418 >= min_delta = 0.0. New best score: 53.400
+Metric val_MAE improved by 0.365 >= min_delta = 0.0. New best score: 53.035
+Metric val_MAE improved by 0.922 >= min_delta = 0.0. New best score: 52.113
+Metric val_MAE improved by 0.847 >= min_delta = 0.0. New best score: 51.266
+Metric val_MAE improved by 0.072 >= min_delta = 0.0. New best score: 51.194
+Metric val_MAE improved by 0.737 >= min_delta = 0.0. New best score: 50.457
+Metric val_MAE improved by 0.066 >= min_delta = 0.0. New best score: 50.391
+Metric val_MAE improved by 0.448 >= min_delta = 0.0. New best score: 49.943
+Metric val_MAE improved by 0.202 >= min_delta = 0.0. New best score: 49.741
+Metric val_MAE improved by 0.152 >= min_delta = 0.0. New best score: 49.590
+Metric val_MAE improved by 0.442 >= min_delta = 0.0. New best score: 49.148
+Metric val_MAE improved by 0.011 >= min_delta = 0.0. New best score: 49.137
+Metric val_MAE improved by 0.155 >= min_delta = 0.0. New best score: 48.982
+Metric val_MAE improved by 0.140 >= min_delta = 0.0. New best score: 48.841
+Metric val_MAE improved by 0.014 >= min_delta = 0.0. New best score: 48.828
+Metric val_MAE improved by 0.035 >= min_delta = 0.0. New best score: 48.793
+Metric val_MAE improved by 0.203 >= min_delta = 0.0. New best score: 48.590
+Metric val_MAE improved by 0.041 >= min_delta = 0.0. New best score: 48.549
+Metric val_MAE improved by 0.127 >= min_delta = 0.0. New best score: 48.422
+Metric val_MAE improved by 0.497 >= min_delta = 0.0. New best score: 47.925
+Metric val_MAE improved by 0.031 >= min_delta = 0.0. New best score: 47.895
+Metric val_MAE improved by 0.039 >= min_delta = 0.0. New best score: 47.856
+Metric val_MAE improved by 0.198 >= min_delta = 0.0. New best score: 47.658
+Metric val_MAE improved by 0.587 >= min_delta = 0.0. New best score: 47.071
+Metric val_MAE improved by 0.512 >= min_delta = 0.0. New best score: 46.559
+Metric val_MAE improved by 0.218 >= min_delta = 0.0. New best score: 46.342
+Metric val_MAE improved by 0.029 >= min_delta = 0.0. New best score: 46.313
+Metric val_MAE improved by 0.559 >= min_delta = 0.0. New best score: 45.754
+Metric val_MAE improved by 0.037 >= min_delta = 0.0. New best score: 45.717
+Metric val_MAE improved by 0.446 >= min_delta = 0.0. New best score: 45.271
+Metric val_MAE improved by 1.292 >= min_delta = 0.0. New best score: 43.979
+Metric val_MAE improved by 0.102 >= min_delta = 0.0. New best score: 43.877
+Metric val_MAE improved by 0.551 >= min_delta = 0.0. New best score: 43.326
+Metric val_MAE improved by 0.369 >= min_delta = 0.0. New best score: 42.958
+Metric val_MAE improved by 0.075 >= min_delta = 0.0. New best score: 42.882
+Metric val_MAE improved by 0.173 >= min_delta = 0.0. New best score: 42.709
+Metric val_MAE improved by 0.547 >= min_delta = 0.0. New best score: 42.163
+Metric val_MAE improved by 0.147 >= min_delta = 0.0. New best score: 42.015
+Metric val_MAE improved by 0.279 >= min_delta = 0.0. New best score: 41.736
+Metric val_MAE improved by 0.065 >= min_delta = 0.0. New best score: 41.671
+Metric val_MAE improved by 0.576 >= min_delta = 0.0. New best score: 41.095
+Metric val_MAE improved by 0.566 >= min_delta = 0.0. New best score: 40.530
+Metric val_MAE improved by 0.282 >= min_delta = 0.0. New best score: 40.248
+Metric val_MAE improved by 1.001 >= min_delta = 0.0. New best score: 39.247
+Metric val_MAE improved by 0.116 >= min_delta = 0.0. New best score: 39.131
+Metric val_MAE improved by 0.080 >= min_delta = 0.0. New best score: 39.051
+Metric val_MAE improved by 0.342 >= min_delta = 0.0. New best score: 38.709
+Metric val_MAE improved by 0.160 >= min_delta = 0.0. New best score: 38.549
+Metric val_MAE improved by 0.138 >= min_delta = 0.0. New best score: 38.412
+Metric val_MAE improved by 0.444 >= min_delta = 0.0. New best score: 37.967
+Metric val_MAE improved by 0.121 >= min_delta = 0.0. New best score: 37.846
+Metric val_MAE improved by 1.455 >= min_delta = 0.0. New best score: 36.391
+Metric val_MAE improved by 0.573 >= min_delta = 0.0. New best score: 35.818
+Metric val_MAE improved by 0.179 >= min_delta = 0.0. New best score: 35.639
+Metric val_MAE improved by 0.525 >= min_delta = 0.0. New best score: 35.114
+Metric val_MAE improved by 0.228 >= min_delta = 0.0. New best score: 34.885
+Metric val_MAE improved by 0.722 >= min_delta = 0.0. New best score: 34.163
+Metric val_MAE improved by 0.496 >= min_delta = 0.0. New best score: 33.667
+Metric val_MAE improved by 0.093 >= min_delta = 0.0. New best score: 33.575
+Metric val_MAE improved by 0.370 >= min_delta = 0.0. New best score: 33.204
+Metric val_MAE improved by 0.038 >= min_delta = 0.0. New best score: 33.166
+Metric val_MAE improved by 0.533 >= min_delta = 0.0. New best score: 32.633
+Metric val_MAE improved by 0.182 >= min_delta = 0.0. New best score: 32.451
+Metric val_MAE improved by 0.411 >= min_delta = 0.0. New best score: 32.041
+Metric val_MAE improved by 0.370 >= min_delta = 0.0. New best score: 31.671
+Metric val_MAE improved by 0.404 >= min_delta = 0.0. New best score: 31.267
+Metric val_MAE improved by 0.681 >= min_delta = 0.0. New best score: 30.586
+Metric val_MAE improved by 0.191 >= min_delta = 0.0. New best score: 30.395
+Metric val_MAE improved by 0.344 >= min_delta = 0.0. New best score: 30.051
+Metric val_MAE improved by 0.044 >= min_delta = 0.0. New best score: 30.007
+Metric val_MAE improved by 0.199 >= min_delta = 0.0. New best score: 29.808
+Metric val_MAE improved by 1.005 >= min_delta = 0.0. New best score: 28.803
+Metric val_MAE improved by 0.146 >= min_delta = 0.0. New best score: 28.657
+Metric val_MAE improved by 0.072 >= min_delta = 0.0. New best score: 28.585
+Metric val_MAE improved by 0.382 >= min_delta = 0.0. New best score: 28.203
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 28.199
+Metric val_MAE improved by 0.322 >= min_delta = 0.0. New best score: 27.878
+Metric val_MAE improved by 0.293 >= min_delta = 0.0. New best score: 27.585
+Metric val_MAE improved by 0.051 >= min_delta = 0.0. New best score: 27.533
+Metric val_MAE improved by 0.324 >= min_delta = 0.0. New best score: 27.209
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 27.201
+Metric val_MAE improved by 0.300 >= min_delta = 0.0. New best score: 26.901
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 26.889
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 26.889. Signaling Trainer to stop.
+  0%|          | 0/253 [00:00<?, ?it/s]  2%|▏         | 4/253 [00:00<00:07, 35.33it/s]  3%|▎         | 8/253 [00:00<00:06, 36.78it/s]  5%|▍         | 12/253 [00:00<00:06, 38.01it/s]  6%|▋         | 16/253 [00:00<00:07, 32.97it/s]  8%|▊         | 20/253 [00:00<00:08, 27.82it/s]  9%|▉         | 23/253 [00:00<00:09, 25.37it/s] 11%|█         | 27/253 [00:00<00:07, 28.92it/s] 12%|█▏        | 31/253 [00:00<00:06, 31.81it/s] 14%|█▍        | 35/253 [00:01<00:07, 30.10it/s] 15%|█▌        | 39/253 [00:01<00:07, 28.55it/s] 17%|█▋        | 43/253 [00:01<00:07, 29.72it/s] 19%|█▊        | 47/253 [00:01<00:06, 32.14it/s] 20%|██        | 51/253 [00:01<00:07, 28.33it/s] 23%|██▎       | 57/253 [00:01<00:05, 35.39it/s] 24%|██▍       | 61/253 [00:01<00:05, 34.93it/s] 26%|██▌       | 65/253 [00:02<00:05, 31.83it/s] 28%|██▊       | 71/253 [00:02<00:04, 36.87it/s] 30%|██▉       | 75/253 [00:02<00:05, 33.27it/s] 32%|███▏      | 80/253 [00:02<00:04, 34.75it/s] 33%|███▎      | 84/253 [00:02<00:05, 32.03it/s] 35%|███▍      | 88/253 [00:02<00:05, 31.52it/s] 36%|███▋      | 92/253 [00:02<00:05, 30.17it/s] 38%|███▊      | 96/253 [00:03<00:04, 32.00it/s] 40%|███▉      | 101/253 [00:03<00:04, 34.08it/s] 42%|████▏     | 105/253 [00:03<00:04, 34.44it/s] 44%|████▍     | 111/253 [00:03<00:03, 38.98it/s] 45%|████▌     | 115/253 [00:03<00:03, 37.10it/s] 47%|████▋     | 119/253 [00:03<00:04, 31.28it/s] 49%|████▊     | 123/253 [00:03<00:04, 31.97it/s] 50%|█████     | 127/253 [00:03<00:03, 32.23it/s] 52%|█████▏    | 131/253 [00:04<00:04, 29.91it/s] 53%|█████▎    | 135/253 [00:04<00:04, 26.00it/s] 55%|█████▍    | 138/253 [00:04<00:04, 25.78it/s] 57%|█████▋    | 143/253 [00:04<00:03, 29.34it/s] 60%|█████▉    | 151/253 [00:04<00:02, 39.39it/s] 62%|██████▏   | 156/253 [00:04<00:02, 34.37it/s] 63%|██████▎   | 160/253 [00:04<00:02, 33.91it/s] 65%|██████▍   | 164/253 [00:05<00:02, 30.07it/s] 66%|██████▋   | 168/253 [00:05<00:02, 32.08it/s] 68%|██████▊   | 172/253 [00:05<00:02, 33.05it/s] 70%|██████▉   | 176/253 [00:05<00:02, 30.67it/s] 72%|███████▏  | 181/253 [00:05<00:02, 32.98it/s] 73%|███████▎  | 185/253 [00:05<00:02, 33.02it/s] 75%|███████▍  | 189/253 [00:05<00:01, 33.37it/s] 76%|███████▋  | 193/253 [00:06<00:01, 32.63it/s] 78%|███████▊  | 198/253 [00:06<00:01, 36.15it/s] 80%|███████▉  | 202/253 [00:06<00:01, 32.89it/s] 81%|████████▏ | 206/253 [00:06<00:01, 28.75it/s] 83%|████████▎ | 210/253 [00:06<00:01, 29.31it/s] 85%|████████▌ | 216/253 [00:06<00:01, 34.61it/s] 87%|████████▋ | 220/253 [00:06<00:00, 35.62it/s] 89%|████████▉ | 225/253 [00:06<00:00, 35.86it/s] 91%|█████████ | 229/253 [00:07<00:00, 35.04it/s] 92%|█████████▏| 233/253 [00:07<00:00, 33.81it/s] 94%|█████████▎| 237/253 [00:07<00:00, 35.31it/s] 95%|█████████▌| 241/253 [00:07<00:00, 36.18it/s] 97%|█████████▋| 246/253 [00:07<00:00, 34.76it/s] 99%|█████████▉| 250/253 [00:07<00:00, 34.33it/s]100%|██████████| 253/253 [00:07<00:00, 32.65it/s]
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+  0%|          | 0/1012 [00:00<?, ?it/s]  1%|          | 6/1012 [00:00<00:19, 52.17it/s]  1%|          | 12/1012 [00:05<08:33,  1.95it/s]  2%|▏         | 17/1012 [00:05<05:11,  3.19it/s]  2%|▏         | 22/1012 [00:05<03:26,  4.80it/s]  3%|▎         | 27/1012 [00:05<02:21,  6.96it/s]  3%|▎         | 31/1012 [00:05<01:51,  8.84it/s]  4%|▎         | 36/1012 [00:05<01:20, 12.16it/s]  4%|▍         | 40/1012 [00:06<01:05, 14.78it/s]  5%|▍         | 47/1012 [00:06<00:44, 21.59it/s]  5%|▌         | 53/1012 [00:06<00:34, 27.43it/s]  6%|▌         | 58/1012 [00:06<00:33, 28.85it/s]  6%|▌         | 63/1012 [00:06<00:42, 22.47it/s]  7%|▋         | 67/1012 [00:06<00:40, 23.16it/s]  7%|▋         | 71/1012 [00:07<00:39, 24.03it/s]  7%|▋         | 75/1012 [00:07<00:37, 25.07it/s]  8%|▊         | 79/1012 [00:07<00:34, 27.36it/s]  8%|▊         | 83/1012 [00:07<00:34, 27.30it/s]  9%|▊         | 87/1012 [00:07<00:34, 27.00it/s]  9%|▉         | 91/1012 [00:07<00:31, 29.50it/s]  9%|▉         | 95/1012 [00:07<00:33, 27.00it/s] 10%|▉         | 98/1012 [00:08<00:34, 26.42it/s] 10%|█         | 102/1012 [00:08<00:32, 27.67it/s] 10%|█         | 105/1012 [00:08<00:33, 26.81it/s] 11%|█         | 109/1012 [00:08<00:31, 28.96it/s] 11%|█         | 112/1012 [00:08<00:34, 25.84it/s] 11%|█▏        | 115/1012 [00:08<00:34, 25.65it/s] 12%|█▏        | 119/1012 [00:08<00:32, 27.64it/s] 12%|█▏        | 123/1012 [00:08<00:28, 30.68it/s] 13%|█▎        | 128/1012 [00:08<00:26, 33.00it/s] 13%|█▎        | 132/1012 [00:09<00:26, 33.16it/s] 13%|█▎        | 136/1012 [00:09<00:26, 32.46it/s] 14%|█▍        | 140/1012 [00:09<00:28, 30.59it/s] 14%|█▍        | 145/1012 [00:09<00:26, 32.15it/s] 15%|█▍        | 149/1012 [00:09<00:30, 28.59it/s] 15%|█▌        | 152/1012 [00:09<00:31, 27.57it/s] 15%|█▌        | 155/1012 [00:09<00:31, 27.01it/s] 16%|█▌        | 158/1012 [00:10<00:34, 24.74it/s] 16%|█▌        | 162/1012 [00:10<00:31, 27.02it/s] 16%|█▋        | 166/1012 [00:10<00:29, 28.49it/s] 17%|█▋        | 170/1012 [00:10<00:27, 30.75it/s] 17%|█▋        | 175/1012 [00:10<00:23, 34.92it/s] 18%|█▊        | 179/1012 [00:10<00:23, 35.54it/s] 18%|█▊        | 183/1012 [00:10<00:23, 35.02it/s] 18%|█▊        | 187/1012 [00:10<00:24, 33.38it/s] 19%|█▉        | 191/1012 [00:11<00:24, 33.34it/s] 19%|█▉        | 195/1012 [00:11<00:23, 34.27it/s] 20%|█▉        | 200/1012 [00:11<00:21, 37.48it/s] 20%|██        | 204/1012 [00:11<00:22, 36.26it/s] 21%|██        | 208/1012 [00:11<00:21, 36.68it/s] 21%|██        | 212/1012 [00:11<00:21, 37.52it/s] 22%|██▏       | 219/1012 [00:11<00:18, 43.46it/s] 22%|██▏       | 224/1012 [00:11<00:22, 35.33it/s] 23%|██▎       | 230/1012 [00:12<00:19, 39.58it/s] 24%|██▍       | 241/1012 [00:12<00:14, 52.96it/s] 24%|██▍       | 247/1012 [00:12<00:16, 47.77it/s] 25%|██▍       | 252/1012 [00:12<00:16, 46.74it/s] 25%|██▌       | 257/1012 [00:12<00:16, 45.75it/s] 26%|██▌       | 262/1012 [00:12<00:18, 41.24it/s] 27%|██▋       | 269/1012 [00:12<00:15, 47.22it/s] 27%|██▋       | 278/1012 [00:12<00:13, 52.90it/s] 28%|██▊       | 284/1012 [00:13<00:16, 45.48it/s] 29%|██▊       | 289/1012 [00:13<00:17, 40.66it/s] 29%|██▉       | 294/1012 [00:13<00:19, 36.54it/s] 29%|██▉       | 298/1012 [00:13<00:21, 33.86it/s] 30%|██▉       | 302/1012 [00:13<00:21, 32.55it/s] 30%|███       | 306/1012 [00:13<00:21, 33.12it/s] 31%|███       | 312/1012 [00:13<00:18, 37.95it/s] 31%|███▏      | 318/1012 [00:14<00:16, 43.15it/s] 32%|███▏      | 323/1012 [00:14<00:15, 43.66it/s] 33%|███▎      | 329/1012 [00:14<00:15, 45.43it/s] 33%|███▎      | 334/1012 [00:14<00:18, 37.46it/s] 33%|███▎      | 339/1012 [00:14<00:18, 35.97it/s] 34%|███▍      | 343/1012 [00:14<00:20, 33.11it/s] 34%|███▍      | 347/1012 [00:14<00:20, 32.72it/s] 35%|███▍      | 351/1012 [00:15<00:20, 31.91it/s] 35%|███▌      | 355/1012 [00:15<00:21, 30.35it/s] 36%|███▌      | 360/1012 [00:15<00:19, 32.82it/s] 36%|███▌      | 365/1012 [00:15<00:17, 36.13it/s] 36%|███▋      | 369/1012 [00:15<00:20, 32.03it/s] 37%|███▋      | 374/1012 [00:15<00:18, 35.28it/s] 37%|███▋      | 378/1012 [00:15<00:17, 35.32it/s] 38%|███▊      | 382/1012 [00:15<00:17, 35.30it/s] 38%|███▊      | 386/1012 [00:16<00:19, 32.33it/s] 39%|███▊      | 390/1012 [00:16<00:18, 33.81it/s] 39%|███▉      | 394/1012 [00:16<00:17, 34.45it/s] 39%|███▉      | 399/1012 [00:16<00:16, 37.40it/s] 40%|███▉      | 404/1012 [00:16<00:15, 39.39it/s] 40%|████      | 409/1012 [00:16<00:14, 41.02it/s] 41%|████      | 414/1012 [00:16<00:16, 36.78it/s] 41%|████▏     | 418/1012 [00:16<00:16, 35.77it/s] 42%|████▏     | 422/1012 [00:17<00:16, 35.26it/s] 42%|████▏     | 426/1012 [00:17<00:17, 33.90it/s] 42%|████▏     | 430/1012 [00:17<00:17, 32.71it/s] 43%|████▎     | 435/1012 [00:17<00:16, 33.98it/s] 43%|████▎     | 439/1012 [00:17<00:17, 33.13it/s] 44%|████▍     | 443/1012 [00:17<00:17, 33.20it/s] 44%|████▍     | 447/1012 [00:17<00:18, 30.76it/s] 45%|████▍     | 451/1012 [00:18<00:20, 27.62it/s] 45%|████▍     | 454/1012 [00:18<00:19, 28.08it/s] 45%|████▌     | 458/1012 [00:18<00:19, 29.05it/s] 46%|████▌     | 462/1012 [00:18<00:18, 29.62it/s] 46%|████▌     | 466/1012 [00:18<00:18, 28.81it/s] 46%|████▋     | 469/1012 [00:18<00:19, 28.07it/s] 47%|████▋     | 472/1012 [00:18<00:19, 27.22it/s] 47%|████▋     | 475/1012 [00:18<00:20, 26.09it/s] 47%|████▋     | 478/1012 [00:19<00:20, 25.68it/s] 48%|████▊     | 482/1012 [00:19<00:18, 28.56it/s] 48%|████▊     | 485/1012 [00:19<00:20, 25.77it/s] 48%|████▊     | 488/1012 [00:19<00:21, 24.08it/s] 49%|████▊     | 491/1012 [00:19<00:22, 22.79it/s] 49%|████▉     | 495/1012 [00:19<00:20, 25.24it/s] 49%|████▉     | 498/1012 [00:19<00:20, 25.09it/s] 50%|████▉     | 501/1012 [00:19<00:20, 25.01it/s] 50%|████▉     | 505/1012 [00:20<00:18, 27.25it/s] 50%|█████     | 508/1012 [00:20<00:19, 26.51it/s] 51%|█████     | 512/1012 [00:20<00:17, 29.08it/s] 51%|█████     | 516/1012 [00:20<00:16, 29.73it/s] 51%|█████▏    | 519/1012 [00:20<00:17, 28.35it/s] 52%|█████▏    | 522/1012 [00:20<00:17, 27.46it/s] 52%|█████▏    | 526/1012 [00:20<00:16, 28.75it/s] 52%|█████▏    | 530/1012 [00:20<00:16, 29.85it/s] 53%|█████▎    | 535/1012 [00:21<00:14, 32.68it/s] 53%|█████▎    | 539/1012 [00:21<00:15, 30.80it/s] 54%|█████▎    | 543/1012 [00:21<00:15, 29.57it/s] 54%|█████▍    | 546/1012 [00:21<00:17, 27.15it/s] 54%|█████▍    | 549/1012 [00:21<00:18, 24.77it/s] 55%|█████▍    | 552/1012 [00:21<00:18, 24.88it/s] 55%|█████▍    | 555/1012 [00:21<00:18, 24.98it/s] 55%|█████▌    | 559/1012 [00:22<00:16, 27.28it/s] 56%|█████▌    | 563/1012 [00:22<00:15, 29.17it/s] 56%|█████▌    | 567/1012 [00:22<00:14, 30.42it/s] 56%|█████▋    | 571/1012 [00:22<00:15, 29.18it/s] 57%|█████▋    | 574/1012 [00:22<00:16, 26.20it/s] 57%|█████▋    | 577/1012 [00:22<00:16, 25.95it/s] 57%|█████▋    | 581/1012 [00:22<00:15, 27.65it/s] 58%|█████▊    | 584/1012 [00:22<00:16, 26.61it/s] 58%|█████▊    | 587/1012 [00:23<00:16, 26.55it/s] 58%|█████▊    | 591/1012 [00:23<00:15, 27.94it/s] 59%|█████▉    | 595/1012 [00:23<00:15, 27.50it/s] 59%|█████▉    | 599/1012 [00:23<00:14, 28.71it/s] 60%|█████▉    | 603/1012 [00:23<00:15, 26.63it/s] 60%|██████    | 608/1012 [00:23<00:13, 30.01it/s] 60%|██████    | 612/1012 [00:23<00:12, 31.72it/s] 61%|██████    | 617/1012 [00:23<00:11, 35.47it/s] 62%|██████▏   | 624/1012 [00:24<00:09, 42.95it/s] 62%|██████▏   | 631/1012 [00:24<00:08, 43.53it/s] 63%|██████▎   | 638/1012 [00:24<00:07, 46.88it/s] 64%|██████▎   | 643/1012 [00:24<00:09, 40.62it/s] 64%|██████▍   | 648/1012 [00:24<00:09, 38.44it/s] 65%|██████▍   | 653/1012 [00:24<00:09, 38.39it/s] 65%|██████▍   | 657/1012 [00:24<00:09, 36.34it/s] 65%|██████▌   | 661/1012 [00:25<00:09, 35.82it/s] 66%|██████▌   | 665/1012 [00:25<00:11, 30.90it/s] 66%|██████▌   | 669/1012 [00:25<00:11, 29.40it/s] 67%|██████▋   | 673/1012 [00:25<00:12, 26.98it/s] 67%|██████▋   | 676/1012 [00:25<00:13, 25.63it/s] 67%|██████▋   | 679/1012 [00:25<00:13, 25.33it/s] 68%|██████▊   | 684/1012 [00:25<00:10, 30.26it/s] 68%|██████▊   | 689/1012 [00:26<00:09, 32.70it/s] 68%|██████▊   | 693/1012 [00:26<00:09, 32.46it/s] 69%|██████▉   | 697/1012 [00:26<00:11, 26.84it/s] 69%|██████▉   | 701/1012 [00:26<00:10, 28.40it/s] 70%|██████▉   | 705/1012 [00:26<00:10, 29.12it/s] 70%|███████   | 709/1012 [00:26<00:10, 29.59it/s] 70%|███████   | 713/1012 [00:26<00:09, 31.20it/s] 71%|███████   | 717/1012 [00:27<00:09, 30.82it/s] 71%|███████   | 721/1012 [00:27<00:09, 29.49it/s] 72%|███████▏  | 725/1012 [00:27<00:09, 30.78it/s] 72%|███████▏  | 730/1012 [00:27<00:08, 34.72it/s] 73%|███████▎  | 734/1012 [00:27<00:08, 34.15it/s] 73%|███████▎  | 738/1012 [00:27<00:08, 31.52it/s] 73%|███████▎  | 742/1012 [00:27<00:09, 29.86it/s] 74%|███████▎  | 746/1012 [00:27<00:09, 28.88it/s] 74%|███████▍  | 749/1012 [00:28<00:09, 27.55it/s] 74%|███████▍  | 753/1012 [00:28<00:08, 28.82it/s] 75%|███████▍  | 757/1012 [00:28<00:08, 29.72it/s] 75%|███████▌  | 760/1012 [00:28<00:08, 28.39it/s] 75%|███████▌  | 763/1012 [00:28<00:08, 28.55it/s] 76%|███████▌  | 767/1012 [00:28<00:07, 31.42it/s] 76%|███████▌  | 771/1012 [00:28<00:09, 26.11it/s] 77%|███████▋  | 775/1012 [00:29<00:08, 27.82it/s] 77%|███████▋  | 778/1012 [00:29<00:08, 26.41it/s] 77%|███████▋  | 783/1012 [00:29<00:07, 31.25it/s] 78%|███████▊  | 787/1012 [00:29<00:07, 29.68it/s] 78%|███████▊  | 792/1012 [00:29<00:06, 33.81it/s] 79%|███████▊  | 796/1012 [00:29<00:06, 33.71it/s] 79%|███████▉  | 800/1012 [00:29<00:06, 33.71it/s] 80%|███████▉  | 805/1012 [00:29<00:05, 36.94it/s] 80%|███████▉  | 809/1012 [00:29<00:05, 35.01it/s] 80%|████████  | 813/1012 [00:30<00:06, 32.10it/s] 81%|████████  | 817/1012 [00:30<00:07, 27.83it/s] 81%|████████  | 820/1012 [00:30<00:07, 27.23it/s] 81%|████████▏ | 823/1012 [00:30<00:07, 26.64it/s] 82%|████████▏ | 826/1012 [00:30<00:07, 25.96it/s] 82%|████████▏ | 830/1012 [00:30<00:06, 28.33it/s] 83%|████████▎ | 835/1012 [00:30<00:05, 33.05it/s] 83%|████████▎ | 841/1012 [00:31<00:04, 38.12it/s] 83%|████████▎ | 845/1012 [00:31<00:04, 35.48it/s] 84%|████████▍ | 849/1012 [00:31<00:04, 32.84it/s] 84%|████████▍ | 855/1012 [00:31<00:04, 34.89it/s] 85%|████████▍ | 860/1012 [00:31<00:03, 38.33it/s] 86%|████████▌ | 866/1012 [00:31<00:03, 43.59it/s] 86%|████████▌ | 871/1012 [00:31<00:03, 38.72it/s] 87%|████████▋ | 876/1012 [00:31<00:03, 38.93it/s] 87%|████████▋ | 881/1012 [00:32<00:03, 36.97it/s] 87%|████████▋ | 885/1012 [00:32<00:04, 29.93it/s] 88%|████████▊ | 889/1012 [00:32<00:04, 28.79it/s] 88%|████████▊ | 893/1012 [00:32<00:04, 26.85it/s] 89%|████████▊ | 898/1012 [00:32<00:03, 30.97it/s] 89%|████████▉ | 902/1012 [00:32<00:03, 29.55it/s] 90%|████████▉ | 908/1012 [00:33<00:03, 34.64it/s] 90%|█████████ | 912/1012 [00:33<00:03, 30.27it/s] 91%|█████████ | 916/1012 [00:33<00:03, 28.62it/s] 91%|█████████ | 920/1012 [00:33<00:03, 29.85it/s] 91%|█████████▏| 925/1012 [00:33<00:02, 34.12it/s] 92%|█████████▏| 930/1012 [00:33<00:02, 37.10it/s] 92%|█████████▏| 934/1012 [00:33<00:02, 34.86it/s] 93%|█████████▎| 940/1012 [00:33<00:01, 41.02it/s] 93%|█████████▎| 945/1012 [00:34<00:01, 42.22it/s] 94%|█████████▍| 950/1012 [00:34<00:01, 38.44it/s] 94%|█████████▍| 955/1012 [00:34<00:01, 38.36it/s] 95%|█████████▍| 959/1012 [00:34<00:01, 34.43it/s] 95%|█████████▌| 964/1012 [00:34<00:01, 35.33it/s] 96%|█████████▌| 968/1012 [00:34<00:01, 32.76it/s] 96%|█████████▌| 972/1012 [00:34<00:01, 33.71it/s] 96%|█████████▋| 976/1012 [00:35<00:01, 32.86it/s] 97%|█████████▋| 980/1012 [00:35<00:01, 31.03it/s] 97%|█████████▋| 984/1012 [00:35<00:00, 31.81it/s] 98%|█████████▊| 988/1012 [00:35<00:00, 30.27it/s] 98%|█████████▊| 992/1012 [00:35<00:00, 26.00it/s] 98%|█████████▊| 996/1012 [00:35<00:00, 27.81it/s] 99%|█████████▉| 1000/1012 [00:35<00:00, 29.32it/s] 99%|█████████▉| 1004/1012 [00:36<00:00, 28.42it/s]100%|█████████▉| 1008/1012 [00:36<00:00, 31.11it/s]100%|██████████| 1012/1012 [00:36<00:00, 31.51it/s]100%|██████████| 1012/1012 [00:36<00:00, 27.93it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name  | Type              | Params
+--------------------------------------------
+0 | model | MEGNet            | 197 K 
+1 | mae   | MeanAbsoluteError | 0     
+2 | rmse  | MeanSquaredError  | 0     
+--------------------------------------------
+187 K     Trainable params
+9.3 K     Non-trainable params
+197 K     Total params
+0.789     Total estimated model params size (MB)
+Metric val_MAE improved. New best score: 568.590
+Metric val_MAE improved by 0.128 >= min_delta = 0.0. New best score: 568.462
+Metric val_MAE improved by 0.306 >= min_delta = 0.0. New best score: 568.156
+Metric val_MAE improved by 0.785 >= min_delta = 0.0. New best score: 567.371
+Metric val_MAE improved by 2.203 >= min_delta = 0.0. New best score: 565.168
+Metric val_MAE improved by 11.487 >= min_delta = 0.0. New best score: 553.681
+Metric val_MAE improved by 130.831 >= min_delta = 0.0. New best score: 422.850
+Metric val_MAE improved by 173.142 >= min_delta = 0.0. New best score: 249.708
+Metric val_MAE improved by 3.529 >= min_delta = 0.0. New best score: 246.180
+Metric val_MAE improved by 10.159 >= min_delta = 0.0. New best score: 236.021
+Metric val_MAE improved by 11.772 >= min_delta = 0.0. New best score: 224.249
+Metric val_MAE improved by 12.680 >= min_delta = 0.0. New best score: 211.569
+Metric val_MAE improved by 8.536 >= min_delta = 0.0. New best score: 203.033
+Metric val_MAE improved by 6.790 >= min_delta = 0.0. New best score: 196.243
+Metric val_MAE improved by 7.444 >= min_delta = 0.0. New best score: 188.799
+Metric val_MAE improved by 11.575 >= min_delta = 0.0. New best score: 177.224
+Metric val_MAE improved by 10.701 >= min_delta = 0.0. New best score: 166.523
+Metric val_MAE improved by 9.900 >= min_delta = 0.0. New best score: 156.623
+Metric val_MAE improved by 9.105 >= min_delta = 0.0. New best score: 147.518
+Metric val_MAE improved by 9.910 >= min_delta = 0.0. New best score: 137.608
+Metric val_MAE improved by 4.117 >= min_delta = 0.0. New best score: 133.490
+Metric val_MAE improved by 1.105 >= min_delta = 0.0. New best score: 132.385
+Metric val_MAE improved by 6.440 >= min_delta = 0.0. New best score: 125.945
+Metric val_MAE improved by 4.458 >= min_delta = 0.0. New best score: 121.488
+Metric val_MAE improved by 2.773 >= min_delta = 0.0. New best score: 118.715
+Metric val_MAE improved by 0.291 >= min_delta = 0.0. New best score: 118.424
+Metric val_MAE improved by 2.481 >= min_delta = 0.0. New best score: 115.943
+Metric val_MAE improved by 0.053 >= min_delta = 0.0. New best score: 115.890
+Metric val_MAE improved by 1.642 >= min_delta = 0.0. New best score: 114.248
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 114.242
+Metric val_MAE improved by 2.622 >= min_delta = 0.0. New best score: 111.620
+Metric val_MAE improved by 1.115 >= min_delta = 0.0. New best score: 110.505
+Metric val_MAE improved by 1.014 >= min_delta = 0.0. New best score: 109.491
+Metric val_MAE improved by 1.248 >= min_delta = 0.0. New best score: 108.243
+Metric val_MAE improved by 1.307 >= min_delta = 0.0. New best score: 106.936
+Metric val_MAE improved by 2.127 >= min_delta = 0.0. New best score: 104.809
+Metric val_MAE improved by 0.420 >= min_delta = 0.0. New best score: 104.389
+Metric val_MAE improved by 3.426 >= min_delta = 0.0. New best score: 100.964
+Metric val_MAE improved by 0.407 >= min_delta = 0.0. New best score: 100.557
+Metric val_MAE improved by 2.398 >= min_delta = 0.0. New best score: 98.158
+Metric val_MAE improved by 0.039 >= min_delta = 0.0. New best score: 98.119
+Metric val_MAE improved by 3.218 >= min_delta = 0.0. New best score: 94.901
+Metric val_MAE improved by 1.255 >= min_delta = 0.0. New best score: 93.647
+Metric val_MAE improved by 3.409 >= min_delta = 0.0. New best score: 90.238
+Metric val_MAE improved by 1.602 >= min_delta = 0.0. New best score: 88.636
+Metric val_MAE improved by 0.710 >= min_delta = 0.0. New best score: 87.926
+Metric val_MAE improved by 0.923 >= min_delta = 0.0. New best score: 87.003
+Metric val_MAE improved by 0.505 >= min_delta = 0.0. New best score: 86.498
+Metric val_MAE improved by 1.440 >= min_delta = 0.0. New best score: 85.058
+Metric val_MAE improved by 1.411 >= min_delta = 0.0. New best score: 83.647
+Metric val_MAE improved by 0.111 >= min_delta = 0.0. New best score: 83.535
+Metric val_MAE improved by 1.340 >= min_delta = 0.0. New best score: 82.195
+Metric val_MAE improved by 0.125 >= min_delta = 0.0. New best score: 82.070
+Metric val_MAE improved by 0.625 >= min_delta = 0.0. New best score: 81.444
+Metric val_MAE improved by 1.109 >= min_delta = 0.0. New best score: 80.336
+Metric val_MAE improved by 0.369 >= min_delta = 0.0. New best score: 79.967
+Metric val_MAE improved by 0.140 >= min_delta = 0.0. New best score: 79.826
+Metric val_MAE improved by 0.592 >= min_delta = 0.0. New best score: 79.234
+Metric val_MAE improved by 0.295 >= min_delta = 0.0. New best score: 78.940
+Metric val_MAE improved by 0.230 >= min_delta = 0.0. New best score: 78.710
+Metric val_MAE improved by 0.427 >= min_delta = 0.0. New best score: 78.282
+Metric val_MAE improved by 0.403 >= min_delta = 0.0. New best score: 77.879
+Metric val_MAE improved by 0.201 >= min_delta = 0.0. New best score: 77.678
+Metric val_MAE improved by 0.281 >= min_delta = 0.0. New best score: 77.396
+Metric val_MAE improved by 0.505 >= min_delta = 0.0. New best score: 76.891
+Metric val_MAE improved by 0.213 >= min_delta = 0.0. New best score: 76.678
+Metric val_MAE improved by 0.709 >= min_delta = 0.0. New best score: 75.970
+Metric val_MAE improved by 0.062 >= min_delta = 0.0. New best score: 75.908
+Metric val_MAE improved by 0.938 >= min_delta = 0.0. New best score: 74.970
+Metric val_MAE improved by 0.255 >= min_delta = 0.0. New best score: 74.714
+Metric val_MAE improved by 0.033 >= min_delta = 0.0. New best score: 74.681
+Metric val_MAE improved by 0.110 >= min_delta = 0.0. New best score: 74.571
+Metric val_MAE improved by 0.162 >= min_delta = 0.0. New best score: 74.409
+Metric val_MAE improved by 0.311 >= min_delta = 0.0. New best score: 74.098
+Metric val_MAE improved by 0.026 >= min_delta = 0.0. New best score: 74.072
+Metric val_MAE improved by 0.048 >= min_delta = 0.0. New best score: 74.024
+Metric val_MAE improved by 0.262 >= min_delta = 0.0. New best score: 73.762
+Metric val_MAE improved by 0.113 >= min_delta = 0.0. New best score: 73.648
+Metric val_MAE improved by 0.160 >= min_delta = 0.0. New best score: 73.488
+Metric val_MAE improved by 0.271 >= min_delta = 0.0. New best score: 73.217
+Metric val_MAE improved by 0.280 >= min_delta = 0.0. New best score: 72.937
+Metric val_MAE improved by 0.143 >= min_delta = 0.0. New best score: 72.794
+Metric val_MAE improved by 0.497 >= min_delta = 0.0. New best score: 72.296
+Metric val_MAE improved by 0.020 >= min_delta = 0.0. New best score: 72.277
+Metric val_MAE improved by 0.800 >= min_delta = 0.0. New best score: 71.477
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 71.465
+Metric val_MAE improved by 0.271 >= min_delta = 0.0. New best score: 71.194
+Metric val_MAE improved by 0.198 >= min_delta = 0.0. New best score: 70.996
+Metric val_MAE improved by 0.435 >= min_delta = 0.0. New best score: 70.561
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 70.555
+Metric val_MAE improved by 0.055 >= min_delta = 0.0. New best score: 70.500
+Metric val_MAE improved by 0.092 >= min_delta = 0.0. New best score: 70.408
+Metric val_MAE improved by 0.267 >= min_delta = 0.0. New best score: 70.141
+Metric val_MAE improved by 0.480 >= min_delta = 0.0. New best score: 69.661
+Metric val_MAE improved by 0.217 >= min_delta = 0.0. New best score: 69.444
+Metric val_MAE improved by 0.333 >= min_delta = 0.0. New best score: 69.110
+Metric val_MAE improved by 0.371 >= min_delta = 0.0. New best score: 68.739
+Metric val_MAE improved by 0.266 >= min_delta = 0.0. New best score: 68.473
+Metric val_MAE improved by 0.154 >= min_delta = 0.0. New best score: 68.320
+Metric val_MAE improved by 0.369 >= min_delta = 0.0. New best score: 67.951
+Metric val_MAE improved by 0.607 >= min_delta = 0.0. New best score: 67.344
+Metric val_MAE improved by 0.193 >= min_delta = 0.0. New best score: 67.151
+Metric val_MAE improved by 0.102 >= min_delta = 0.0. New best score: 67.050
+Metric val_MAE improved by 0.292 >= min_delta = 0.0. New best score: 66.757
+Metric val_MAE improved by 0.359 >= min_delta = 0.0. New best score: 66.398
+Metric val_MAE improved by 0.389 >= min_delta = 0.0. New best score: 66.009
+Metric val_MAE improved by 1.681 >= min_delta = 0.0. New best score: 64.328
+Metric val_MAE improved by 0.487 >= min_delta = 0.0. New best score: 63.841
+Metric val_MAE improved by 0.047 >= min_delta = 0.0. New best score: 63.794
+Metric val_MAE improved by 0.159 >= min_delta = 0.0. New best score: 63.634
+Metric val_MAE improved by 0.988 >= min_delta = 0.0. New best score: 62.647
+Metric val_MAE improved by 0.133 >= min_delta = 0.0. New best score: 62.514
+Metric val_MAE improved by 4.066 >= min_delta = 0.0. New best score: 58.448
+Metric val_MAE improved by 1.624 >= min_delta = 0.0. New best score: 56.824
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 56.824. Signaling Trainer to stop.
+  0%|          | 0/253 [00:00<?, ?it/s]  2%|▏         | 5/253 [00:00<00:06, 41.15it/s]  4%|▍         | 10/253 [00:00<00:06, 38.84it/s]  6%|▌         | 14/253 [00:00<00:06, 35.15it/s]  8%|▊         | 19/253 [00:00<00:06, 36.28it/s]  9%|▉         | 23/253 [00:00<00:06, 35.24it/s] 11%|█         | 27/253 [00:00<00:07, 31.14it/s] 13%|█▎        | 34/253 [00:00<00:06, 36.00it/s] 15%|█▌        | 38/253 [00:01<00:06, 32.51it/s] 17%|█▋        | 42/253 [00:01<00:06, 34.03it/s] 18%|█▊        | 46/253 [00:01<00:06, 30.62it/s] 20%|█▉        | 50/253 [00:01<00:06, 32.79it/s] 23%|██▎       | 57/253 [00:01<00:05, 36.79it/s] 24%|██▍       | 61/253 [00:01<00:05, 37.47it/s] 26%|██▌       | 65/253 [00:01<00:05, 36.41it/s] 27%|██▋       | 69/253 [00:02<00:05, 32.94it/s] 30%|██▉       | 75/253 [00:02<00:05, 34.90it/s] 31%|███       | 79/253 [00:02<00:05, 34.74it/s] 33%|███▎      | 83/253 [00:02<00:04, 34.75it/s] 34%|███▍      | 87/253 [00:02<00:04, 33.54it/s] 36%|███▋      | 92/253 [00:02<00:04, 37.26it/s] 38%|███▊      | 97/253 [00:02<00:04, 38.71it/s] 40%|███▉      | 101/253 [00:02<00:03, 38.29it/s] 42%|████▏     | 105/253 [00:02<00:04, 36.15it/s] 43%|████▎     | 109/253 [00:03<00:04, 33.32it/s] 45%|████▍     | 113/253 [00:03<00:04, 31.67it/s] 46%|████▌     | 117/253 [00:03<00:04, 28.47it/s] 47%|████▋     | 120/253 [00:03<00:04, 27.67it/s] 49%|████▉     | 125/253 [00:03<00:04, 30.93it/s] 51%|█████     | 129/253 [00:03<00:04, 25.06it/s] 53%|█████▎    | 133/253 [00:04<00:04, 25.61it/s] 54%|█████▍    | 137/253 [00:04<00:04, 26.21it/s] 56%|█████▌    | 141/253 [00:04<00:04, 27.95it/s] 57%|█████▋    | 144/253 [00:04<00:04, 27.17it/s] 58%|█████▊    | 148/253 [00:04<00:03, 29.00it/s] 60%|██████    | 153/253 [00:04<00:02, 33.68it/s] 62%|██████▏   | 157/253 [00:04<00:02, 32.78it/s] 64%|██████▍   | 162/253 [00:04<00:02, 34.78it/s] 66%|██████▌   | 166/253 [00:05<00:02, 32.02it/s] 67%|██████▋   | 170/253 [00:05<00:02, 32.64it/s] 69%|██████▉   | 174/253 [00:05<00:02, 30.72it/s] 70%|███████   | 178/253 [00:05<00:02, 31.47it/s] 72%|███████▏  | 182/253 [00:05<00:02, 28.21it/s] 74%|███████▎  | 186/253 [00:05<00:02, 29.72it/s] 75%|███████▌  | 190/253 [00:05<00:02, 30.77it/s] 77%|███████▋  | 194/253 [00:06<00:01, 30.70it/s] 78%|███████▊  | 198/253 [00:06<00:01, 29.62it/s] 80%|███████▉  | 202/253 [00:06<00:01, 28.67it/s] 82%|████████▏ | 207/253 [00:06<00:01, 33.07it/s] 83%|████████▎ | 211/253 [00:06<00:01, 34.38it/s] 85%|████████▍ | 215/253 [00:06<00:01, 34.43it/s] 87%|████████▋ | 219/253 [00:06<00:00, 34.44it/s] 89%|████████▊ | 224/253 [00:06<00:00, 37.87it/s] 92%|█████████▏| 232/253 [00:06<00:00, 47.35it/s] 94%|█████████▎| 237/253 [00:07<00:00, 40.20it/s] 96%|█████████▌| 242/253 [00:07<00:00, 39.50it/s] 98%|█████████▊| 247/253 [00:07<00:00, 37.62it/s]100%|█████████▉| 252/253 [00:07<00:00, 39.56it/s]100%|██████████| 253/253 [00:07<00:00, 33.43it/s]
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    49.066104888916016     │
+│         test_RMSE         │    108.58555603027344     │
+│      test_Total_Loss      │    49.066104888916016     │
+└───────────────────────────┴───────────────────────────┘
+  0%|          | 0/1012 [00:00<?, ?it/s]  1%|          | 6/1012 [00:00<00:18, 53.55it/s]  1%|          | 12/1012 [00:00<00:21, 46.43it/s]  2%|▏         | 17/1012 [00:00<00:23, 42.05it/s]  2%|▏         | 22/1012 [00:00<00:24, 40.51it/s]  3%|▎         | 27/1012 [00:00<00:23, 42.00it/s]  3%|▎         | 32/1012 [00:00<00:24, 39.34it/s]  4%|▎         | 37/1012 [00:00<00:24, 39.30it/s]  4%|▍         | 43/1012 [00:01<00:22, 42.37it/s]  5%|▍         | 50/1012 [00:01<00:20, 46.45it/s]  5%|▌         | 55/1012 [00:01<00:21, 45.01it/s]  6%|▌         | 60/1012 [00:01<00:28, 33.98it/s]  6%|▋         | 64/1012 [00:01<00:29, 32.16it/s]  7%|▋         | 68/1012 [00:01<00:30, 31.37it/s]  7%|▋         | 73/1012 [00:01<00:27, 33.95it/s]  8%|▊         | 77/1012 [00:02<00:29, 32.13it/s]  8%|▊         | 81/1012 [00:02<00:32, 29.01it/s]  8%|▊         | 85/1012 [00:02<00:30, 30.24it/s]  9%|▉         | 89/1012 [00:02<00:32, 28.62it/s]  9%|▉         | 94/1012 [00:02<00:30, 29.87it/s] 10%|▉         | 99/1012 [00:02<00:30, 30.41it/s] 10%|█         | 103/1012 [00:02<00:31, 29.27it/s] 10%|█         | 106/1012 [00:03<00:31, 28.47it/s] 11%|█         | 110/1012 [00:03<00:30, 29.25it/s] 11%|█         | 113/1012 [00:03<00:32, 27.98it/s] 12%|█▏        | 118/1012 [00:03<00:28, 31.24it/s] 12%|█▏        | 122/1012 [00:03<00:27, 32.07it/s] 12%|█▏        | 126/1012 [00:03<00:26, 33.85it/s] 13%|█▎        | 130/1012 [00:03<00:25, 34.36it/s] 13%|█▎        | 135/1012 [00:03<00:26, 33.26it/s] 14%|█▎        | 139/1012 [00:04<00:28, 30.26it/s] 14%|█▍        | 144/1012 [00:04<00:25, 34.66it/s] 15%|█▍        | 149/1012 [00:04<00:24, 35.25it/s] 15%|█▌        | 153/1012 [00:04<00:26, 32.48it/s] 16%|█▌        | 157/1012 [00:04<00:26, 31.76it/s] 16%|█▌        | 161/1012 [00:04<00:33, 25.75it/s] 16%|█▋        | 165/1012 [00:04<00:30, 27.73it/s] 17%|█▋        | 168/1012 [00:05<00:29, 28.20it/s] 17%|█▋        | 175/1012 [00:05<00:24, 33.59it/s] 18%|█▊        | 180/1012 [00:05<00:22, 36.46it/s] 18%|█▊        | 184/1012 [00:05<00:24, 33.66it/s] 19%|█▊        | 188/1012 [00:05<00:24, 33.49it/s] 19%|█▉        | 193/1012 [00:05<00:26, 31.33it/s] 19%|█▉        | 197/1012 [00:05<00:24, 32.67it/s] 20%|█▉        | 201/1012 [00:06<00:24, 33.50it/s] 20%|██        | 206/1012 [00:06<00:21, 36.82it/s] 21%|██        | 212/1012 [00:06<00:19, 41.83it/s] 21%|██▏       | 217/1012 [00:06<00:23, 34.43it/s] 22%|██▏       | 222/1012 [00:06<00:21, 35.93it/s] 23%|██▎       | 231/1012 [00:06<00:16, 47.85it/s] 24%|██▎       | 238/1012 [00:06<00:15, 49.64it/s] 24%|██▍       | 244/1012 [00:06<00:16, 45.82it/s] 25%|██▍       | 249/1012 [00:07<00:19, 39.51it/s] 25%|██▌       | 254/1012 [00:07<00:19, 38.60it/s] 26%|██▌       | 259/1012 [00:07<00:19, 38.55it/s] 26%|██▋       | 267/1012 [00:07<00:16, 46.18it/s] 27%|██▋       | 274/1012 [00:07<00:15, 48.52it/s] 28%|██▊       | 279/1012 [00:07<00:15, 46.02it/s] 28%|██▊       | 284/1012 [00:07<00:19, 37.02it/s] 28%|██▊       | 288/1012 [00:08<00:19, 36.58it/s] 29%|██▉       | 292/1012 [00:08<00:21, 33.50it/s] 29%|██▉       | 296/1012 [00:08<00:21, 33.22it/s] 30%|██▉       | 300/1012 [00:08<00:21, 33.09it/s] 30%|███       | 304/1012 [00:08<00:20, 34.52it/s] 31%|███       | 310/1012 [00:08<00:17, 40.73it/s] 31%|███       | 315/1012 [00:08<00:17, 40.55it/s] 32%|███▏      | 320/1012 [00:08<00:17, 39.52it/s] 32%|███▏      | 325/1012 [00:09<00:21, 32.60it/s] 33%|███▎      | 329/1012 [00:09<00:20, 33.42it/s] 33%|███▎      | 333/1012 [00:09<00:20, 33.53it/s] 33%|███▎      | 337/1012 [00:09<00:20, 32.70it/s] 34%|███▎      | 341/1012 [00:09<00:20, 33.31it/s] 34%|███▍      | 345/1012 [00:09<00:20, 33.04it/s] 34%|███▍      | 349/1012 [00:09<00:19, 33.19it/s] 35%|███▍      | 353/1012 [00:10<00:22, 29.50it/s] 35%|███▌      | 358/1012 [00:10<00:20, 32.26it/s] 36%|███▌      | 363/1012 [00:10<00:18, 34.93it/s] 36%|███▋      | 367/1012 [00:10<00:18, 35.51it/s] 37%|███▋      | 372/1012 [00:10<00:17, 37.43it/s] 37%|███▋      | 377/1012 [00:10<00:16, 38.87it/s] 38%|███▊      | 381/1012 [00:10<00:16, 39.02it/s] 38%|███▊      | 386/1012 [00:10<00:15, 41.16it/s] 39%|███▊      | 391/1012 [00:10<00:15, 40.93it/s] 39%|███▉      | 396/1012 [00:11<00:16, 38.44it/s] 40%|███▉      | 400/1012 [00:11<00:16, 38.03it/s] 40%|████      | 405/1012 [00:11<00:16, 36.07it/s] 40%|████      | 409/1012 [00:11<00:17, 34.34it/s] 41%|████      | 413/1012 [00:11<00:18, 32.87it/s] 41%|████      | 417/1012 [00:11<00:17, 33.42it/s] 42%|████▏     | 421/1012 [00:11<00:18, 32.74it/s] 42%|████▏     | 425/1012 [00:12<00:19, 30.50it/s] 42%|████▏     | 429/1012 [00:12<00:17, 32.47it/s] 43%|████▎     | 433/1012 [00:12<00:19, 29.04it/s] 43%|████▎     | 438/1012 [00:12<00:17, 32.13it/s] 44%|████▎     | 442/1012 [00:12<00:18, 30.53it/s] 44%|████▍     | 446/1012 [00:12<00:19, 29.70it/s] 44%|████▍     | 450/1012 [00:12<00:20, 27.09it/s] 45%|████▍     | 455/1012 [00:13<00:18, 30.49it/s] 45%|████▌     | 459/1012 [00:13<00:18, 29.41it/s] 46%|████▌     | 463/1012 [00:13<00:19, 28.35it/s] 46%|████▌     | 468/1012 [00:13<00:17, 31.40it/s] 47%|████▋     | 472/1012 [00:13<00:20, 26.76it/s] 47%|████▋     | 475/1012 [00:13<00:22, 23.50it/s] 47%|████▋     | 478/1012 [00:13<00:22, 24.06it/s] 48%|████▊     | 482/1012 [00:14<00:21, 24.43it/s] 48%|████▊     | 485/1012 [00:14<00:22, 23.78it/s] 48%|████▊     | 488/1012 [00:14<00:21, 24.06it/s] 49%|████▊     | 491/1012 [00:14<00:22, 22.66it/s] 49%|████▉     | 496/1012 [00:14<00:20, 25.65it/s] 49%|████▉     | 499/1012 [00:14<00:20, 25.46it/s] 50%|████▉     | 503/1012 [00:14<00:18, 27.64it/s] 50%|█████     | 506/1012 [00:15<00:18, 27.11it/s] 50%|█████     | 511/1012 [00:15<00:16, 30.22it/s] 51%|█████     | 516/1012 [00:15<00:16, 30.95it/s] 51%|█████▏    | 520/1012 [00:15<00:15, 31.77it/s] 52%|█████▏    | 524/1012 [00:15<00:16, 30.40it/s] 52%|█████▏    | 528/1012 [00:15<00:15, 31.58it/s] 53%|█████▎    | 532/1012 [00:15<00:15, 31.75it/s] 53%|█████▎    | 536/1012 [00:15<00:14, 32.78it/s] 53%|█████▎    | 540/1012 [00:16<00:15, 29.81it/s] 54%|█████▍    | 544/1012 [00:16<00:16, 28.72it/s] 54%|█████▍    | 548/1012 [00:16<00:15, 30.19it/s] 55%|█████▍    | 552/1012 [00:16<00:14, 31.23it/s] 55%|█████▍    | 556/1012 [00:16<00:14, 32.04it/s] 55%|█████▌    | 560/1012 [00:16<00:13, 32.89it/s] 56%|█████▌    | 564/1012 [00:16<00:14, 30.73it/s] 56%|█████▌    | 568/1012 [00:17<00:16, 26.25it/s] 56%|█████▋    | 571/1012 [00:17<00:16, 25.98it/s] 57%|█████▋    | 574/1012 [00:17<00:16, 26.86it/s] 57%|█████▋    | 577/1012 [00:17<00:16, 26.59it/s] 57%|█████▋    | 580/1012 [00:17<00:16, 26.62it/s] 58%|█████▊    | 584/1012 [00:17<00:14, 29.99it/s] 58%|█████▊    | 588/1012 [00:17<00:14, 29.03it/s] 58%|█████▊    | 592/1012 [00:17<00:13, 30.48it/s] 59%|█████▉    | 596/1012 [00:18<00:14, 29.18it/s] 59%|█████▉    | 601/1012 [00:18<00:12, 33.92it/s] 60%|█████▉    | 605/1012 [00:18<00:11, 35.16it/s] 60%|██████    | 611/1012 [00:18<00:10, 39.68it/s] 61%|██████    | 616/1012 [00:18<00:10, 38.69it/s] 61%|██████▏   | 622/1012 [00:18<00:08, 43.36it/s] 62%|██████▏   | 627/1012 [00:18<00:09, 41.95it/s] 62%|██████▏   | 632/1012 [00:18<00:11, 34.53it/s] 63%|██████▎   | 636/1012 [00:19<00:10, 35.73it/s] 63%|██████▎   | 641/1012 [00:19<00:09, 37.25it/s] 64%|██████▎   | 645/1012 [00:19<00:10, 33.95it/s] 64%|██████▍   | 649/1012 [00:19<00:10, 35.25it/s] 65%|██████▍   | 653/1012 [00:19<00:11, 30.53it/s] 65%|██████▍   | 657/1012 [00:19<00:12, 27.98it/s] 65%|██████▌   | 660/1012 [00:19<00:12, 27.35it/s] 66%|██████▌   | 663/1012 [00:20<00:13, 25.78it/s] 66%|██████▌   | 666/1012 [00:20<00:13, 25.72it/s] 66%|██████▌   | 670/1012 [00:20<00:11, 29.04it/s] 67%|██████▋   | 675/1012 [00:20<00:10, 32.53it/s] 67%|██████▋   | 679/1012 [00:20<00:10, 33.03it/s] 67%|██████▋   | 683/1012 [00:20<00:11, 28.37it/s] 68%|██████▊   | 687/1012 [00:20<00:10, 30.00it/s] 68%|██████▊   | 691/1012 [00:20<00:11, 28.88it/s] 69%|██████▉   | 696/1012 [00:21<00:09, 33.11it/s] 69%|██████▉   | 700/1012 [00:21<00:10, 30.83it/s] 70%|██████▉   | 705/1012 [00:21<00:09, 33.13it/s] 70%|███████   | 709/1012 [00:21<00:09, 33.37it/s] 71%|███████   | 714/1012 [00:21<00:08, 34.98it/s] 71%|███████   | 718/1012 [00:21<00:08, 34.68it/s] 71%|███████▏  | 722/1012 [00:21<00:08, 34.82it/s] 72%|███████▏  | 726/1012 [00:22<00:09, 30.04it/s] 72%|███████▏  | 730/1012 [00:22<00:10, 27.82it/s] 72%|███████▏  | 733/1012 [00:22<00:10, 27.09it/s] 73%|███████▎  | 737/1012 [00:22<00:10, 26.96it/s] 73%|███████▎  | 741/1012 [00:22<00:10, 26.92it/s] 74%|███████▎  | 745/1012 [00:22<00:09, 28.46it/s] 74%|███████▍  | 749/1012 [00:22<00:09, 28.39it/s] 74%|███████▍  | 752/1012 [00:22<00:09, 27.43it/s] 75%|███████▍  | 755/1012 [00:23<00:09, 27.19it/s] 75%|███████▌  | 759/1012 [00:23<00:08, 28.16it/s] 75%|███████▌  | 764/1012 [00:23<00:07, 31.86it/s] 76%|███████▌  | 768/1012 [00:23<00:08, 29.90it/s] 76%|███████▋  | 773/1012 [00:23<00:06, 34.64it/s] 77%|███████▋  | 777/1012 [00:23<00:06, 34.28it/s] 77%|███████▋  | 781/1012 [00:23<00:06, 34.51it/s] 78%|███████▊  | 786/1012 [00:23<00:06, 37.60it/s] 78%|███████▊  | 790/1012 [00:24<00:06, 36.16it/s] 79%|███████▊  | 795/1012 [00:24<00:06, 34.77it/s] 79%|███████▉  | 799/1012 [00:24<00:07, 30.23it/s] 79%|███████▉  | 803/1012 [00:24<00:06, 30.88it/s] 80%|███████▉  | 807/1012 [00:24<00:07, 27.88it/s] 80%|████████  | 811/1012 [00:24<00:07, 27.63it/s] 80%|████████  | 814/1012 [00:24<00:07, 25.78it/s] 81%|████████  | 820/1012 [00:25<00:05, 33.39it/s] 81%|████████▏ | 824/1012 [00:25<00:05, 34.99it/s] 82%|████████▏ | 829/1012 [00:25<00:04, 36.67it/s] 82%|████████▏ | 833/1012 [00:25<00:05, 35.49it/s] 83%|████████▎ | 838/1012 [00:25<00:04, 35.40it/s] 83%|████████▎ | 842/1012 [00:25<00:04, 36.00it/s] 84%|████████▍ | 849/1012 [00:25<00:03, 41.62it/s] 84%|████████▍ | 855/1012 [00:25<00:03, 43.64it/s] 85%|████████▍ | 860/1012 [00:26<00:03, 40.48it/s] 85%|████████▌ | 865/1012 [00:26<00:04, 34.41it/s] 86%|████████▌ | 870/1012 [00:26<00:04, 33.51it/s] 86%|████████▋ | 874/1012 [00:26<00:04, 31.61it/s] 87%|████████▋ | 878/1012 [00:26<00:04, 31.51it/s] 87%|████████▋ | 883/1012 [00:26<00:03, 33.67it/s] 88%|████████▊ | 887/1012 [00:26<00:03, 34.09it/s] 88%|████████▊ | 892/1012 [00:27<00:03, 34.33it/s] 89%|████████▊ | 896/1012 [00:27<00:03, 32.07it/s] 89%|████████▉ | 900/1012 [00:27<00:03, 30.97it/s] 89%|████████▉ | 905/1012 [00:27<00:03, 33.57it/s] 90%|█████████ | 911/1012 [00:27<00:02, 38.18it/s] 91%|█████████ | 917/1012 [00:27<00:02, 43.40it/s] 91%|█████████ | 922/1012 [00:27<00:02, 39.46it/s] 92%|█████████▏| 930/1012 [00:28<00:01, 46.98it/s] 92%|█████████▏| 935/1012 [00:28<00:01, 43.56it/s] 93%|█████████▎| 940/1012 [00:28<00:01, 41.31it/s] 93%|█████████▎| 945/1012 [00:28<00:01, 37.90it/s] 94%|█████████▍| 950/1012 [00:28<00:01, 38.14it/s] 94%|█████████▍| 954/1012 [00:28<00:01, 36.12it/s] 95%|█████████▍| 958/1012 [00:28<00:01, 36.07it/s] 95%|█████████▌| 962/1012 [00:28<00:01, 32.84it/s] 95%|█████████▌| 966/1012 [00:29<00:01, 30.12it/s] 96%|█████████▌| 972/1012 [00:29<00:01, 36.91it/s] 96%|█████████▋| 976/1012 [00:29<00:01, 34.20it/s] 97%|█████████▋| 980/1012 [00:29<00:00, 34.24it/s] 97%|█████████▋| 984/1012 [00:29<00:00, 34.09it/s] 98%|█████████▊| 988/1012 [00:29<00:00, 26.48it/s] 98%|█████████▊| 991/1012 [00:29<00:00, 26.28it/s] 98%|█████████▊| 995/1012 [00:30<00:00, 28.49it/s] 99%|█████████▊| 999/1012 [00:30<00:00, 29.88it/s] 99%|█████████▉| 1003/1012 [00:30<00:00, 30.50it/s]100%|█████████▉| 1008/1012 [00:30<00:00, 34.29it/s]100%|██████████| 1012/1012 [00:30<00:00, 34.24it/s]100%|██████████| 1012/1012 [00:30<00:00, 33.13it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name  | Type              | Params
+--------------------------------------------
+0 | model | MEGNet            | 197 K 
+1 | mae   | MeanAbsoluteError | 0     
+2 | rmse  | MeanSquaredError  | 0     
+--------------------------------------------
+187 K     Trainable params
+9.3 K     Non-trainable params
+197 K     Total params
+0.789     Total estimated model params size (MB)
+Metric val_MAE improved. New best score: 612.017
+Metric val_MAE improved by 0.129 >= min_delta = 0.0. New best score: 611.888
+Metric val_MAE improved by 0.307 >= min_delta = 0.0. New best score: 611.581
+Metric val_MAE improved by 0.791 >= min_delta = 0.0. New best score: 610.790
+Metric val_MAE improved by 2.237 >= min_delta = 0.0. New best score: 608.553
+Metric val_MAE improved by 11.785 >= min_delta = 0.0. New best score: 596.768
+Metric val_MAE improved by 136.529 >= min_delta = 0.0. New best score: 460.239
+Metric val_MAE improved by 186.066 >= min_delta = 0.0. New best score: 274.173
+Metric val_MAE improved by 16.707 >= min_delta = 0.0. New best score: 257.465
+Metric val_MAE improved by 7.034 >= min_delta = 0.0. New best score: 250.431
+Metric val_MAE improved by 1.135 >= min_delta = 0.0. New best score: 249.296
+Metric val_MAE improved by 13.318 >= min_delta = 0.0. New best score: 235.978
+Metric val_MAE improved by 4.264 >= min_delta = 0.0. New best score: 231.714
+Metric val_MAE improved by 11.432 >= min_delta = 0.0. New best score: 220.283
+Metric val_MAE improved by 5.258 >= min_delta = 0.0. New best score: 215.025
+Metric val_MAE improved by 6.812 >= min_delta = 0.0. New best score: 208.213
+Metric val_MAE improved by 8.513 >= min_delta = 0.0. New best score: 199.700
+Metric val_MAE improved by 10.724 >= min_delta = 0.0. New best score: 188.975
+Metric val_MAE improved by 15.150 >= min_delta = 0.0. New best score: 173.826
+Metric val_MAE improved by 8.410 >= min_delta = 0.0. New best score: 165.416
+Metric val_MAE improved by 7.438 >= min_delta = 0.0. New best score: 157.978
+Metric val_MAE improved by 7.407 >= min_delta = 0.0. New best score: 150.571
+Metric val_MAE improved by 3.128 >= min_delta = 0.0. New best score: 147.442
+Metric val_MAE improved by 4.069 >= min_delta = 0.0. New best score: 143.374
+Metric val_MAE improved by 4.992 >= min_delta = 0.0. New best score: 138.381
+Metric val_MAE improved by 0.481 >= min_delta = 0.0. New best score: 137.900
+Metric val_MAE improved by 1.013 >= min_delta = 0.0. New best score: 136.887
+Metric val_MAE improved by 0.926 >= min_delta = 0.0. New best score: 135.961
+Metric val_MAE improved by 3.102 >= min_delta = 0.0. New best score: 132.859
+Metric val_MAE improved by 2.925 >= min_delta = 0.0. New best score: 129.934
+Metric val_MAE improved by 3.352 >= min_delta = 0.0. New best score: 126.583
+Metric val_MAE improved by 0.980 >= min_delta = 0.0. New best score: 125.603
+Metric val_MAE improved by 0.580 >= min_delta = 0.0. New best score: 125.023
+Metric val_MAE improved by 0.417 >= min_delta = 0.0. New best score: 124.606
+Metric val_MAE improved by 0.173 >= min_delta = 0.0. New best score: 124.433
+Metric val_MAE improved by 0.587 >= min_delta = 0.0. New best score: 123.846
+Metric val_MAE improved by 1.177 >= min_delta = 0.0. New best score: 122.669
+Metric val_MAE improved by 1.660 >= min_delta = 0.0. New best score: 121.009
+Metric val_MAE improved by 0.866 >= min_delta = 0.0. New best score: 120.143
+Metric val_MAE improved by 0.679 >= min_delta = 0.0. New best score: 119.464
+Metric val_MAE improved by 0.186 >= min_delta = 0.0. New best score: 119.278
+Metric val_MAE improved by 1.086 >= min_delta = 0.0. New best score: 118.192
+Metric val_MAE improved by 0.343 >= min_delta = 0.0. New best score: 117.849
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 117.847
+Metric val_MAE improved by 0.170 >= min_delta = 0.0. New best score: 117.677
+Metric val_MAE improved by 0.139 >= min_delta = 0.0. New best score: 117.538
+Metric val_MAE improved by 0.724 >= min_delta = 0.0. New best score: 116.815
+Metric val_MAE improved by 0.482 >= min_delta = 0.0. New best score: 116.332
+Metric val_MAE improved by 0.952 >= min_delta = 0.0. New best score: 115.381
+Metric val_MAE improved by 0.255 >= min_delta = 0.0. New best score: 115.125
+Metric val_MAE improved by 0.088 >= min_delta = 0.0. New best score: 115.037
+Metric val_MAE improved by 0.171 >= min_delta = 0.0. New best score: 114.866
+Metric val_MAE improved by 0.918 >= min_delta = 0.0. New best score: 113.948
+Metric val_MAE improved by 0.346 >= min_delta = 0.0. New best score: 113.602
+Metric val_MAE improved by 0.226 >= min_delta = 0.0. New best score: 113.376
+Metric val_MAE improved by 0.133 >= min_delta = 0.0. New best score: 113.243
+Metric val_MAE improved by 0.123 >= min_delta = 0.0. New best score: 113.121
+Metric val_MAE improved by 0.723 >= min_delta = 0.0. New best score: 112.397
+Metric val_MAE improved by 0.732 >= min_delta = 0.0. New best score: 111.665
+Metric val_MAE improved by 0.886 >= min_delta = 0.0. New best score: 110.779
+Metric val_MAE improved by 1.554 >= min_delta = 0.0. New best score: 109.224
+Metric val_MAE improved by 0.815 >= min_delta = 0.0. New best score: 108.409
+Metric val_MAE improved by 1.737 >= min_delta = 0.0. New best score: 106.672
+Metric val_MAE improved by 0.271 >= min_delta = 0.0. New best score: 106.402
+Metric val_MAE improved by 0.343 >= min_delta = 0.0. New best score: 106.059
+Metric val_MAE improved by 2.164 >= min_delta = 0.0. New best score: 103.895
+Metric val_MAE improved by 1.082 >= min_delta = 0.0. New best score: 102.813
+Metric val_MAE improved by 1.144 >= min_delta = 0.0. New best score: 101.669
+Metric val_MAE improved by 0.087 >= min_delta = 0.0. New best score: 101.583
+Metric val_MAE improved by 0.317 >= min_delta = 0.0. New best score: 101.266
+Metric val_MAE improved by 1.259 >= min_delta = 0.0. New best score: 100.007
+Metric val_MAE improved by 3.507 >= min_delta = 0.0. New best score: 96.500
+Metric val_MAE improved by 2.100 >= min_delta = 0.0. New best score: 94.400
+Metric val_MAE improved by 1.844 >= min_delta = 0.0. New best score: 92.556
+Metric val_MAE improved by 2.602 >= min_delta = 0.0. New best score: 89.954
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 89.954
+Metric val_MAE improved by 2.968 >= min_delta = 0.0. New best score: 86.986
+Metric val_MAE improved by 0.042 >= min_delta = 0.0. New best score: 86.943
+Metric val_MAE improved by 0.195 >= min_delta = 0.0. New best score: 86.748
+Metric val_MAE improved by 0.865 >= min_delta = 0.0. New best score: 85.884
+Metric val_MAE improved by 2.497 >= min_delta = 0.0. New best score: 83.387
+Metric val_MAE improved by 2.646 >= min_delta = 0.0. New best score: 80.741
+Metric val_MAE improved by 0.937 >= min_delta = 0.0. New best score: 79.804
+Metric val_MAE improved by 0.100 >= min_delta = 0.0. New best score: 79.704
+Metric val_MAE improved by 4.806 >= min_delta = 0.0. New best score: 74.898
+Metric val_MAE improved by 2.296 >= min_delta = 0.0. New best score: 72.602
+Metric val_MAE improved by 1.402 >= min_delta = 0.0. New best score: 71.200
+Metric val_MAE improved by 1.647 >= min_delta = 0.0. New best score: 69.553
+Metric val_MAE improved by 1.080 >= min_delta = 0.0. New best score: 68.473
+Metric val_MAE improved by 0.364 >= min_delta = 0.0. New best score: 68.109
+Metric val_MAE improved by 0.830 >= min_delta = 0.0. New best score: 67.279
+Metric val_MAE improved by 0.277 >= min_delta = 0.0. New best score: 67.003
+Metric val_MAE improved by 0.310 >= min_delta = 0.0. New best score: 66.693
+Metric val_MAE improved by 0.200 >= min_delta = 0.0. New best score: 66.493
+Metric val_MAE improved by 0.196 >= min_delta = 0.0. New best score: 66.296
+Metric val_MAE improved by 0.423 >= min_delta = 0.0. New best score: 65.873
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 65.864
+Metric val_MAE improved by 0.161 >= min_delta = 0.0. New best score: 65.703
+Metric val_MAE improved by 0.017 >= min_delta = 0.0. New best score: 65.686
+Metric val_MAE improved by 0.526 >= min_delta = 0.0. New best score: 65.160
+Metric val_MAE improved by 0.081 >= min_delta = 0.0. New best score: 65.078
+Metric val_MAE improved by 0.073 >= min_delta = 0.0. New best score: 65.005
+Metric val_MAE improved by 0.014 >= min_delta = 0.0. New best score: 64.991
+Metric val_MAE improved by 0.127 >= min_delta = 0.0. New best score: 64.864
+Metric val_MAE improved by 0.042 >= min_delta = 0.0. New best score: 64.823
+Metric val_MAE improved by 0.014 >= min_delta = 0.0. New best score: 64.809
+Metric val_MAE improved by 0.093 >= min_delta = 0.0. New best score: 64.716
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 64.710
+Metric val_MAE improved by 0.035 >= min_delta = 0.0. New best score: 64.675
+Metric val_MAE improved by 0.050 >= min_delta = 0.0. New best score: 64.625
+Metric val_MAE improved by 0.094 >= min_delta = 0.0. New best score: 64.532
+Metric val_MAE improved by 0.087 >= min_delta = 0.0. New best score: 64.445
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 64.436
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 64.425
+Metric val_MAE improved by 0.047 >= min_delta = 0.0. New best score: 64.378
+Metric val_MAE improved by 0.188 >= min_delta = 0.0. New best score: 64.190
+Metric val_MAE improved by 0.126 >= min_delta = 0.0. New best score: 64.063
+Metric val_MAE improved by 0.210 >= min_delta = 0.0. New best score: 63.853
+Metric val_MAE improved by 0.153 >= min_delta = 0.0. New best score: 63.701
+Metric val_MAE improved by 0.237 >= min_delta = 0.0. New best score: 63.464
+Metric val_MAE improved by 0.051 >= min_delta = 0.0. New best score: 63.412
+Metric val_MAE improved by 0.496 >= min_delta = 0.0. New best score: 62.916
+Metric val_MAE improved by 0.032 >= min_delta = 0.0. New best score: 62.884
+Metric val_MAE improved by 0.342 >= min_delta = 0.0. New best score: 62.543
+Metric val_MAE improved by 0.605 >= min_delta = 0.0. New best score: 61.938
+Metric val_MAE improved by 0.346 >= min_delta = 0.0. New best score: 61.592
+Metric val_MAE improved by 0.630 >= min_delta = 0.0. New best score: 60.962
+Metric val_MAE improved by 0.184 >= min_delta = 0.0. New best score: 60.778
+Metric val_MAE improved by 0.355 >= min_delta = 0.0. New best score: 60.423
+Metric val_MAE improved by 0.253 >= min_delta = 0.0. New best score: 60.170
+Metric val_MAE improved by 0.350 >= min_delta = 0.0. New best score: 59.820
+Metric val_MAE improved by 0.896 >= min_delta = 0.0. New best score: 58.924
+Metric val_MAE improved by 1.113 >= min_delta = 0.0. New best score: 57.810
+Metric val_MAE improved by 0.824 >= min_delta = 0.0. New best score: 56.986
+Metric val_MAE improved by 0.098 >= min_delta = 0.0. New best score: 56.888
+Metric val_MAE improved by 0.963 >= min_delta = 0.0. New best score: 55.925
+Metric val_MAE improved by 0.253 >= min_delta = 0.0. New best score: 55.672
+Metric val_MAE improved by 0.026 >= min_delta = 0.0. New best score: 55.647
+Metric val_MAE improved by 0.531 >= min_delta = 0.0. New best score: 55.116
+Metric val_MAE improved by 0.082 >= min_delta = 0.0. New best score: 55.034
+Metric val_MAE improved by 0.202 >= min_delta = 0.0. New best score: 54.832
+Metric val_MAE improved by 0.107 >= min_delta = 0.0. New best score: 54.725
+Metric val_MAE improved by 0.424 >= min_delta = 0.0. New best score: 54.302
+Metric val_MAE improved by 0.779 >= min_delta = 0.0. New best score: 53.522
+Metric val_MAE improved by 0.714 >= min_delta = 0.0. New best score: 52.808
+Metric val_MAE improved by 0.780 >= min_delta = 0.0. New best score: 52.028
+Metric val_MAE improved by 0.534 >= min_delta = 0.0. New best score: 51.494
+Metric val_MAE improved by 0.533 >= min_delta = 0.0. New best score: 50.961
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 50.953
+Metric val_MAE improved by 0.279 >= min_delta = 0.0. New best score: 50.674
+Metric val_MAE improved by 0.278 >= min_delta = 0.0. New best score: 50.396
+Metric val_MAE improved by 0.273 >= min_delta = 0.0. New best score: 50.123
+Metric val_MAE improved by 0.381 >= min_delta = 0.0. New best score: 49.741
+Metric val_MAE improved by 0.197 >= min_delta = 0.0. New best score: 49.544
+Metric val_MAE improved by 0.085 >= min_delta = 0.0. New best score: 49.459
+Metric val_MAE improved by 0.164 >= min_delta = 0.0. New best score: 49.295
+Metric val_MAE improved by 0.230 >= min_delta = 0.0. New best score: 49.065
+Metric val_MAE improved by 0.059 >= min_delta = 0.0. New best score: 49.006
+Metric val_MAE improved by 0.194 >= min_delta = 0.0. New best score: 48.812
+Metric val_MAE improved by 0.253 >= min_delta = 0.0. New best score: 48.559
+Metric val_MAE improved by 0.062 >= min_delta = 0.0. New best score: 48.497
+Metric val_MAE improved by 0.145 >= min_delta = 0.0. New best score: 48.352
+Metric val_MAE improved by 0.087 >= min_delta = 0.0. New best score: 48.265
+Metric val_MAE improved by 0.068 >= min_delta = 0.0. New best score: 48.197
+Metric val_MAE improved by 0.397 >= min_delta = 0.0. New best score: 47.801
+Metric val_MAE improved by 0.361 >= min_delta = 0.0. New best score: 47.440
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 47.435
+Metric val_MAE improved by 0.046 >= min_delta = 0.0. New best score: 47.389
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 47.388
+Metric val_MAE improved by 0.394 >= min_delta = 0.0. New best score: 46.994
+Metric val_MAE improved by 0.076 >= min_delta = 0.0. New best score: 46.918
+Metric val_MAE improved by 0.255 >= min_delta = 0.0. New best score: 46.663
+Metric val_MAE improved by 0.046 >= min_delta = 0.0. New best score: 46.617
+Metric val_MAE improved by 0.177 >= min_delta = 0.0. New best score: 46.440
+Metric val_MAE improved by 0.013 >= min_delta = 0.0. New best score: 46.427
+Metric val_MAE improved by 0.569 >= min_delta = 0.0. New best score: 45.858
+Metric val_MAE improved by 1.098 >= min_delta = 0.0. New best score: 44.760
+Metric val_MAE improved by 0.083 >= min_delta = 0.0. New best score: 44.677
+Metric val_MAE improved by 0.451 >= min_delta = 0.0. New best score: 44.226
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 44.226. Signaling Trainer to stop.
+  0%|          | 0/253 [00:00<?, ?it/s]  2%|▏         | 4/253 [00:00<00:07, 32.94it/s]  3%|▎         | 8/253 [00:00<00:06, 36.13it/s]  5%|▌         | 13/253 [00:00<00:05, 41.10it/s]  7%|▋         | 18/253 [00:00<00:05, 43.69it/s]  9%|▉         | 23/253 [00:00<00:06, 36.15it/s] 11%|█         | 27/253 [00:00<00:06, 33.00it/s] 12%|█▏        | 31/253 [00:00<00:07, 30.30it/s] 14%|█▍        | 35/253 [00:01<00:06, 31.40it/s] 15%|█▌        | 39/253 [00:01<00:07, 29.81it/s] 17%|█▋        | 44/253 [00:01<00:06, 34.22it/s] 19%|█▉        | 48/253 [00:01<00:05, 35.13it/s] 21%|██        | 53/253 [00:01<00:05, 38.29it/s] 25%|██▍       | 62/253 [00:01<00:03, 49.18it/s] 27%|██▋       | 68/253 [00:01<00:03, 52.02it/s] 29%|██▉       | 74/253 [00:01<00:04, 41.27it/s] 31%|███       | 79/253 [00:02<00:04, 42.50it/s] 34%|███▎      | 85/253 [00:02<00:03, 46.61it/s] 36%|███▌      | 90/253 [00:02<00:03, 41.36it/s] 38%|███▊      | 96/253 [00:02<00:03, 40.97it/s] 40%|███▉      | 101/253 [00:02<00:04, 36.34it/s] 42%|████▏     | 105/253 [00:02<00:04, 35.75it/s] 43%|████▎     | 110/253 [00:02<00:03, 38.20it/s] 45%|████▌     | 114/253 [00:02<00:03, 37.61it/s] 47%|████▋     | 118/253 [00:03<00:04, 33.25it/s] 48%|████▊     | 122/253 [00:03<00:04, 31.37it/s] 50%|████▉     | 126/253 [00:03<00:04, 31.65it/s] 51%|█████▏    | 130/253 [00:03<00:03, 33.15it/s] 53%|█████▎    | 134/253 [00:03<00:04, 29.13it/s] 55%|█████▍    | 138/253 [00:03<00:04, 28.37it/s] 56%|█████▌    | 141/253 [00:03<00:04, 27.78it/s] 57%|█████▋    | 145/253 [00:04<00:04, 27.00it/s] 58%|█████▊    | 148/253 [00:04<00:04, 24.90it/s] 60%|█████▉    | 151/253 [00:04<00:04, 24.88it/s] 61%|██████    | 154/253 [00:04<00:03, 24.97it/s] 62%|██████▏   | 158/253 [00:04<00:03, 27.30it/s] 64%|██████▍   | 163/253 [00:04<00:02, 31.18it/s] 67%|██████▋   | 170/253 [00:04<00:02, 40.26it/s] 69%|██████▉   | 175/253 [00:05<00:02, 36.86it/s] 71%|███████   | 180/253 [00:05<00:01, 37.50it/s] 73%|███████▎  | 184/253 [00:05<00:01, 34.66it/s] 74%|███████▍  | 188/253 [00:05<00:02, 29.68it/s] 76%|███████▋  | 193/253 [00:05<00:01, 32.18it/s] 78%|███████▊  | 197/253 [00:05<00:01, 30.71it/s] 80%|███████▉  | 202/253 [00:05<00:01, 34.42it/s] 81%|████████▏ | 206/253 [00:05<00:01, 33.81it/s] 83%|████████▎ | 210/253 [00:06<00:01, 30.83it/s] 85%|████████▍ | 214/253 [00:06<00:01, 31.71it/s] 86%|████████▌ | 218/253 [00:06<00:01, 30.23it/s] 88%|████████▊ | 223/253 [00:06<00:00, 34.22it/s] 90%|█████████ | 228/253 [00:06<00:00, 33.67it/s] 92%|█████████▏| 232/253 [00:06<00:00, 29.97it/s] 94%|█████████▎| 237/253 [00:06<00:00, 32.52it/s] 96%|█████████▌| 242/253 [00:07<00:00, 35.98it/s] 97%|█████████▋| 246/253 [00:07<00:00, 34.29it/s] 99%|█████████▉| 250/253 [00:07<00:00, 33.84it/s]100%|██████████| 253/253 [00:07<00:00, 34.20it/s]
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     46.85015106201172     │
+│         test_RMSE         │    122.43047332763672     │
+│      test_Total_Loss      │     46.85015106201172     │
+└───────────────────────────┴───────────────────────────┘
+  0%|          | 0/1012 [00:00<?, ?it/s]  0%|          | 5/1012 [00:00<00:21, 47.62it/s]  1%|          | 10/1012 [00:00<00:23, 42.27it/s]  1%|▏         | 15/1012 [00:00<00:25, 39.75it/s]  2%|▏         | 20/1012 [00:00<00:29, 33.09it/s]  2%|▏         | 25/1012 [00:00<00:26, 37.05it/s]  3%|▎         | 29/1012 [00:00<00:28, 35.08it/s]  3%|▎         | 33/1012 [00:00<00:28, 34.74it/s]  4%|▍         | 39/1012 [00:01<00:24, 39.32it/s]  4%|▍         | 44/1012 [00:01<00:23, 41.30it/s]  5%|▍         | 49/1012 [00:01<00:23, 41.57it/s]  5%|▌         | 54/1012 [00:01<00:24, 38.39it/s]  6%|▌         | 58/1012 [00:01<00:28, 33.74it/s]  6%|▌         | 62/1012 [00:01<00:28, 33.14it/s]  7%|▋         | 66/1012 [00:01<00:27, 34.61it/s]  7%|▋         | 70/1012 [00:01<00:31, 30.18it/s]  7%|▋         | 74/1012 [00:02<00:28, 32.49it/s]  8%|▊         | 78/1012 [00:02<00:30, 30.18it/s]  8%|▊         | 82/1012 [00:02<00:29, 31.06it/s]  8%|▊         | 86/1012 [00:02<00:29, 30.95it/s]  9%|▉         | 91/1012 [00:02<00:27, 33.22it/s]  9%|▉         | 95/1012 [00:02<00:28, 32.74it/s] 10%|▉         | 99/1012 [00:02<00:31, 28.73it/s] 10%|█         | 103/1012 [00:03<00:29, 30.49it/s] 11%|█         | 107/1012 [00:03<00:29, 31.14it/s] 11%|█         | 112/1012 [00:03<00:26, 33.71it/s] 11%|█▏        | 116/1012 [00:03<00:26, 33.78it/s] 12%|█▏        | 120/1012 [00:03<00:27, 32.96it/s] 12%|█▏        | 124/1012 [00:03<00:32, 27.48it/s] 13%|█▎        | 129/1012 [00:03<00:27, 32.35it/s] 13%|█▎        | 133/1012 [00:03<00:26, 33.72it/s] 14%|█▎        | 137/1012 [00:04<00:24, 35.18it/s] 14%|█▍        | 141/1012 [00:04<00:28, 30.10it/s] 14%|█▍        | 145/1012 [00:04<00:28, 30.58it/s] 15%|█▍        | 149/1012 [00:04<00:31, 27.56it/s] 15%|█▌        | 152/1012 [00:04<00:34, 25.29it/s] 15%|█▌        | 155/1012 [00:04<00:33, 25.28it/s] 16%|█▌        | 160/1012 [00:04<00:28, 29.98it/s] 16%|█▌        | 164/1012 [00:05<00:29, 28.69it/s] 17%|█▋        | 169/1012 [00:05<00:25, 33.20it/s] 17%|█▋        | 174/1012 [00:05<00:22, 36.63it/s] 18%|█▊        | 178/1012 [00:05<00:25, 33.12it/s] 18%|█▊        | 182/1012 [00:05<00:24, 33.51it/s] 18%|█▊        | 186/1012 [00:05<00:24, 34.29it/s] 19%|█▉        | 190/1012 [00:05<00:25, 31.72it/s] 19%|█▉        | 195/1012 [00:05<00:24, 33.97it/s] 20%|█▉        | 199/1012 [00:06<00:23, 34.03it/s] 20%|██        | 204/1012 [00:06<00:21, 37.39it/s] 21%|██        | 209/1012 [00:06<00:19, 40.25it/s] 21%|██        | 214/1012 [00:06<00:24, 33.20it/s] 22%|██▏       | 219/1012 [00:06<00:22, 34.85it/s] 22%|██▏       | 227/1012 [00:06<00:17, 43.80it/s] 23%|██▎       | 235/1012 [00:06<00:14, 52.57it/s] 24%|██▍       | 242/1012 [00:06<00:14, 53.27it/s] 25%|██▍       | 248/1012 [00:07<00:16, 47.48it/s] 25%|██▌       | 254/1012 [00:07<00:19, 39.55it/s] 26%|██▌       | 259/1012 [00:07<00:19, 37.99it/s] 26%|██▌       | 264/1012 [00:07<00:18, 39.99it/s] 27%|██▋       | 271/1012 [00:07<00:15, 46.46it/s] 27%|██▋       | 276/1012 [00:07<00:16, 45.52it/s] 28%|██▊       | 281/1012 [00:07<00:17, 42.32it/s] 28%|██▊       | 286/1012 [00:08<00:20, 35.38it/s] 29%|██▊       | 290/1012 [00:08<00:20, 34.77it/s] 29%|██▉       | 295/1012 [00:08<00:19, 36.05it/s] 30%|██▉       | 299/1012 [00:08<00:21, 33.00it/s] 30%|███       | 305/1012 [00:08<00:18, 37.82it/s] 31%|███       | 309/1012 [00:08<00:18, 37.62it/s] 31%|███       | 314/1012 [00:08<00:17, 39.91it/s] 32%|███▏      | 321/1012 [00:08<00:14, 46.72it/s] 32%|███▏      | 327/1012 [00:09<00:15, 44.98it/s] 33%|███▎      | 332/1012 [00:09<00:17, 39.13it/s] 33%|███▎      | 337/1012 [00:09<00:18, 37.24it/s] 34%|███▎      | 341/1012 [00:09<00:20, 32.10it/s] 34%|███▍      | 345/1012 [00:09<00:20, 32.52it/s] 34%|███▍      | 349/1012 [00:09<00:20, 32.18it/s] 35%|███▍      | 353/1012 [00:09<00:20, 32.56it/s] 35%|███▌      | 357/1012 [00:10<00:21, 30.36it/s] 36%|███▌      | 362/1012 [00:10<00:18, 34.46it/s] 36%|███▋      | 367/1012 [00:10<00:19, 33.49it/s] 37%|███▋      | 371/1012 [00:10<00:18, 34.23it/s] 37%|███▋      | 376/1012 [00:10<00:17, 35.71it/s] 38%|███▊      | 381/1012 [00:10<00:16, 37.58it/s] 38%|███▊      | 385/1012 [00:10<00:16, 37.15it/s] 38%|███▊      | 389/1012 [00:10<00:17, 35.48it/s] 39%|███▉      | 393/1012 [00:11<00:18, 33.93it/s] 39%|███▉      | 398/1012 [00:11<00:17, 35.53it/s] 40%|███▉      | 402/1012 [00:11<00:16, 35.95it/s] 40%|████      | 406/1012 [00:11<00:17, 35.47it/s] 41%|████      | 411/1012 [00:11<00:16, 36.64it/s] 41%|████      | 415/1012 [00:11<00:16, 36.68it/s] 41%|████▏     | 419/1012 [00:11<00:17, 34.70it/s] 42%|████▏     | 424/1012 [00:11<00:16, 36.02it/s] 42%|████▏     | 428/1012 [00:12<00:17, 33.88it/s] 43%|████▎     | 432/1012 [00:12<00:17, 33.79it/s] 43%|████▎     | 437/1012 [00:12<00:16, 35.85it/s] 44%|████▎     | 441/1012 [00:12<00:18, 30.54it/s] 44%|████▍     | 445/1012 [00:12<00:17, 32.22it/s] 44%|████▍     | 449/1012 [00:12<00:18, 29.85it/s] 45%|████▍     | 453/1012 [00:12<00:18, 30.11it/s] 45%|████▌     | 457/1012 [00:13<00:17, 31.21it/s] 46%|████▌     | 461/1012 [00:13<00:18, 30.11it/s] 46%|████▌     | 465/1012 [00:13<00:18, 29.62it/s] 46%|████▋     | 469/1012 [00:13<00:17, 31.09it/s] 47%|████▋     | 473/1012 [00:13<00:18, 28.88it/s] 47%|████▋     | 476/1012 [00:13<00:19, 27.83it/s] 47%|████▋     | 480/1012 [00:13<00:17, 29.61it/s] 48%|████▊     | 484/1012 [00:13<00:17, 30.18it/s] 48%|████▊     | 488/1012 [00:14<00:20, 25.87it/s] 49%|████▊     | 492/1012 [00:14<00:19, 26.23it/s] 49%|████▉     | 496/1012 [00:14<00:18, 27.64it/s] 49%|████▉     | 499/1012 [00:14<00:18, 27.03it/s] 50%|████▉     | 502/1012 [00:14<00:20, 24.71it/s] 50%|█████     | 506/1012 [00:14<00:19, 26.58it/s] 50%|█████     | 510/1012 [00:14<00:17, 28.67it/s] 51%|█████     | 513/1012 [00:15<00:18, 27.55it/s] 51%|█████     | 516/1012 [00:15<00:18, 26.63it/s] 51%|█████▏    | 520/1012 [00:15<00:17, 28.02it/s] 52%|█████▏    | 523/1012 [00:15<00:17, 27.33it/s] 52%|█████▏    | 526/1012 [00:15<00:19, 24.96it/s] 52%|█████▏    | 531/1012 [00:15<00:16, 29.55it/s] 53%|█████▎    | 535/1012 [00:15<00:16, 28.85it/s] 53%|█████▎    | 540/1012 [00:15<00:15, 31.42it/s] 54%|█████▍    | 544/1012 [00:16<00:15, 30.64it/s] 54%|█████▍    | 548/1012 [00:16<00:15, 29.75it/s] 54%|█████▍    | 551/1012 [00:16<00:17, 26.78it/s] 55%|█████▍    | 554/1012 [00:16<00:17, 26.36it/s] 55%|█████▌    | 557/1012 [00:16<00:17, 26.50it/s] 55%|█████▌    | 561/1012 [00:16<00:15, 28.66it/s] 56%|█████▌    | 565/1012 [00:16<00:15, 28.09it/s] 56%|█████▌    | 568/1012 [00:17<00:17, 25.80it/s] 56%|█████▋    | 571/1012 [00:17<00:17, 25.83it/s] 57%|█████▋    | 574/1012 [00:17<00:16, 25.83it/s] 57%|█████▋    | 577/1012 [00:17<00:16, 26.08it/s] 57%|█████▋    | 580/1012 [00:17<00:16, 25.76it/s] 58%|█████▊    | 585/1012 [00:17<00:14, 29.63it/s] 58%|█████▊    | 588/1012 [00:17<00:14, 28.58it/s] 58%|█████▊    | 592/1012 [00:17<00:13, 30.21it/s] 59%|█████▉    | 596/1012 [00:18<00:13, 31.41it/s] 60%|█████▉    | 603/1012 [00:18<00:10, 38.45it/s] 60%|██████    | 608/1012 [00:18<00:09, 40.77it/s] 61%|██████    | 615/1012 [00:18<00:08, 45.48it/s] 61%|██████▏   | 620/1012 [00:18<00:09, 43.07it/s] 62%|██████▏   | 626/1012 [00:18<00:08, 44.28it/s] 62%|██████▏   | 632/1012 [00:18<00:08, 45.95it/s] 63%|██████▎   | 637/1012 [00:18<00:09, 40.06it/s] 63%|██████▎   | 642/1012 [00:19<00:09, 39.95it/s] 64%|██████▍   | 647/1012 [00:19<00:09, 38.31it/s] 64%|██████▍   | 651/1012 [00:19<00:10, 34.55it/s] 65%|██████▍   | 655/1012 [00:19<00:11, 32.24it/s] 65%|██████▌   | 659/1012 [00:19<00:12, 29.04it/s] 65%|██████▌   | 662/1012 [00:19<00:13, 26.64it/s] 66%|██████▌   | 666/1012 [00:19<00:12, 28.46it/s] 66%|██████▋   | 671/1012 [00:20<00:10, 31.43it/s] 67%|██████▋   | 676/1012 [00:20<00:10, 33.24it/s] 67%|██████▋   | 680/1012 [00:20<00:10, 30.94it/s] 68%|██████▊   | 684/1012 [00:20<00:11, 29.46it/s] 68%|██████▊   | 688/1012 [00:20<00:10, 31.00it/s] 68%|██████▊   | 692/1012 [00:20<00:11, 28.09it/s] 69%|██████▉   | 697/1012 [00:20<00:09, 32.19it/s] 69%|██████▉   | 701/1012 [00:21<00:10, 30.00it/s] 70%|██████▉   | 706/1012 [00:21<00:09, 33.81it/s] 70%|███████   | 710/1012 [00:21<00:10, 30.10it/s] 71%|███████   | 714/1012 [00:21<00:09, 31.11it/s] 71%|███████   | 719/1012 [00:21<00:08, 35.14it/s] 71%|███████▏  | 723/1012 [00:21<00:08, 34.87it/s] 72%|███████▏  | 727/1012 [00:21<00:08, 33.99it/s] 72%|███████▏  | 731/1012 [00:21<00:08, 31.85it/s] 73%|███████▎  | 735/1012 [00:22<00:10, 26.85it/s] 73%|███████▎  | 739/1012 [00:22<00:09, 28.62it/s] 73%|███████▎  | 743/1012 [00:22<00:09, 29.44it/s] 74%|███████▍  | 747/1012 [00:22<00:08, 30.65it/s] 74%|███████▍  | 752/1012 [00:22<00:08, 32.47it/s] 75%|███████▍  | 756/1012 [00:22<00:08, 28.80it/s] 75%|███████▌  | 760/1012 [00:22<00:08, 31.28it/s] 75%|███████▌  | 764/1012 [00:23<00:07, 31.44it/s] 76%|███████▌  | 768/1012 [00:23<00:07, 33.30it/s] 76%|███████▋  | 772/1012 [00:23<00:07, 31.44it/s] 77%|███████▋  | 777/1012 [00:23<00:06, 35.20it/s] 77%|███████▋  | 781/1012 [00:23<00:06, 34.73it/s] 78%|███████▊  | 786/1012 [00:23<00:05, 37.96it/s] 78%|███████▊  | 790/1012 [00:23<00:05, 37.10it/s] 78%|███████▊  | 794/1012 [00:23<00:06, 33.46it/s] 79%|███████▉  | 798/1012 [00:24<00:06, 30.59it/s] 79%|███████▉  | 802/1012 [00:24<00:07, 29.02it/s] 80%|███████▉  | 805/1012 [00:24<00:07, 28.08it/s] 80%|███████▉  | 809/1012 [00:24<00:06, 29.77it/s] 80%|████████  | 813/1012 [00:24<00:07, 25.49it/s] 81%|████████  | 817/1012 [00:24<00:07, 27.72it/s] 81%|████████  | 821/1012 [00:24<00:06, 30.49it/s] 82%|████████▏ | 826/1012 [00:24<00:05, 33.14it/s] 82%|████████▏ | 830/1012 [00:25<00:05, 32.36it/s] 82%|████████▏ | 834/1012 [00:25<00:05, 30.62it/s] 83%|████████▎ | 838/1012 [00:25<00:05, 32.22it/s] 83%|████████▎ | 842/1012 [00:25<00:05, 31.94it/s] 84%|████████▍ | 849/1012 [00:25<00:04, 40.08it/s] 85%|████████▍ | 856/1012 [00:25<00:03, 46.43it/s] 85%|████████▌ | 861/1012 [00:25<00:03, 41.07it/s] 86%|████████▌ | 866/1012 [00:26<00:03, 38.99it/s] 86%|████████▌ | 871/1012 [00:26<00:04, 33.05it/s] 86%|████████▋ | 875/1012 [00:26<00:04, 30.90it/s] 87%|████████▋ | 879/1012 [00:26<00:04, 28.19it/s] 87%|████████▋ | 884/1012 [00:26<00:03, 32.08it/s] 88%|████████▊ | 888/1012 [00:26<00:04, 30.26it/s] 88%|████████▊ | 892/1012 [00:26<00:03, 31.59it/s] 89%|████████▊ | 898/1012 [00:27<00:03, 36.28it/s] 89%|████████▉ | 902/1012 [00:27<00:03, 33.65it/s] 90%|████████▉ | 906/1012 [00:27<00:03, 33.76it/s] 90%|█████████ | 912/1012 [00:27<00:02, 38.53it/s] 91%|█████████ | 916/1012 [00:27<00:02, 38.62it/s] 91%|█████████ | 923/1012 [00:27<00:02, 43.79it/s] 92%|█████████▏| 928/1012 [00:27<00:01, 43.71it/s] 92%|█████████▏| 935/1012 [00:27<00:01, 49.66it/s] 93%|█████████▎| 941/1012 [00:28<00:01, 41.05it/s] 93%|█████████▎| 946/1012 [00:28<00:01, 40.43it/s] 94%|█████████▍| 951/1012 [00:28<00:01, 37.57it/s] 94%|█████████▍| 955/1012 [00:28<00:01, 36.67it/s] 95%|█████████▍| 960/1012 [00:28<00:01, 39.39it/s] 95%|█████████▌| 965/1012 [00:28<00:01, 37.39it/s] 96%|█████████▌| 969/1012 [00:28<00:01, 34.89it/s] 96%|█████████▌| 974/1012 [00:29<00:01, 37.76it/s] 97%|█████████▋| 978/1012 [00:29<00:01, 32.04it/s] 97%|█████████▋| 982/1012 [00:29<00:00, 32.67it/s] 97%|█████████▋| 986/1012 [00:29<00:00, 30.55it/s] 98%|█████████▊| 990/1012 [00:29<00:00, 27.34it/s] 98%|█████████▊| 994/1012 [00:29<00:00, 29.20it/s] 99%|█████████▊| 998/1012 [00:29<00:00, 30.56it/s] 99%|█████████▉| 1002/1012 [00:30<00:00, 29.44it/s]100%|█████████▉| 1008/1012 [00:30<00:00, 35.24it/s]100%|██████████| 1012/1012 [00:30<00:00, 34.64it/s]100%|██████████| 1012/1012 [00:30<00:00, 33.44it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name  | Type              | Params
+--------------------------------------------
+0 | model | MEGNet            | 197 K 
+1 | mae   | MeanAbsoluteError | 0     
+2 | rmse  | MeanSquaredError  | 0     
+--------------------------------------------
+187 K     Trainable params
+9.3 K     Non-trainable params
+197 K     Total params
+0.789     Total estimated model params size (MB)
+Metric val_MAE improved. New best score: 595.880
+Metric val_MAE improved by 0.129 >= min_delta = 0.0. New best score: 595.752
+Metric val_MAE improved by 0.307 >= min_delta = 0.0. New best score: 595.444
+Metric val_MAE improved by 0.793 >= min_delta = 0.0. New best score: 594.651
+Metric val_MAE improved by 2.237 >= min_delta = 0.0. New best score: 592.414
+Metric val_MAE improved by 11.877 >= min_delta = 0.0. New best score: 580.537
+Metric val_MAE improved by 139.217 >= min_delta = 0.0. New best score: 441.320
+Metric val_MAE improved by 185.859 >= min_delta = 0.0. New best score: 255.461
+Metric val_MAE improved by 18.687 >= min_delta = 0.0. New best score: 236.774
+Metric val_MAE improved by 7.340 >= min_delta = 0.0. New best score: 229.434
+Metric val_MAE improved by 12.734 >= min_delta = 0.0. New best score: 216.700
+Metric val_MAE improved by 15.362 >= min_delta = 0.0. New best score: 201.338
+Metric val_MAE improved by 8.852 >= min_delta = 0.0. New best score: 192.486
+Metric val_MAE improved by 14.739 >= min_delta = 0.0. New best score: 177.746
+Metric val_MAE improved by 8.256 >= min_delta = 0.0. New best score: 169.490
+Metric val_MAE improved by 2.346 >= min_delta = 0.0. New best score: 167.145
+Metric val_MAE improved by 10.499 >= min_delta = 0.0. New best score: 156.646
+Metric val_MAE improved by 9.200 >= min_delta = 0.0. New best score: 147.446
+Metric val_MAE improved by 7.461 >= min_delta = 0.0. New best score: 139.984
+Metric val_MAE improved by 8.194 >= min_delta = 0.0. New best score: 131.790
+Metric val_MAE improved by 2.647 >= min_delta = 0.0. New best score: 129.143
+Metric val_MAE improved by 4.005 >= min_delta = 0.0. New best score: 125.138
+Metric val_MAE improved by 0.440 >= min_delta = 0.0. New best score: 124.698
+Metric val_MAE improved by 0.915 >= min_delta = 0.0. New best score: 123.783
+Metric val_MAE improved by 0.014 >= min_delta = 0.0. New best score: 123.770
+Metric val_MAE improved by 4.998 >= min_delta = 0.0. New best score: 118.772
+Metric val_MAE improved by 2.968 >= min_delta = 0.0. New best score: 115.804
+Metric val_MAE improved by 0.328 >= min_delta = 0.0. New best score: 115.476
+Metric val_MAE improved by 0.639 >= min_delta = 0.0. New best score: 114.837
+Metric val_MAE improved by 2.412 >= min_delta = 0.0. New best score: 112.426
+Metric val_MAE improved by 0.927 >= min_delta = 0.0. New best score: 111.499
+Metric val_MAE improved by 0.467 >= min_delta = 0.0. New best score: 111.032
+Metric val_MAE improved by 0.614 >= min_delta = 0.0. New best score: 110.417
+Metric val_MAE improved by 0.078 >= min_delta = 0.0. New best score: 110.340
+Metric val_MAE improved by 0.480 >= min_delta = 0.0. New best score: 109.859
+Metric val_MAE improved by 0.130 >= min_delta = 0.0. New best score: 109.730
+Metric val_MAE improved by 0.143 >= min_delta = 0.0. New best score: 109.587
+Metric val_MAE improved by 0.470 >= min_delta = 0.0. New best score: 109.117
+Metric val_MAE improved by 0.240 >= min_delta = 0.0. New best score: 108.878
+Metric val_MAE improved by 0.051 >= min_delta = 0.0. New best score: 108.827
+Metric val_MAE improved by 0.165 >= min_delta = 0.0. New best score: 108.662
+Metric val_MAE improved by 0.889 >= min_delta = 0.0. New best score: 107.773
+Metric val_MAE improved by 2.120 >= min_delta = 0.0. New best score: 105.653
+Metric val_MAE improved by 1.801 >= min_delta = 0.0. New best score: 103.853
+Metric val_MAE improved by 2.786 >= min_delta = 0.0. New best score: 101.067
+Metric val_MAE improved by 0.676 >= min_delta = 0.0. New best score: 100.391
+Metric val_MAE improved by 0.227 >= min_delta = 0.0. New best score: 100.165
+Metric val_MAE improved by 0.757 >= min_delta = 0.0. New best score: 99.407
+Metric val_MAE improved by 0.467 >= min_delta = 0.0. New best score: 98.941
+Metric val_MAE improved by 1.628 >= min_delta = 0.0. New best score: 97.313
+Metric val_MAE improved by 2.214 >= min_delta = 0.0. New best score: 95.099
+Metric val_MAE improved by 2.156 >= min_delta = 0.0. New best score: 92.943
+Metric val_MAE improved by 0.523 >= min_delta = 0.0. New best score: 92.420
+Metric val_MAE improved by 0.873 >= min_delta = 0.0. New best score: 91.547
+Metric val_MAE improved by 4.069 >= min_delta = 0.0. New best score: 87.478
+Metric val_MAE improved by 1.744 >= min_delta = 0.0. New best score: 85.734
+Metric val_MAE improved by 0.242 >= min_delta = 0.0. New best score: 85.491
+Metric val_MAE improved by 0.410 >= min_delta = 0.0. New best score: 85.082
+Metric val_MAE improved by 0.060 >= min_delta = 0.0. New best score: 85.022
+Metric val_MAE improved by 0.022 >= min_delta = 0.0. New best score: 85.000
+Metric val_MAE improved by 0.780 >= min_delta = 0.0. New best score: 84.220
+Metric val_MAE improved by 2.134 >= min_delta = 0.0. New best score: 82.086
+Metric val_MAE improved by 0.485 >= min_delta = 0.0. New best score: 81.601
+Metric val_MAE improved by 0.695 >= min_delta = 0.0. New best score: 80.906
+Metric val_MAE improved by 0.435 >= min_delta = 0.0. New best score: 80.471
+Metric val_MAE improved by 1.527 >= min_delta = 0.0. New best score: 78.944
+Metric val_MAE improved by 0.878 >= min_delta = 0.0. New best score: 78.066
+Metric val_MAE improved by 0.244 >= min_delta = 0.0. New best score: 77.821
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 77.806
+Metric val_MAE improved by 0.783 >= min_delta = 0.0. New best score: 77.023
+Metric val_MAE improved by 0.829 >= min_delta = 0.0. New best score: 76.194
+Metric val_MAE improved by 0.501 >= min_delta = 0.0. New best score: 75.693
+Metric val_MAE improved by 0.945 >= min_delta = 0.0. New best score: 74.747
+Metric val_MAE improved by 0.249 >= min_delta = 0.0. New best score: 74.499
+Metric val_MAE improved by 1.960 >= min_delta = 0.0. New best score: 72.539
+Metric val_MAE improved by 0.109 >= min_delta = 0.0. New best score: 72.430
+Metric val_MAE improved by 0.699 >= min_delta = 0.0. New best score: 71.731
+Metric val_MAE improved by 0.055 >= min_delta = 0.0. New best score: 71.675
+Metric val_MAE improved by 0.551 >= min_delta = 0.0. New best score: 71.124
+Metric val_MAE improved by 0.207 >= min_delta = 0.0. New best score: 70.917
+Metric val_MAE improved by 0.481 >= min_delta = 0.0. New best score: 70.436
+Metric val_MAE improved by 0.141 >= min_delta = 0.0. New best score: 70.295
+Metric val_MAE improved by 0.309 >= min_delta = 0.0. New best score: 69.986
+Metric val_MAE improved by 0.880 >= min_delta = 0.0. New best score: 69.106
+Metric val_MAE improved by 0.218 >= min_delta = 0.0. New best score: 68.888
+Metric val_MAE improved by 0.156 >= min_delta = 0.0. New best score: 68.731
+Metric val_MAE improved by 1.004 >= min_delta = 0.0. New best score: 67.727
+Metric val_MAE improved by 0.566 >= min_delta = 0.0. New best score: 67.161
+Metric val_MAE improved by 0.467 >= min_delta = 0.0. New best score: 66.694
+Metric val_MAE improved by 0.440 >= min_delta = 0.0. New best score: 66.255
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 66.247
+Metric val_MAE improved by 0.117 >= min_delta = 0.0. New best score: 66.129
+Metric val_MAE improved by 0.011 >= min_delta = 0.0. New best score: 66.118
+Metric val_MAE improved by 1.319 >= min_delta = 0.0. New best score: 64.800
+Metric val_MAE improved by 0.718 >= min_delta = 0.0. New best score: 64.081
+Metric val_MAE improved by 0.669 >= min_delta = 0.0. New best score: 63.412
+Metric val_MAE improved by 0.078 >= min_delta = 0.0. New best score: 63.333
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 63.324
+Metric val_MAE improved by 0.086 >= min_delta = 0.0. New best score: 63.238
+Metric val_MAE improved by 0.440 >= min_delta = 0.0. New best score: 62.798
+Metric val_MAE improved by 0.021 >= min_delta = 0.0. New best score: 62.776
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 62.770
+Metric val_MAE improved by 0.424 >= min_delta = 0.0. New best score: 62.346
+Metric val_MAE improved by 0.337 >= min_delta = 0.0. New best score: 62.009
+Metric val_MAE improved by 0.236 >= min_delta = 0.0. New best score: 61.773
+Metric val_MAE improved by 0.132 >= min_delta = 0.0. New best score: 61.641
+Metric val_MAE improved by 0.663 >= min_delta = 0.0. New best score: 60.979
+Metric val_MAE improved by 0.047 >= min_delta = 0.0. New best score: 60.931
+Metric val_MAE improved by 0.139 >= min_delta = 0.0. New best score: 60.792
+Metric val_MAE improved by 0.177 >= min_delta = 0.0. New best score: 60.614
+Metric val_MAE improved by 0.185 >= min_delta = 0.0. New best score: 60.429
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 60.428
+Metric val_MAE improved by 0.045 >= min_delta = 0.0. New best score: 60.383
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 60.369
+Metric val_MAE improved by 0.089 >= min_delta = 0.0. New best score: 60.279
+Metric val_MAE improved by 0.104 >= min_delta = 0.0. New best score: 60.175
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 60.169
+Metric val_MAE improved by 0.018 >= min_delta = 0.0. New best score: 60.151
+Metric val_MAE improved by 0.044 >= min_delta = 0.0. New best score: 60.107
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 60.099
+Metric val_MAE improved by 0.024 >= min_delta = 0.0. New best score: 60.075
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 60.067
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 60.063
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 60.060
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 60.054
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 60.051
+Metric val_MAE improved by 0.041 >= min_delta = 0.0. New best score: 60.009
+Metric val_MAE improved by 0.016 >= min_delta = 0.0. New best score: 59.994
+Metric val_MAE improved by 0.062 >= min_delta = 0.0. New best score: 59.932
+Metric val_MAE improved by 0.088 >= min_delta = 0.0. New best score: 59.844
+Metric val_MAE improved by 0.075 >= min_delta = 0.0. New best score: 59.769
+Metric val_MAE improved by 0.188 >= min_delta = 0.0. New best score: 59.581
+Metric val_MAE improved by 0.090 >= min_delta = 0.0. New best score: 59.491
+Metric val_MAE improved by 0.209 >= min_delta = 0.0. New best score: 59.281
+Metric val_MAE improved by 0.213 >= min_delta = 0.0. New best score: 59.068
+Metric val_MAE improved by 0.151 >= min_delta = 0.0. New best score: 58.917
+Metric val_MAE improved by 0.176 >= min_delta = 0.0. New best score: 58.741
+Metric val_MAE improved by 0.077 >= min_delta = 0.0. New best score: 58.664
+Metric val_MAE improved by 0.059 >= min_delta = 0.0. New best score: 58.604
+Metric val_MAE improved by 0.309 >= min_delta = 0.0. New best score: 58.295
+Metric val_MAE improved by 0.524 >= min_delta = 0.0. New best score: 57.771
+Metric val_MAE improved by 0.649 >= min_delta = 0.0. New best score: 57.122
+Metric val_MAE improved by 0.760 >= min_delta = 0.0. New best score: 56.363
+Metric val_MAE improved by 0.164 >= min_delta = 0.0. New best score: 56.199
+Metric val_MAE improved by 0.582 >= min_delta = 0.0. New best score: 55.617
+Metric val_MAE improved by 0.043 >= min_delta = 0.0. New best score: 55.574
+Metric val_MAE improved by 0.191 >= min_delta = 0.0. New best score: 55.383
+Metric val_MAE improved by 0.343 >= min_delta = 0.0. New best score: 55.040
+Metric val_MAE improved by 0.516 >= min_delta = 0.0. New best score: 54.524
+Metric val_MAE improved by 0.705 >= min_delta = 0.0. New best score: 53.818
+Metric val_MAE improved by 0.342 >= min_delta = 0.0. New best score: 53.476
+Metric val_MAE improved by 0.480 >= min_delta = 0.0. New best score: 52.996
+Metric val_MAE improved by 0.294 >= min_delta = 0.0. New best score: 52.702
+Metric val_MAE improved by 0.259 >= min_delta = 0.0. New best score: 52.443
+Metric val_MAE improved by 0.298 >= min_delta = 0.0. New best score: 52.145
+Metric val_MAE improved by 0.605 >= min_delta = 0.0. New best score: 51.540
+Metric val_MAE improved by 0.974 >= min_delta = 0.0. New best score: 50.566
+Metric val_MAE improved by 0.072 >= min_delta = 0.0. New best score: 50.494
+Metric val_MAE improved by 1.198 >= min_delta = 0.0. New best score: 49.296
+Metric val_MAE improved by 0.607 >= min_delta = 0.0. New best score: 48.689
+Metric val_MAE improved by 0.504 >= min_delta = 0.0. New best score: 48.185
+Metric val_MAE improved by 0.212 >= min_delta = 0.0. New best score: 47.973
+Metric val_MAE improved by 0.121 >= min_delta = 0.0. New best score: 47.852
+Metric val_MAE improved by 0.267 >= min_delta = 0.0. New best score: 47.585
+Metric val_MAE improved by 0.205 >= min_delta = 0.0. New best score: 47.380
+Metric val_MAE improved by 0.646 >= min_delta = 0.0. New best score: 46.734
+Metric val_MAE improved by 0.428 >= min_delta = 0.0. New best score: 46.306
+Metric val_MAE improved by 0.150 >= min_delta = 0.0. New best score: 46.157
+Metric val_MAE improved by 0.563 >= min_delta = 0.0. New best score: 45.594
+Metric val_MAE improved by 0.597 >= min_delta = 0.0. New best score: 44.996
+Metric val_MAE improved by 0.122 >= min_delta = 0.0. New best score: 44.874
+Metric val_MAE improved by 1.344 >= min_delta = 0.0. New best score: 43.530
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 43.527
+Metric val_MAE improved by 0.741 >= min_delta = 0.0. New best score: 42.786
+Metric val_MAE improved by 0.625 >= min_delta = 0.0. New best score: 42.161
+Metric val_MAE improved by 0.195 >= min_delta = 0.0. New best score: 41.966
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 41.957
+Metric val_MAE improved by 0.387 >= min_delta = 0.0. New best score: 41.570
+Metric val_MAE improved by 0.116 >= min_delta = 0.0. New best score: 41.455
+Metric val_MAE improved by 0.057 >= min_delta = 0.0. New best score: 41.398
+Metric val_MAE improved by 0.347 >= min_delta = 0.0. New best score: 41.051
+Metric val_MAE improved by 0.061 >= min_delta = 0.0. New best score: 40.989
+Metric val_MAE improved by 0.043 >= min_delta = 0.0. New best score: 40.947
+Metric val_MAE improved by 0.362 >= min_delta = 0.0. New best score: 40.585
+Metric val_MAE improved by 0.146 >= min_delta = 0.0. New best score: 40.439
+Metric val_MAE improved by 0.447 >= min_delta = 0.0. New best score: 39.992
+Metric val_MAE improved by 0.113 >= min_delta = 0.0. New best score: 39.878
+Metric val_MAE improved by 0.061 >= min_delta = 0.0. New best score: 39.818
+Metric val_MAE improved by 0.074 >= min_delta = 0.0. New best score: 39.743
+Metric val_MAE improved by 0.078 >= min_delta = 0.0. New best score: 39.665
+Metric val_MAE improved by 0.328 >= min_delta = 0.0. New best score: 39.337
+Metric val_MAE improved by 0.073 >= min_delta = 0.0. New best score: 39.264
+Metric val_MAE improved by 0.225 >= min_delta = 0.0. New best score: 39.039
+Metric val_MAE improved by 0.088 >= min_delta = 0.0. New best score: 38.951
+Metric val_MAE improved by 0.471 >= min_delta = 0.0. New best score: 38.480
+Metric val_MAE improved by 0.363 >= min_delta = 0.0. New best score: 38.117
+Metric val_MAE improved by 0.055 >= min_delta = 0.0. New best score: 38.062
+Metric val_MAE improved by 0.486 >= min_delta = 0.0. New best score: 37.577
+Metric val_MAE improved by 0.261 >= min_delta = 0.0. New best score: 37.315
+Metric val_MAE improved by 1.140 >= min_delta = 0.0. New best score: 36.175
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 36.175. Signaling Trainer to stop.
+  0%|          | 0/253 [00:00<?, ?it/s]  3%|▎         | 7/253 [00:00<00:04, 59.53it/s]  6%|▌         | 14/253 [00:00<00:03, 62.95it/s]  8%|▊         | 21/253 [00:00<00:05, 43.33it/s] 10%|█         | 26/253 [00:00<00:05, 39.76it/s] 12%|█▏        | 31/253 [00:00<00:06, 33.63it/s] 14%|█▍        | 35/253 [00:00<00:06, 32.08it/s] 16%|█▌        | 40/253 [00:01<00:06, 34.03it/s] 17%|█▋        | 44/253 [00:01<00:06, 33.77it/s] 19%|█▉        | 49/253 [00:01<00:05, 36.94it/s] 21%|██        | 53/253 [00:01<00:05, 36.22it/s] 23%|██▎       | 59/253 [00:01<00:04, 42.37it/s] 26%|██▋       | 67/253 [00:01<00:03, 51.23it/s] 29%|██▉       | 73/253 [00:01<00:03, 46.68it/s] 31%|███       | 78/253 [00:01<00:04, 41.37it/s] 33%|███▎      | 83/253 [00:02<00:04, 36.94it/s] 35%|███▍      | 88/253 [00:02<00:04, 39.50it/s] 37%|███▋      | 93/253 [00:02<00:03, 41.17it/s] 39%|███▊      | 98/253 [00:02<00:04, 38.40it/s] 41%|████      | 103/253 [00:02<00:03, 37.75it/s] 42%|████▏     | 107/253 [00:02<00:04, 35.10it/s] 44%|████▍     | 111/253 [00:02<00:04, 31.94it/s] 45%|████▌     | 115/253 [00:03<00:04, 29.21it/s] 47%|████▋     | 119/253 [00:03<00:04, 27.59it/s] 48%|████▊     | 122/253 [00:03<00:04, 27.50it/s] 49%|████▉     | 125/253 [00:03<00:04, 26.88it/s] 51%|█████▏    | 130/253 [00:03<00:04, 30.18it/s] 53%|█████▎    | 134/253 [00:03<00:03, 30.95it/s] 55%|█████▍    | 138/253 [00:03<00:04, 28.65it/s] 56%|█████▌    | 142/253 [00:03<00:03, 29.98it/s] 58%|█████▊    | 146/253 [00:04<00:03, 31.46it/s] 59%|█████▉    | 150/253 [00:04<00:03, 30.48it/s] 61%|██████    | 154/253 [00:04<00:03, 31.23it/s] 62%|██████▏   | 158/253 [00:04<00:03, 29.01it/s] 64%|██████▎   | 161/253 [00:04<00:03, 28.10it/s] 66%|██████▌   | 166/253 [00:04<00:02, 32.89it/s] 67%|██████▋   | 170/253 [00:04<00:02, 32.55it/s] 69%|██████▉   | 175/253 [00:05<00:02, 31.22it/s] 71%|███████   | 179/253 [00:05<00:02, 31.81it/s] 72%|███████▏  | 183/253 [00:05<00:02, 30.35it/s] 74%|███████▍  | 187/253 [00:05<00:02, 32.01it/s] 75%|███████▌  | 191/253 [00:05<00:02, 28.50it/s] 77%|███████▋  | 195/253 [00:05<00:01, 30.09it/s] 79%|███████▊  | 199/253 [00:05<00:01, 27.81it/s] 80%|███████▉  | 202/253 [00:06<00:01, 27.30it/s] 81%|████████▏ | 206/253 [00:06<00:01, 29.16it/s] 83%|████████▎ | 210/253 [00:06<00:01, 29.87it/s] 85%|████████▍ | 214/253 [00:06<00:01, 30.49it/s] 87%|████████▋ | 221/253 [00:06<00:00, 38.91it/s] 89%|████████▉ | 225/253 [00:06<00:00, 35.46it/s] 91%|█████████ | 229/253 [00:06<00:00, 33.84it/s] 92%|█████████▏| 233/253 [00:06<00:00, 31.76it/s] 95%|█████████▍| 240/253 [00:07<00:00, 36.61it/s] 97%|█████████▋| 246/253 [00:07<00:00, 40.60it/s] 99%|█████████▉| 251/253 [00:07<00:00, 34.31it/s]100%|██████████| 253/253 [00:07<00:00, 34.01it/s]
+[rank: 0] Seed set to 42
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     37.74364471435547     │
+│         test_RMSE         │     87.07443237304688     │
+│      test_Total_Loss      │     37.74364471435547     │
+└───────────────────────────┴───────────────────────────┘

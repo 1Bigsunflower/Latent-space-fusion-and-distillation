@@ -1,0 +1,228 @@
+Seed set to 42
+2025-12-11 21:06:38 INFO     Initialized benchmark 'matbench_v0.1' with 1 tasks: 
+['matbench_phonons']
+2025-12-11 21:06:38 INFO     Loading dataset 'matbench_phonons'...
+2025-12-11 21:06:39 INFO     Dataset 'matbench_phonons loaded.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3080') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+2025-12-11 21:06:41.202321: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-12-11 21:06:41.236884: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-12-11 21:06:41.865917: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 87.2 K
+------------------------------------------------------------
+87.2 K    Trainable params
+0         Non-trainable params
+87.2 K    Total params
+0.349     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 1.504
+Metric val_MAE improved by 1.117 >= min_delta = 0.0. New best score: 0.387
+Metric val_MAE improved by 0.044 >= min_delta = 0.0. New best score: 0.343
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.338
+Metric val_MAE improved by 0.061 >= min_delta = 0.0. New best score: 0.277
+Metric val_MAE improved by 0.018 >= min_delta = 0.0. New best score: 0.259
+Metric val_MAE improved by 0.011 >= min_delta = 0.0. New best score: 0.249
+Metric val_MAE improved by 0.030 >= min_delta = 0.0. New best score: 0.219
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.218
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.217
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.210
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.209
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.204
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.199
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.191
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 0.180
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.179
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.177
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.177
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.177
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.170
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.170. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    132.83128356933594     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold1_dim64 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 87.2 K
+------------------------------------------------------------
+87.2 K    Trainable params
+0         Non-trainable params
+87.2 K    Total params
+0.349     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 1.001
+Metric val_MAE improved by 0.408 >= min_delta = 0.0. New best score: 0.593
+Metric val_MAE improved by 0.200 >= min_delta = 0.0. New best score: 0.393
+Metric val_MAE improved by 0.070 >= min_delta = 0.0. New best score: 0.322
+Metric val_MAE improved by 0.018 >= min_delta = 0.0. New best score: 0.304
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.295
+Metric val_MAE improved by 0.039 >= min_delta = 0.0. New best score: 0.256
+Metric val_MAE improved by 0.018 >= min_delta = 0.0. New best score: 0.238
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.229
+Metric val_MAE improved by 0.030 >= min_delta = 0.0. New best score: 0.199
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.193
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.189
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.185
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 0.175
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.172
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.171
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.170
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.170. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     84.07618713378906     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold2_dim64 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 87.2 K
+------------------------------------------------------------
+87.2 K    Trainable params
+0         Non-trainable params
+87.2 K    Total params
+0.349     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.676
+Metric val_MAE improved by 0.089 >= min_delta = 0.0. New best score: 0.587
+Metric val_MAE improved by 0.266 >= min_delta = 0.0. New best score: 0.321
+Metric val_MAE improved by 0.062 >= min_delta = 0.0. New best score: 0.258
+Metric val_MAE improved by 0.017 >= min_delta = 0.0. New best score: 0.241
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 0.231
+Metric val_MAE improved by 0.026 >= min_delta = 0.0. New best score: 0.205
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.202
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.197
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.196
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.193
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.188
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.185
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.182
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.182
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.175
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.175. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    102.78368377685547     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold3_dim64 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 87.2 K
+------------------------------------------------------------
+87.2 K    Trainable params
+0         Non-trainable params
+87.2 K    Total params
+0.349     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.643
+Metric val_MAE improved by 0.289 >= min_delta = 0.0. New best score: 0.355
+Metric val_MAE improved by 0.033 >= min_delta = 0.0. New best score: 0.321
+Metric val_MAE improved by 0.037 >= min_delta = 0.0. New best score: 0.284
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.277
+Metric val_MAE improved by 0.048 >= min_delta = 0.0. New best score: 0.229
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.222
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.215
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.211
+Metric val_MAE improved by 0.030 >= min_delta = 0.0. New best score: 0.181
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.179
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.177
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.177
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.173
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.170
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.169
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.169
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.168
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.167
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.165
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.161
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.161
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.160
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.160
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.160. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │      90.718017578125      │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN/Cgcnn_matbench_phonons_fold4_dim64 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 87.2 K
+------------------------------------------------------------
+87.2 K    Trainable params
+0         Non-trainable params
+87.2 K    Total params
+0.349     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (6) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 1.112
+Metric val_MAE improved by 0.680 >= min_delta = 0.0. New best score: 0.432
+Metric val_MAE improved by 0.135 >= min_delta = 0.0. New best score: 0.297
+Metric val_MAE improved by 0.039 >= min_delta = 0.0. New best score: 0.258
+Metric val_MAE improved by 0.036 >= min_delta = 0.0. New best score: 0.222
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.219
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.216
+Metric val_MAE improved by 0.027 >= min_delta = 0.0. New best score: 0.189
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.187
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.187
+Metric val_MAE improved by 0.013 >= min_delta = 0.0. New best score: 0.173
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.173
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.173
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.171
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.169
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.165
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.164
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.159
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.157
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.153
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.151
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.151. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │     99.26594543457031     │
+└───────────────────────────┴───────────────────────────┘
