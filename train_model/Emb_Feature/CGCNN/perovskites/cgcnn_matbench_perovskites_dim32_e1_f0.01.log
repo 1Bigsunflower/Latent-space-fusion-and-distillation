@@ -1,0 +1,813 @@
+Seed set to 42
+2025-12-24 15:08:01 INFO     Initialized benchmark 'matbench_v0.1' with 1 tasks: 
+['matbench_perovskites']
+2025-12-24 15:08:01 INFO     Loading dataset 'matbench_perovskites'...
+2025-12-24 15:08:04 INFO     Dataset 'matbench_perovskites loaded.
+Precomputing features (processes=8):   0%|          | 0/15142 [00:00<?, ?it/s]Precomputing features (processes=8):   0%|          | 1/15142 [00:00<26:08,  9.65it/s]Precomputing features (processes=8):   2%|▏         | 289/15142 [00:00<00:09, 1599.40it/s]Precomputing features (processes=8):   4%|▍         | 577/15142 [00:00<00:06, 2103.86it/s]Precomputing features (processes=8):   6%|▌         | 865/15142 [00:00<00:06, 2225.18it/s]Precomputing features (processes=8):   8%|▊         | 1153/15142 [00:00<00:05, 2399.14it/s]Precomputing features (processes=8):   9%|▉         | 1409/15142 [00:00<00:05, 2441.34it/s]Precomputing features (processes=8):  11%|█         | 1665/15142 [00:00<00:05, 2389.51it/s]Precomputing features (processes=8):  13%|█▎        | 1985/15142 [00:00<00:05, 2567.98it/s]Precomputing features (processes=8):  15%|█▌        | 2273/15142 [00:00<00:04, 2606.73it/s]Precomputing features (processes=8):  17%|█▋        | 2561/15142 [00:01<00:04, 2642.91it/s]Precomputing features (processes=8):  19%|█▊        | 2826/15142 [00:01<00:05, 2441.79it/s]Precomputing features (processes=8):  21%|██        | 3105/15142 [00:01<00:04, 2454.07it/s]Precomputing features (processes=8):  22%|██▏       | 3361/15142 [00:01<00:04, 2473.10it/s]Precomputing features (processes=8):  24%|██▍       | 3681/15142 [00:01<00:04, 2498.01it/s]Precomputing features (processes=8):  26%|██▌       | 3969/15142 [00:01<00:04, 2595.09it/s]Precomputing features (processes=8):  28%|██▊       | 4257/15142 [00:01<00:04, 2462.86it/s]Precomputing features (processes=8):  30%|██▉       | 4506/15142 [00:01<00:04, 2430.81it/s]Precomputing features (processes=8):  31%|███▏      | 4751/15142 [00:02<00:07, 1299.49it/s]Precomputing features (processes=8):  33%|███▎      | 4940/15142 [00:02<00:07, 1312.00it/s]Precomputing features (processes=8):  34%|███▍      | 5185/15142 [00:02<00:06, 1428.55it/s]Precomputing features (processes=8):  36%|███▌      | 5441/15142 [00:02<00:05, 1626.11it/s]Precomputing features (processes=8):  38%|███▊      | 5729/15142 [00:02<00:04, 1899.88it/s]Precomputing features (processes=8):  40%|███▉      | 6020/15142 [00:02<00:04, 2141.11it/s]Precomputing features (processes=8):  42%|████▏     | 6305/15142 [00:03<00:04, 2199.21it/s]Precomputing features (processes=8):  43%|████▎     | 6561/15142 [00:03<00:03, 2266.37it/s]Precomputing features (processes=8):  45%|████▌     | 6817/15142 [00:03<00:03, 2330.04it/s]Precomputing features (processes=8):  47%|████▋     | 7137/15142 [00:03<00:03, 2528.96it/s]Precomputing features (processes=8):  49%|████▉     | 7457/15142 [00:03<00:03, 2522.85it/s]Precomputing features (processes=8):  52%|█████▏    | 7809/15142 [00:03<00:02, 2629.50it/s]Precomputing features (processes=8):  54%|█████▎    | 8129/15142 [00:03<00:02, 2491.85it/s]Precomputing features (processes=8):  56%|█████▌    | 8449/15142 [00:03<00:02, 2593.23it/s]Precomputing features (processes=8):  58%|█████▊    | 8737/15142 [00:03<00:02, 2664.88it/s]Precomputing features (processes=8):  59%|█████▉    | 9008/15142 [00:04<00:02, 2654.11it/s]Precomputing features (processes=8):  61%|██████▏   | 9277/15142 [00:04<00:02, 2659.25it/s]Precomputing features (processes=8):  63%|██████▎   | 9569/15142 [00:04<00:02, 2656.42it/s]Precomputing features (processes=8):  65%|██████▌   | 9889/15142 [00:04<00:02, 2584.38it/s]Precomputing features (processes=8):  67%|██████▋   | 10177/15142 [00:04<00:01, 2652.77it/s]Precomputing features (processes=8):  69%|██████▉   | 10465/15142 [00:04<00:01, 2684.30it/s]Precomputing features (processes=8):  71%|███████   | 10785/15142 [00:04<00:01, 2689.45it/s]Precomputing features (processes=8):  73%|███████▎  | 11073/15142 [00:04<00:01, 2502.40it/s]Precomputing features (processes=8):  75%|███████▍  | 11327/15142 [00:04<00:01, 2174.31it/s]Precomputing features (processes=8):  76%|███████▋  | 11553/15142 [00:05<00:01, 2032.34it/s]Precomputing features (processes=8):  78%|███████▊  | 11762/15142 [00:05<00:01, 2017.18it/s]Precomputing features (processes=8):  79%|███████▉  | 11968/15142 [00:05<00:01, 1983.61it/s]Precomputing features (processes=8):  80%|████████  | 12169/15142 [00:05<00:01, 1899.66it/s]Precomputing features (processes=8):  82%|████████▏ | 12385/15142 [00:05<00:01, 1939.78it/s]Precomputing features (processes=8):  83%|████████▎ | 12641/15142 [00:05<00:01, 1984.56it/s]Precomputing features (processes=8):  86%|████████▌ | 12961/15142 [00:05<00:00, 2308.94it/s]Precomputing features (processes=8):  87%|████████▋ | 13249/15142 [00:05<00:00, 2345.29it/s]Precomputing features (processes=8):  89%|████████▉ | 13487/15142 [00:06<00:00, 2254.42it/s]Precomputing features (processes=8):  91%|█████████ | 13729/15142 [00:06<00:00, 2188.74it/s]Precomputing features (processes=8):  93%|█████████▎| 14049/15142 [00:06<00:00, 2393.17it/s]Precomputing features (processes=8):  95%|█████████▍| 14337/15142 [00:06<00:00, 2458.63it/s]Precomputing features (processes=8):  97%|█████████▋| 14625/15142 [00:06<00:00, 2406.96it/s]Precomputing features (processes=8):  99%|█████████▊| 14945/15142 [00:06<00:00, 2603.24it/s]Precomputing features (processes=8): 100%|██████████| 15142/15142 [00:06<00:00, 2276.15it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3080') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Missing logger folder: /home/ubuntu/cht_article/129/train_model/Emb_Feature/CGCNN_per/lightning_logs
+2025-12-24 15:08:14.994888: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-12-24 15:08:15.028612: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-12-24 15:08:15.751322: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (89) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.399
+Metric val_MAE improved by 0.116 >= min_delta = 0.0. New best score: 0.284
+Metric val_MAE improved by 0.026 >= min_delta = 0.0. New best score: 0.257
+Metric val_MAE improved by 0.024 >= min_delta = 0.0. New best score: 0.233
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.232
+Metric val_MAE improved by 0.031 >= min_delta = 0.0. New best score: 0.202
+Metric val_MAE improved by 0.017 >= min_delta = 0.0. New best score: 0.184
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.183
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 0.169
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.166
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 0.153
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.152
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.152
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.148
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.146
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.145
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.138
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.138
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.132
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.127
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.123
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.119
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.107
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.095
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.095. Signaling Trainer to stop.
+Precomputing features (serial):   0%|          | 0/3786 [00:00<?, ?it/s]Precomputing features (serial):   1%|          | 40/3786 [00:00<00:09, 395.85it/s]Precomputing features (serial):   2%|▏         | 80/3786 [00:00<00:25, 144.32it/s]Precomputing features (serial):   3%|▎         | 123/3786 [00:00<00:17, 210.15it/s]Precomputing features (serial):   4%|▍         | 165/3786 [00:00<00:13, 262.21it/s]Precomputing features (serial):   5%|▌         | 206/3786 [00:00<00:11, 300.74it/s]Precomputing features (serial):   7%|▋         | 249/3786 [00:00<00:10, 335.40it/s]Precomputing features (serial):   8%|▊         | 289/3786 [00:01<00:09, 351.27it/s]Precomputing features (serial):   9%|▊         | 331/3786 [00:01<00:09, 369.27it/s]Precomputing features (serial):  10%|▉         | 371/3786 [00:01<00:09, 377.48it/s]Precomputing features (serial):  11%|█         | 415/3786 [00:01<00:08, 392.77it/s]Precomputing features (serial):  12%|█▏        | 458/3786 [00:01<00:08, 402.04it/s]Precomputing features (serial):  13%|█▎        | 500/3786 [00:01<00:08, 402.67it/s]Precomputing features (serial):  14%|█▍        | 542/3786 [00:01<00:08, 403.87it/s]Precomputing features (serial):  15%|█▌        | 583/3786 [00:01<00:07, 404.85it/s]Precomputing features (serial):  17%|█▋        | 626/3786 [00:01<00:07, 409.96it/s]Precomputing features (serial):  18%|█▊        | 670/3786 [00:01<00:07, 418.02it/s]Precomputing features (serial):  19%|█▉        | 713/3786 [00:02<00:07, 419.82it/s]Precomputing features (serial):  20%|█▉        | 756/3786 [00:02<00:07, 420.51it/s]Precomputing features (serial):  21%|██        | 799/3786 [00:02<00:07, 420.77it/s]Precomputing features (serial):  22%|██▏       | 842/3786 [00:02<00:07, 408.86it/s]Precomputing features (serial):  23%|██▎       | 884/3786 [00:02<00:07, 406.27it/s]Precomputing features (serial):  24%|██▍       | 925/3786 [00:02<00:07, 407.30it/s]Precomputing features (serial):  26%|██▌       | 966/3786 [00:02<00:06, 403.38it/s]Precomputing features (serial):  27%|██▋       | 1012/3786 [00:02<00:06, 417.58it/s]Precomputing features (serial):  28%|██▊       | 1054/3786 [00:02<00:06, 405.59it/s]Precomputing features (serial):  29%|██▉       | 1095/3786 [00:02<00:06, 406.80it/s]Precomputing features (serial):  30%|███       | 1136/3786 [00:03<00:06, 407.61it/s]Precomputing features (serial):  31%|███       | 1178/3786 [00:03<00:06, 409.04it/s]Precomputing features (serial):  32%|███▏      | 1219/3786 [00:03<00:06, 404.32it/s]Precomputing features (serial):  33%|███▎      | 1260/3786 [00:03<00:06, 405.29it/s]Precomputing features (serial):  34%|███▍      | 1301/3786 [00:03<00:06, 406.24it/s]Precomputing features (serial):  35%|███▌      | 1342/3786 [00:03<00:11, 214.85it/s]Precomputing features (serial):  37%|███▋      | 1384/3786 [00:03<00:09, 251.33it/s]Precomputing features (serial):  38%|███▊      | 1425/3786 [00:04<00:08, 282.80it/s]Precomputing features (serial):  39%|███▊      | 1465/3786 [00:04<00:07, 308.76it/s]Precomputing features (serial):  40%|███▉      | 1506/3786 [00:04<00:06, 332.82it/s]Precomputing features (serial):  41%|████      | 1547/3786 [00:04<00:06, 352.54it/s]Precomputing features (serial):  42%|████▏     | 1591/3786 [00:04<00:05, 375.91it/s]Precomputing features (serial):  43%|████▎     | 1633/3786 [00:04<00:05, 387.29it/s]Precomputing features (serial):  44%|████▍     | 1676/3786 [00:04<00:05, 396.63it/s]Precomputing features (serial):  45%|████▌     | 1718/3786 [00:04<00:05, 398.30it/s]Precomputing features (serial):  46%|████▋     | 1759/3786 [00:04<00:05, 396.48it/s]Precomputing features (serial):  48%|████▊     | 1803/3786 [00:04<00:04, 406.86it/s]Precomputing features (serial):  49%|████▊     | 1845/3786 [00:05<00:04, 408.90it/s]Precomputing features (serial):  50%|████▉     | 1887/3786 [00:05<00:04, 407.26it/s]Precomputing features (serial):  51%|█████     | 1930/3786 [00:05<00:04, 413.10it/s]Precomputing features (serial):  52%|█████▏    | 1972/3786 [00:05<00:04, 411.10it/s]Precomputing features (serial):  53%|█████▎    | 2014/3786 [00:05<00:04, 409.32it/s]Precomputing features (serial):  54%|█████▍    | 2057/3786 [00:05<00:04, 412.70it/s]Precomputing features (serial):  55%|█████▌    | 2099/3786 [00:05<00:04, 404.02it/s]Precomputing features (serial):  57%|█████▋    | 2142/3786 [00:05<00:04, 409.51it/s]Precomputing features (serial):  58%|█████▊    | 2184/3786 [00:05<00:03, 408.62it/s]Precomputing features (serial):  59%|█████▉    | 2226/3786 [00:06<00:03, 410.33it/s]Precomputing features (serial):  60%|█████▉    | 2268/3786 [00:06<00:03, 409.06it/s]Precomputing features (serial):  61%|██████    | 2309/3786 [00:06<00:03, 407.68it/s]Precomputing features (serial):  62%|██████▏   | 2350/3786 [00:06<00:03, 401.26it/s]Precomputing features (serial):  63%|██████▎   | 2391/3786 [00:06<00:03, 394.93it/s]Precomputing features (serial):  64%|██████▍   | 2434/3786 [00:06<00:03, 402.30it/s]Precomputing features (serial):  65%|██████▌   | 2475/3786 [00:06<00:03, 399.89it/s]Precomputing features (serial):  66%|██████▋   | 2516/3786 [00:06<00:03, 391.53it/s]Precomputing features (serial):  68%|██████▊   | 2556/3786 [00:06<00:03, 389.27it/s]Precomputing features (serial):  69%|██████▊   | 2595/3786 [00:07<00:05, 202.66it/s]Precomputing features (serial):  70%|██████▉   | 2636/3786 [00:07<00:04, 238.30it/s]Precomputing features (serial):  71%|███████   | 2676/3786 [00:07<00:04, 268.82it/s]Precomputing features (serial):  72%|███████▏  | 2714/3786 [00:07<00:03, 292.80it/s]Precomputing features (serial):  73%|███████▎  | 2755/3786 [00:07<00:03, 320.28it/s]Precomputing features (serial):  74%|███████▍  | 2793/3786 [00:07<00:03, 330.75it/s]Precomputing features (serial):  75%|███████▍  | 2833/3786 [00:07<00:02, 347.38it/s]Precomputing features (serial):  76%|███████▌  | 2871/3786 [00:07<00:02, 355.81it/s]Precomputing features (serial):  77%|███████▋  | 2911/3786 [00:08<00:02, 366.76it/s]Precomputing features (serial):  78%|███████▊  | 2950/3786 [00:08<00:02, 370.01it/s]Precomputing features (serial):  79%|███████▉  | 2991/3786 [00:08<00:02, 380.33it/s]Precomputing features (serial):  80%|████████  | 3030/3786 [00:08<00:02, 375.19it/s]Precomputing features (serial):  81%|████████  | 3069/3786 [00:08<00:01, 376.22it/s]Precomputing features (serial):  82%|████████▏ | 3111/3786 [00:08<00:01, 386.65it/s]Precomputing features (serial):  83%|████████▎ | 3152/3786 [00:08<00:01, 393.11it/s]Precomputing features (serial):  84%|████████▍ | 3194/3786 [00:08<00:01, 398.85it/s]Precomputing features (serial):  85%|████████▌ | 3235/3786 [00:08<00:01, 398.53it/s]Precomputing features (serial):  87%|████████▋ | 3276/3786 [00:09<00:01, 401.14it/s]Precomputing features (serial):  88%|████████▊ | 3319/3786 [00:09<00:01, 406.48it/s]Precomputing features (serial):  89%|████████▊ | 3360/3786 [00:09<00:01, 403.31it/s]Precomputing features (serial):  90%|████████▉ | 3401/3786 [00:09<00:00, 402.71it/s]Precomputing features (serial):  91%|█████████ | 3443/3786 [00:09<00:00, 407.35it/s]Precomputing features (serial):  92%|█████████▏| 3485/3786 [00:09<00:00, 410.64it/s]Precomputing features (serial):  93%|█████████▎| 3527/3786 [00:09<00:00, 409.28it/s]Precomputing features (serial):  94%|█████████▍| 3568/3786 [00:09<00:00, 404.68it/s]Precomputing features (serial):  95%|█████████▌| 3612/3786 [00:09<00:00, 412.28it/s]Precomputing features (serial):  97%|█████████▋| 3655/3786 [00:09<00:00, 414.74it/s]Precomputing features (serial):  98%|█████████▊| 3697/3786 [00:10<00:00, 413.92it/s]Precomputing features (serial):  99%|█████████▉| 3739/3786 [00:10<00:00, 410.77it/s]Precomputing features (serial): 100%|█████████▉| 3781/3786 [00:10<00:00, 410.20it/s]Precomputing features (serial): 100%|██████████| 3786/3786 [00:10<00:00, 368.87it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    0.06275348365306854    │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (89) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.385
+Metric val_MAE improved by 0.092 >= min_delta = 0.0. New best score: 0.293
+Metric val_MAE improved by 0.069 >= min_delta = 0.0. New best score: 0.224
+Metric val_MAE improved by 0.030 >= min_delta = 0.0. New best score: 0.194
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.188
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.181
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 0.169
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.163
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.157
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.155
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.151
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.144
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.139
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.137
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.133
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.132
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.123
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.118
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.117
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.117
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.105
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.080. Signaling Trainer to stop.
+Precomputing features (serial):   0%|          | 0/3786 [00:00<?, ?it/s]Precomputing features (serial):   1%|          | 43/3786 [00:00<00:08, 419.65it/s]Precomputing features (serial):   2%|▏         | 85/3786 [00:00<00:09, 405.85it/s]Precomputing features (serial):   3%|▎         | 126/3786 [00:00<00:09, 397.08it/s]Precomputing features (serial):   4%|▍         | 167/3786 [00:00<00:09, 400.71it/s]Precomputing features (serial):   5%|▌         | 208/3786 [00:00<00:08, 401.70it/s]Precomputing features (serial):   7%|▋         | 249/3786 [00:00<00:08, 400.97it/s]Precomputing features (serial):   8%|▊         | 290/3786 [00:00<00:08, 400.93it/s]Precomputing features (serial):   9%|▊         | 331/3786 [00:00<00:08, 395.11it/s]Precomputing features (serial):  10%|▉         | 371/3786 [00:00<00:08, 393.37it/s]Precomputing features (serial):  11%|█         | 412/3786 [00:01<00:08, 395.59it/s]Precomputing features (serial):  12%|█▏        | 453/3786 [00:01<00:08, 399.68it/s]Precomputing features (serial):  13%|█▎        | 494/3786 [00:01<00:08, 399.60it/s]Precomputing features (serial):  14%|█▍        | 535/3786 [00:01<00:08, 402.33it/s]Precomputing features (serial):  15%|█▌        | 577/3786 [00:01<00:07, 405.70it/s]Precomputing features (serial):  16%|█▋        | 618/3786 [00:01<00:07, 405.51it/s]Precomputing features (serial):  17%|█▋        | 659/3786 [00:01<00:07, 405.69it/s]Precomputing features (serial):  19%|█▊        | 701/3786 [00:01<00:07, 408.04it/s]Precomputing features (serial):  20%|█▉        | 742/3786 [00:01<00:07, 404.64it/s]Precomputing features (serial):  21%|██        | 784/3786 [00:01<00:07, 408.34it/s]Precomputing features (serial):  22%|██▏       | 825/3786 [00:02<00:13, 213.45it/s]Precomputing features (serial):  23%|██▎       | 867/3786 [00:02<00:11, 250.32it/s]Precomputing features (serial):  24%|██▍       | 908/3786 [00:02<00:10, 281.93it/s]Precomputing features (serial):  25%|██▌       | 948/3786 [00:02<00:09, 307.74it/s]Precomputing features (serial):  26%|██▌       | 989/3786 [00:02<00:08, 331.76it/s]Precomputing features (serial):  27%|██▋       | 1028/3786 [00:02<00:08, 343.53it/s]Precomputing features (serial):  28%|██▊       | 1068/3786 [00:02<00:07, 357.15it/s]Precomputing features (serial):  29%|██▉       | 1109/3786 [00:03<00:07, 371.29it/s]Precomputing features (serial):  30%|███       | 1150/3786 [00:03<00:06, 379.63it/s]Precomputing features (serial):  31%|███▏      | 1191/3786 [00:03<00:06, 387.55it/s]Precomputing features (serial):  33%|███▎      | 1233/3786 [00:03<00:06, 394.78it/s]Precomputing features (serial):  34%|███▎      | 1274/3786 [00:03<00:06, 393.23it/s]Precomputing features (serial):  35%|███▍      | 1316/3786 [00:03<00:06, 399.20it/s]Precomputing features (serial):  36%|███▌      | 1357/3786 [00:03<00:06, 396.94it/s]Precomputing features (serial):  37%|███▋      | 1397/3786 [00:03<00:06, 387.56it/s]Precomputing features (serial):  38%|███▊      | 1436/3786 [00:03<00:06, 384.25it/s]Precomputing features (serial):  39%|███▉      | 1476/3786 [00:03<00:05, 387.74it/s]Precomputing features (serial):  40%|████      | 1519/3786 [00:04<00:05, 399.51it/s]Precomputing features (serial):  41%|████      | 1560/3786 [00:04<00:05, 394.29it/s]Precomputing features (serial):  42%|████▏     | 1602/3786 [00:04<00:05, 400.14it/s]Precomputing features (serial):  43%|████▎     | 1643/3786 [00:04<00:05, 394.30it/s]Precomputing features (serial):  44%|████▍     | 1683/3786 [00:04<00:05, 391.40it/s]Precomputing features (serial):  46%|████▌     | 1725/3786 [00:04<00:05, 397.59it/s]Precomputing features (serial):  47%|████▋     | 1765/3786 [00:04<00:05, 393.30it/s]Precomputing features (serial):  48%|████▊     | 1805/3786 [00:04<00:05, 388.78it/s]Precomputing features (serial):  49%|████▉     | 1848/3786 [00:04<00:04, 399.44it/s]Precomputing features (serial):  50%|████▉     | 1890/3786 [00:05<00:04, 403.09it/s]Precomputing features (serial):  51%|█████     | 1935/3786 [00:05<00:04, 414.73it/s]Precomputing features (serial):  52%|█████▏    | 1977/3786 [00:05<00:04, 410.42it/s]Precomputing features (serial):  53%|█████▎    | 2019/3786 [00:05<00:04, 393.85it/s]Precomputing features (serial):  54%|█████▍    | 2059/3786 [00:05<00:04, 384.48it/s]Precomputing features (serial):  55%|█████▌    | 2099/3786 [00:05<00:07, 211.01it/s]Precomputing features (serial):  57%|█████▋    | 2140/3786 [00:05<00:06, 246.57it/s]Precomputing features (serial):  58%|█████▊    | 2183/3786 [00:06<00:05, 283.19it/s]Precomputing features (serial):  59%|█████▊    | 2224/3786 [00:06<00:05, 310.29it/s]Precomputing features (serial):  60%|█████▉    | 2263/3786 [00:06<00:04, 328.05it/s]Precomputing features (serial):  61%|██████    | 2301/3786 [00:06<00:04, 321.62it/s]Precomputing features (serial):  62%|██████▏   | 2339/3786 [00:06<00:04, 336.13it/s]Precomputing features (serial):  63%|██████▎   | 2376/3786 [00:06<00:04, 339.56it/s]Precomputing features (serial):  64%|██████▍   | 2417/3786 [00:06<00:03, 355.79it/s]Precomputing features (serial):  65%|██████▍   | 2457/3786 [00:06<00:03, 367.98it/s]Precomputing features (serial):  66%|██████▌   | 2499/3786 [00:06<00:03, 382.44it/s]Precomputing features (serial):  67%|██████▋   | 2543/3786 [00:07<00:03, 397.22it/s]Precomputing features (serial):  68%|██████▊   | 2584/3786 [00:07<00:03, 393.38it/s]Precomputing features (serial):  69%|██████▉   | 2626/3786 [00:07<00:02, 400.56it/s]Precomputing features (serial):  70%|███████   | 2668/3786 [00:07<00:02, 405.26it/s]Precomputing features (serial):  72%|███████▏  | 2709/3786 [00:07<00:02, 405.67it/s]Precomputing features (serial):  73%|███████▎  | 2750/3786 [00:07<00:02, 403.60it/s]Precomputing features (serial):  74%|███████▎  | 2791/3786 [00:07<00:02, 404.74it/s]Precomputing features (serial):  75%|███████▍  | 2832/3786 [00:07<00:02, 402.39it/s]Precomputing features (serial):  76%|███████▌  | 2873/3786 [00:07<00:02, 398.98it/s]Precomputing features (serial):  77%|███████▋  | 2914/3786 [00:07<00:02, 401.61it/s]Precomputing features (serial):  78%|███████▊  | 2955/3786 [00:08<00:02, 403.65it/s]Precomputing features (serial):  79%|███████▉  | 2997/3786 [00:08<00:01, 406.68it/s]Precomputing features (serial):  80%|████████  | 3040/3786 [00:08<00:01, 411.41it/s]Precomputing features (serial):  81%|████████▏ | 3082/3786 [00:08<00:01, 402.75it/s]Precomputing features (serial):  83%|████████▎ | 3125/3786 [00:08<00:01, 406.86it/s]Precomputing features (serial):  84%|████████▎ | 3166/3786 [00:08<00:01, 402.32it/s]Precomputing features (serial):  85%|████████▍ | 3207/3786 [00:08<00:01, 403.31it/s]Precomputing features (serial):  86%|████████▌ | 3248/3786 [00:08<00:01, 404.03it/s]Precomputing features (serial):  87%|████████▋ | 3289/3786 [00:08<00:01, 405.03it/s]Precomputing features (serial):  88%|████████▊ | 3330/3786 [00:08<00:01, 401.24it/s]Precomputing features (serial):  89%|████████▉ | 3373/3786 [00:09<00:01, 406.63it/s]Precomputing features (serial):  90%|█████████ | 3414/3786 [00:09<00:00, 406.58it/s]Precomputing features (serial):  91%|█████████▏| 3455/3786 [00:09<00:01, 215.49it/s]Precomputing features (serial):  92%|█████████▏| 3496/3786 [00:09<00:01, 250.09it/s]Precomputing features (serial):  93%|█████████▎| 3538/3786 [00:09<00:00, 284.21it/s]Precomputing features (serial):  95%|█████████▍| 3582/3786 [00:09<00:00, 318.63it/s]Precomputing features (serial):  96%|█████████▌| 3623/3786 [00:09<00:00, 340.39it/s]Precomputing features (serial):  97%|█████████▋| 3665/3786 [00:10<00:00, 359.32it/s]Precomputing features (serial):  98%|█████████▊| 3708/3786 [00:10<00:00, 376.37it/s]Precomputing features (serial):  99%|█████████▉| 3750/3786 [00:10<00:00, 387.44it/s]Precomputing features (serial): 100%|██████████| 3786/3786 [00:10<00:00, 365.34it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │   0.031445566564798355    │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (89) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.440
+Metric val_MAE improved by 0.164 >= min_delta = 0.0. New best score: 0.276
+Metric val_MAE improved by 0.047 >= min_delta = 0.0. New best score: 0.229
+Metric val_MAE improved by 0.017 >= min_delta = 0.0. New best score: 0.212
+Metric val_MAE improved by 0.014 >= min_delta = 0.0. New best score: 0.198
+Metric val_MAE improved by 0.020 >= min_delta = 0.0. New best score: 0.177
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.170
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.165
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 0.149
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.145
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.141
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.136
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.133
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.128
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.128
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.128
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.126
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.122
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.121
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.120
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.116
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.114
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.110
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.109
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.086. Signaling Trainer to stop.
+Precomputing features (serial):   0%|          | 0/3786 [00:00<?, ?it/s]Precomputing features (serial):   1%|          | 41/3786 [00:00<00:09, 400.52it/s]Precomputing features (serial):   2%|▏         | 82/3786 [00:00<00:09, 389.00it/s]Precomputing features (serial):   3%|▎         | 122/3786 [00:00<00:09, 393.83it/s]Precomputing features (serial):   4%|▍         | 165/3786 [00:00<00:08, 406.98it/s]Precomputing features (serial):   5%|▌         | 206/3786 [00:00<00:08, 406.13it/s]Precomputing features (serial):   7%|▋         | 247/3786 [00:00<00:08, 399.70it/s]Precomputing features (serial):   8%|▊         | 288/3786 [00:00<00:08, 398.51it/s]Precomputing features (serial):   9%|▊         | 329/3786 [00:00<00:08, 400.64it/s]Precomputing features (serial):  10%|▉         | 370/3786 [00:00<00:08, 402.08it/s]Precomputing features (serial):  11%|█         | 412/3786 [00:01<00:08, 407.31it/s]Precomputing features (serial):  12%|█▏        | 453/3786 [00:01<00:08, 406.77it/s]Precomputing features (serial):  13%|█▎        | 494/3786 [00:01<00:08, 406.05it/s]Precomputing features (serial):  14%|█▍        | 536/3786 [00:01<00:07, 408.63it/s]Precomputing features (serial):  15%|█▌        | 577/3786 [00:01<00:07, 406.61it/s]Precomputing features (serial):  16%|█▋        | 620/3786 [00:01<00:07, 411.44it/s]Precomputing features (serial):  17%|█▋        | 662/3786 [00:01<00:07, 403.40it/s]Precomputing features (serial):  19%|█▊        | 703/3786 [00:01<00:07, 399.54it/s]Precomputing features (serial):  20%|█▉        | 744/3786 [00:01<00:07, 401.33it/s]Precomputing features (serial):  21%|██        | 785/3786 [00:01<00:07, 403.66it/s]Precomputing features (serial):  22%|██▏       | 826/3786 [00:02<00:07, 404.78it/s]Precomputing features (serial):  23%|██▎       | 867/3786 [00:02<00:07, 396.24it/s]Precomputing features (serial):  24%|██▍       | 907/3786 [00:02<00:07, 396.08it/s]Precomputing features (serial):  25%|██▌       | 947/3786 [00:02<00:07, 386.50it/s]Precomputing features (serial):  26%|██▌       | 986/3786 [00:02<00:07, 387.45it/s]Precomputing features (serial):  27%|██▋       | 1025/3786 [00:02<00:13, 205.13it/s]Precomputing features (serial):  28%|██▊       | 1061/3786 [00:02<00:11, 232.46it/s]Precomputing features (serial):  29%|██▉       | 1101/3786 [00:03<00:10, 264.99it/s]Precomputing features (serial):  30%|███       | 1142/3786 [00:03<00:08, 297.40it/s]Precomputing features (serial):  31%|███       | 1181/3786 [00:03<00:08, 318.49it/s]Precomputing features (serial):  32%|███▏      | 1221/3786 [00:03<00:07, 339.18it/s]Precomputing features (serial):  33%|███▎      | 1262/3786 [00:03<00:07, 358.11it/s]Precomputing features (serial):  34%|███▍      | 1301/3786 [00:03<00:06, 364.67it/s]Precomputing features (serial):  35%|███▌      | 1340/3786 [00:03<00:06, 367.62it/s]Precomputing features (serial):  36%|███▋      | 1380/3786 [00:03<00:06, 376.31it/s]Precomputing features (serial):  38%|███▊      | 1420/3786 [00:03<00:06, 382.73it/s]Precomputing features (serial):  39%|███▊      | 1460/3786 [00:03<00:06, 383.39it/s]Precomputing features (serial):  40%|███▉      | 1499/3786 [00:04<00:06, 376.59it/s]Precomputing features (serial):  41%|████      | 1539/3786 [00:04<00:05, 381.74it/s]Precomputing features (serial):  42%|████▏     | 1578/3786 [00:04<00:05, 381.60it/s]Precomputing features (serial):  43%|████▎     | 1617/3786 [00:04<00:05, 382.02it/s]Precomputing features (serial):  44%|████▍     | 1658/3786 [00:04<00:05, 388.20it/s]Precomputing features (serial):  45%|████▍     | 1697/3786 [00:04<00:05, 381.54it/s]Precomputing features (serial):  46%|████▌     | 1738/3786 [00:04<00:05, 389.52it/s]Precomputing features (serial):  47%|████▋     | 1778/3786 [00:04<00:05, 388.53it/s]Precomputing features (serial):  48%|████▊     | 1817/3786 [00:04<00:05, 384.71it/s]Precomputing features (serial):  49%|████▉     | 1858/3786 [00:05<00:04, 389.37it/s]Precomputing features (serial):  50%|█████     | 1898/3786 [00:05<00:04, 390.44it/s]Precomputing features (serial):  51%|█████     | 1938/3786 [00:05<00:04, 393.19it/s]Precomputing features (serial):  52%|█████▏    | 1978/3786 [00:05<00:04, 395.17it/s]Precomputing features (serial):  53%|█████▎    | 2018/3786 [00:05<00:04, 388.76it/s]Precomputing features (serial):  54%|█████▍    | 2061/3786 [00:05<00:04, 399.33it/s]Precomputing features (serial):  55%|█████▌    | 2101/3786 [00:05<00:04, 395.96it/s]Precomputing features (serial):  57%|█████▋    | 2141/3786 [00:05<00:04, 396.81it/s]Precomputing features (serial):  58%|█████▊    | 2182/3786 [00:05<00:04, 398.80it/s]Precomputing features (serial):  59%|█████▉    | 2226/3786 [00:05<00:03, 408.70it/s]Precomputing features (serial):  60%|█████▉    | 2267/3786 [00:06<00:07, 210.68it/s]Precomputing features (serial):  61%|██████    | 2305/3786 [00:06<00:06, 240.33it/s]Precomputing features (serial):  62%|██████▏   | 2345/3786 [00:06<00:05, 271.72it/s]Precomputing features (serial):  63%|██████▎   | 2387/3786 [00:06<00:04, 303.69it/s]Precomputing features (serial):  64%|██████▍   | 2430/3786 [00:06<00:04, 333.97it/s]Precomputing features (serial):  65%|██████▌   | 2472/3786 [00:06<00:03, 355.58it/s]Precomputing features (serial):  66%|██████▋   | 2513/3786 [00:06<00:03, 369.32it/s]Precomputing features (serial):  67%|██████▋   | 2553/3786 [00:07<00:03, 375.33it/s]Precomputing features (serial):  69%|██████▊   | 2596/3786 [00:07<00:03, 388.47it/s]Precomputing features (serial):  70%|██████▉   | 2637/3786 [00:07<00:03, 382.10it/s]Precomputing features (serial):  71%|███████   | 2677/3786 [00:07<00:02, 385.92it/s]Precomputing features (serial):  72%|███████▏  | 2718/3786 [00:07<00:02, 390.67it/s]Precomputing features (serial):  73%|███████▎  | 2758/3786 [00:07<00:02, 383.05it/s]Precomputing features (serial):  74%|███████▍  | 2797/3786 [00:07<00:02, 382.37it/s]Precomputing features (serial):  75%|███████▍  | 2837/3786 [00:07<00:02, 385.63it/s]Precomputing features (serial):  76%|███████▌  | 2878/3786 [00:07<00:02, 389.86it/s]Precomputing features (serial):  77%|███████▋  | 2920/3786 [00:07<00:02, 397.88it/s]Precomputing features (serial):  78%|███████▊  | 2962/3786 [00:08<00:02, 403.04it/s]Precomputing features (serial):  79%|███████▉  | 3003/3786 [00:08<00:01, 397.58it/s]Precomputing features (serial):  80%|████████  | 3043/3786 [00:08<00:01, 393.92it/s]Precomputing features (serial):  81%|████████▏ | 3084/3786 [00:08<00:01, 398.09it/s]Precomputing features (serial):  83%|████████▎ | 3124/3786 [00:08<00:01, 395.34it/s]Precomputing features (serial):  84%|████████▎ | 3165/3786 [00:08<00:01, 397.69it/s]Precomputing features (serial):  85%|████████▍ | 3206/3786 [00:08<00:01, 399.15it/s]Precomputing features (serial):  86%|████████▌ | 3246/3786 [00:08<00:01, 381.92it/s]Precomputing features (serial):  87%|████████▋ | 3285/3786 [00:08<00:01, 362.56it/s]Precomputing features (serial):  88%|████████▊ | 3325/3786 [00:09<00:01, 370.78it/s]Precomputing features (serial):  89%|████████▉ | 3365/3786 [00:09<00:01, 378.57it/s]Precomputing features (serial):  90%|████████▉ | 3406/3786 [00:09<00:00, 385.46it/s]Precomputing features (serial):  91%|█████████ | 3445/3786 [00:09<00:00, 383.69it/s]Precomputing features (serial):  92%|█████████▏| 3486/3786 [00:09<00:00, 390.31it/s]Precomputing features (serial):  93%|█████████▎| 3526/3786 [00:09<00:01, 208.27it/s]Precomputing features (serial):  94%|█████████▍| 3566/3786 [00:09<00:00, 242.86it/s]Precomputing features (serial):  95%|█████████▌| 3608/3786 [00:10<00:00, 277.95it/s]Precomputing features (serial):  96%|█████████▋| 3647/3786 [00:10<00:00, 303.31it/s]Precomputing features (serial):  97%|█████████▋| 3684/3786 [00:10<00:00, 319.59it/s]Precomputing features (serial):  98%|█████████▊| 3724/3786 [00:10<00:00, 339.55it/s]Precomputing features (serial):  99%|█████████▉| 3765/3786 [00:10<00:00, 357.82it/s]Precomputing features (serial): 100%|██████████| 3786/3786 [00:10<00:00, 359.90it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    0.0337521992623806     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (89) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.451
+Metric val_MAE improved by 0.035 >= min_delta = 0.0. New best score: 0.416
+Metric val_MAE improved by 0.105 >= min_delta = 0.0. New best score: 0.311
+Metric val_MAE improved by 0.087 >= min_delta = 0.0. New best score: 0.224
+Metric val_MAE improved by 0.011 >= min_delta = 0.0. New best score: 0.213
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.205
+Metric val_MAE improved by 0.022 >= min_delta = 0.0. New best score: 0.183
+Metric val_MAE improved by 0.012 >= min_delta = 0.0. New best score: 0.171
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.169
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.161
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.156
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 0.146
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.143
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.138
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.135
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.132
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.128
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.124
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.120
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.120
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.117
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.113
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.103
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.101
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.099
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.098
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.096
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.087. Signaling Trainer to stop.
+Precomputing features (serial):   0%|          | 0/3785 [00:00<?, ?it/s]Precomputing features (serial):   1%|          | 37/3785 [00:00<00:10, 364.09it/s]Precomputing features (serial):   2%|▏         | 75/3785 [00:00<00:10, 369.28it/s]Precomputing features (serial):   3%|▎         | 112/3785 [00:00<00:10, 363.68it/s]Precomputing features (serial):   4%|▍         | 151/3785 [00:00<00:09, 372.30it/s]Precomputing features (serial):   5%|▍         | 189/3785 [00:00<00:09, 369.57it/s]Precomputing features (serial):   6%|▌         | 231/3785 [00:00<00:09, 384.42it/s]Precomputing features (serial):   7%|▋         | 270/3785 [00:00<00:09, 378.74it/s]Precomputing features (serial):   8%|▊         | 308/3785 [00:00<00:09, 372.73it/s]Precomputing features (serial):   9%|▉         | 347/3785 [00:00<00:09, 376.38it/s]Precomputing features (serial):  10%|█         | 385/3785 [00:01<00:16, 200.18it/s]Precomputing features (serial):  11%|█         | 425/3785 [00:01<00:14, 237.28it/s]Precomputing features (serial):  12%|█▏        | 468/3785 [00:01<00:11, 276.56it/s]Precomputing features (serial):  13%|█▎        | 509/3785 [00:01<00:10, 306.09it/s]Precomputing features (serial):  15%|█▍        | 550/3785 [00:01<00:09, 330.69it/s]Precomputing features (serial):  16%|█▌        | 590/3785 [00:01<00:09, 347.38it/s]Precomputing features (serial):  17%|█▋        | 630/3785 [00:01<00:08, 361.37it/s]Precomputing features (serial):  18%|█▊        | 669/3785 [00:02<00:08, 363.52it/s]Precomputing features (serial):  19%|█▊        | 708/3785 [00:02<00:08, 363.33it/s]Precomputing features (serial):  20%|█▉        | 748/3785 [00:02<00:08, 372.99it/s]Precomputing features (serial):  21%|██        | 787/3785 [00:02<00:07, 377.53it/s]Precomputing features (serial):  22%|██▏       | 826/3785 [00:02<00:07, 373.12it/s]Precomputing features (serial):  23%|██▎       | 864/3785 [00:02<00:07, 367.72it/s]Precomputing features (serial):  24%|██▍       | 905/3785 [00:02<00:07, 378.91it/s]Precomputing features (serial):  25%|██▍       | 945/3785 [00:02<00:07, 382.37it/s]Precomputing features (serial):  26%|██▌       | 986/3785 [00:02<00:07, 387.62it/s]Precomputing features (serial):  27%|██▋       | 1028/3785 [00:02<00:06, 396.74it/s]Precomputing features (serial):  28%|██▊       | 1068/3785 [00:03<00:06, 393.10it/s]Precomputing features (serial):  29%|██▉       | 1108/3785 [00:03<00:06, 393.33it/s]Precomputing features (serial):  30%|███       | 1148/3785 [00:03<00:06, 391.59it/s]Precomputing features (serial):  31%|███▏      | 1190/3785 [00:03<00:06, 399.85it/s]Precomputing features (serial):  33%|███▎      | 1231/3785 [00:03<00:06, 399.94it/s]Precomputing features (serial):  34%|███▎      | 1272/3785 [00:03<00:06, 396.06it/s]Precomputing features (serial):  35%|███▍      | 1313/3785 [00:03<00:06, 399.22it/s]Precomputing features (serial):  36%|███▌      | 1353/3785 [00:03<00:06, 397.26it/s]Precomputing features (serial):  37%|███▋      | 1393/3785 [00:03<00:06, 392.72it/s]Precomputing features (serial):  38%|███▊      | 1435/3785 [00:03<00:05, 398.96it/s]Precomputing features (serial):  39%|███▉      | 1476/3785 [00:04<00:05, 400.91it/s]Precomputing features (serial):  40%|████      | 1517/3785 [00:04<00:05, 396.27it/s]Precomputing features (serial):  41%|████      | 1557/3785 [00:04<00:05, 396.01it/s]Precomputing features (serial):  42%|████▏     | 1598/3785 [00:04<00:05, 398.89it/s]Precomputing features (serial):  43%|████▎     | 1638/3785 [00:04<00:10, 206.53it/s]Precomputing features (serial):  44%|████▍     | 1675/3785 [00:04<00:08, 234.91it/s]Precomputing features (serial):  45%|████▌     | 1710/3785 [00:05<00:08, 257.87it/s]Precomputing features (serial):  46%|████▌     | 1749/3785 [00:05<00:07, 287.34it/s]Precomputing features (serial):  47%|████▋     | 1784/3785 [00:05<00:06, 301.00it/s]Precomputing features (serial):  48%|████▊     | 1824/3785 [00:05<00:06, 326.13it/s]Precomputing features (serial):  49%|████▉     | 1865/3785 [00:05<00:05, 347.69it/s]Precomputing features (serial):  50%|█████     | 1904/3785 [00:05<00:05, 358.60it/s]Precomputing features (serial):  51%|█████▏    | 1947/3785 [00:05<00:04, 378.63it/s]Precomputing features (serial):  52%|█████▏    | 1987/3785 [00:05<00:04, 383.27it/s]Precomputing features (serial):  54%|█████▎    | 2027/3785 [00:05<00:04, 384.20it/s]Precomputing features (serial):  55%|█████▍    | 2067/3785 [00:05<00:04, 379.28it/s]Precomputing features (serial):  56%|█████▌    | 2106/3785 [00:06<00:04, 379.25it/s]Precomputing features (serial):  57%|█████▋    | 2145/3785 [00:06<00:04, 377.30it/s]Precomputing features (serial):  58%|█████▊    | 2186/3785 [00:06<00:04, 385.12it/s]Precomputing features (serial):  59%|█████▉    | 2228/3785 [00:06<00:03, 394.97it/s]Precomputing features (serial):  60%|█████▉    | 2269/3785 [00:06<00:03, 397.96it/s]Precomputing features (serial):  61%|██████    | 2312/3785 [00:06<00:03, 403.72it/s]Precomputing features (serial):  62%|██████▏   | 2353/3785 [00:06<00:03, 400.82it/s]Precomputing features (serial):  63%|██████▎   | 2394/3785 [00:06<00:03, 396.42it/s]Precomputing features (serial):  64%|██████▍   | 2435/3785 [00:06<00:03, 398.29it/s]Precomputing features (serial):  65%|██████▌   | 2477/3785 [00:06<00:03, 403.31it/s]Precomputing features (serial):  67%|██████▋   | 2518/3785 [00:07<00:03, 401.03it/s]Precomputing features (serial):  68%|██████▊   | 2561/3785 [00:07<00:02, 409.54it/s]Precomputing features (serial):  69%|██████▊   | 2602/3785 [00:07<00:02, 406.73it/s]Precomputing features (serial):  70%|██████▉   | 2643/3785 [00:07<00:02, 400.08it/s]Precomputing features (serial):  71%|███████   | 2684/3785 [00:07<00:02, 402.66it/s]Precomputing features (serial):  72%|███████▏  | 2725/3785 [00:07<00:02, 401.81it/s]Precomputing features (serial):  73%|███████▎  | 2767/3785 [00:07<00:02, 404.78it/s]Precomputing features (serial):  74%|███████▍  | 2810/3785 [00:07<00:02, 409.87it/s]Precomputing features (serial):  75%|███████▌  | 2851/3785 [00:07<00:02, 407.30it/s]Precomputing features (serial):  76%|███████▋  | 2892/3785 [00:07<00:02, 405.11it/s]Precomputing features (serial):  77%|███████▋  | 2933/3785 [00:08<00:02, 405.46it/s]Precomputing features (serial):  79%|███████▊  | 2974/3785 [00:08<00:03, 211.22it/s]Precomputing features (serial):  80%|███████▉  | 3015/3785 [00:08<00:03, 246.17it/s]Precomputing features (serial):  81%|████████  | 3055/3785 [00:08<00:02, 276.93it/s]Precomputing features (serial):  82%|████████▏ | 3097/3785 [00:08<00:02, 307.84it/s]Precomputing features (serial):  83%|████████▎ | 3137/3785 [00:08<00:01, 328.94it/s]Precomputing features (serial):  84%|████████▍ | 3178/3785 [00:09<00:01, 347.68it/s]Precomputing features (serial):  85%|████████▌ | 3220/3785 [00:09<00:01, 364.73it/s]Precomputing features (serial):  86%|████████▌ | 3261/3785 [00:09<00:01, 375.87it/s]Precomputing features (serial):  87%|████████▋ | 3304/3785 [00:09<00:01, 387.57it/s]Precomputing features (serial):  88%|████████▊ | 3345/3785 [00:09<00:01, 389.93it/s]Precomputing features (serial):  89%|████████▉ | 3387/3785 [00:09<00:01, 397.53it/s]Precomputing features (serial):  91%|█████████ | 3428/3785 [00:09<00:00, 400.98it/s]Precomputing features (serial):  92%|█████████▏| 3469/3785 [00:09<00:00, 391.40it/s]Precomputing features (serial):  93%|█████████▎| 3509/3785 [00:09<00:00, 392.21it/s]Precomputing features (serial):  94%|█████████▍| 3549/3785 [00:09<00:00, 389.10it/s]Precomputing features (serial):  95%|█████████▍| 3590/3785 [00:10<00:00, 395.16it/s]Precomputing features (serial):  96%|█████████▌| 3631/3785 [00:10<00:00, 397.89it/s]Precomputing features (serial):  97%|█████████▋| 3671/3785 [00:10<00:00, 394.53it/s]Precomputing features (serial):  98%|█████████▊| 3711/3785 [00:10<00:00, 395.10it/s]Precomputing features (serial):  99%|█████████▉| 3751/3785 [00:10<00:00, 396.42it/s]Precomputing features (serial): 100%|██████████| 3785/3785 [00:10<00:00, 359.69it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    0.0317864865064621     │
+└───────────────────────────┴───────────────────────────┘
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 31.5 K
+------------------------------------------------------------
+31.5 K    Trainable params
+0         Non-trainable params
+31.5 K    Total params
+0.126     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (89) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.379
+Metric val_MAE improved by 0.144 >= min_delta = 0.0. New best score: 0.235
+Metric val_MAE improved by 0.027 >= min_delta = 0.0. New best score: 0.208
+Metric val_MAE improved by 0.022 >= min_delta = 0.0. New best score: 0.186
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 0.175
+Metric val_MAE improved by 0.015 >= min_delta = 0.0. New best score: 0.160
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.152
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.150
+Metric val_MAE improved by 0.014 >= min_delta = 0.0. New best score: 0.137
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.134
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.127
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.124
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.119
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.115
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.108
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.004 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.097
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.093
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.092
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.091
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.090
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.088
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.087
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.086
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.085
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.084
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.083
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Monitored metric val_MAE did not improve in the last 500 records. Best score: 0.081. Signaling Trainer to stop.
+Precomputing features (serial):   0%|          | 0/3785 [00:00<?, ?it/s]Precomputing features (serial):   1%|          | 40/3785 [00:00<00:09, 385.59it/s]Precomputing features (serial):   2%|▏         | 79/3785 [00:00<00:09, 384.02it/s]Precomputing features (serial):   3%|▎         | 118/3785 [00:00<00:09, 383.89it/s]Precomputing features (serial):   4%|▍         | 158/3785 [00:00<00:09, 387.40it/s]Precomputing features (serial):   5%|▌         | 199/3785 [00:00<00:09, 394.94it/s]Precomputing features (serial):   6%|▋         | 240/3785 [00:00<00:08, 396.82it/s]Precomputing features (serial):   7%|▋         | 280/3785 [00:00<00:08, 389.95it/s]Precomputing features (serial):   8%|▊         | 320/3785 [00:00<00:08, 388.11it/s]Precomputing features (serial):  10%|▉         | 360/3785 [00:00<00:08, 390.59it/s]Precomputing features (serial):  11%|█         | 400/3785 [00:01<00:08, 387.66it/s]Precomputing features (serial):  12%|█▏        | 441/3785 [00:01<00:08, 391.91it/s]Precomputing features (serial):  13%|█▎        | 482/3785 [00:01<00:08, 395.88it/s]Precomputing features (serial):  14%|█▍        | 522/3785 [00:01<00:08, 387.57it/s]Precomputing features (serial):  15%|█▍        | 561/3785 [00:01<00:08, 380.04it/s]Precomputing features (serial):  16%|█▌        | 600/3785 [00:01<00:08, 379.59it/s]Precomputing features (serial):  17%|█▋        | 638/3785 [00:01<00:08, 377.73it/s]Precomputing features (serial):  18%|█▊        | 677/3785 [00:01<00:08, 378.66it/s]Precomputing features (serial):  19%|█▉        | 716/3785 [00:01<00:08, 378.25it/s]Precomputing features (serial):  20%|██        | 757/3785 [00:01<00:07, 384.11it/s]Precomputing features (serial):  21%|██        | 796/3785 [00:02<00:07, 381.97it/s]Precomputing features (serial):  22%|██▏       | 835/3785 [00:02<00:14, 202.23it/s]Precomputing features (serial):  23%|██▎       | 874/3785 [00:02<00:12, 235.36it/s]Precomputing features (serial):  24%|██▍       | 910/3785 [00:02<00:11, 260.53it/s]Precomputing features (serial):  25%|██▌       | 948/3785 [00:02<00:09, 286.35it/s]Precomputing features (serial):  26%|██▌       | 985/3785 [00:02<00:09, 304.00it/s]Precomputing features (serial):  27%|██▋       | 1022/3785 [00:02<00:08, 320.38it/s]Precomputing features (serial):  28%|██▊       | 1062/3785 [00:03<00:07, 340.70it/s]Precomputing features (serial):  29%|██▉       | 1099/3785 [00:03<00:07, 348.34it/s]Precomputing features (serial):  30%|███       | 1140/3785 [00:03<00:07, 364.18it/s]Precomputing features (serial):  31%|███       | 1181/3785 [00:03<00:06, 376.10it/s]Precomputing features (serial):  32%|███▏      | 1222/3785 [00:03<00:06, 383.55it/s]Precomputing features (serial):  33%|███▎      | 1262/3785 [00:03<00:06, 383.79it/s]Precomputing features (serial):  34%|███▍      | 1302/3785 [00:03<00:06, 388.32it/s]Precomputing features (serial):  35%|███▌      | 1343/3785 [00:03<00:06, 394.10it/s]Precomputing features (serial):  37%|███▋      | 1384/3785 [00:03<00:06, 396.90it/s]Precomputing features (serial):  38%|███▊      | 1425/3785 [00:03<00:05, 397.61it/s]Precomputing features (serial):  39%|███▊      | 1465/3785 [00:04<00:05, 394.89it/s]Precomputing features (serial):  40%|███▉      | 1506/3785 [00:04<00:05, 398.26it/s]Precomputing features (serial):  41%|████      | 1546/3785 [00:04<00:05, 395.99it/s]Precomputing features (serial):  42%|████▏     | 1586/3785 [00:04<00:05, 396.04it/s]Precomputing features (serial):  43%|████▎     | 1626/3785 [00:04<00:05, 396.51it/s]Precomputing features (serial):  44%|████▍     | 1668/3785 [00:04<00:05, 402.54it/s]Precomputing features (serial):  45%|████▌     | 1709/3785 [00:04<00:05, 401.86it/s]Precomputing features (serial):  46%|████▌     | 1750/3785 [00:04<00:05, 403.75it/s]Precomputing features (serial):  47%|████▋     | 1791/3785 [00:04<00:04, 404.52it/s]Precomputing features (serial):  48%|████▊     | 1832/3785 [00:05<00:04, 403.58it/s]Precomputing features (serial):  49%|████▉     | 1873/3785 [00:05<00:04, 401.04it/s]Precomputing features (serial):  51%|█████     | 1915/3785 [00:05<00:04, 403.07it/s]Precomputing features (serial):  52%|█████▏    | 1956/3785 [00:05<00:04, 396.44it/s]Precomputing features (serial):  53%|█████▎    | 1998/3785 [00:05<00:04, 401.07it/s]Precomputing features (serial):  54%|█████▍    | 2041/3785 [00:05<00:04, 407.07it/s]Precomputing features (serial):  55%|█████▌    | 2082/3785 [00:05<00:04, 405.94it/s]Precomputing features (serial):  56%|█████▌    | 2123/3785 [00:05<00:04, 401.82it/s]Precomputing features (serial):  57%|█████▋    | 2164/3785 [00:06<00:07, 211.07it/s]Precomputing features (serial):  58%|█████▊    | 2204/3785 [00:06<00:06, 244.94it/s]Precomputing features (serial):  59%|█████▉    | 2244/3785 [00:06<00:05, 275.93it/s]Precomputing features (serial):  60%|██████    | 2286/3785 [00:06<00:04, 307.54it/s]Precomputing features (serial):  61%|██████▏   | 2327/3785 [00:06<00:04, 331.59it/s]Precomputing features (serial):  63%|██████▎   | 2366/3785 [00:06<00:04, 346.09it/s]Precomputing features (serial):  64%|██████▎   | 2407/3785 [00:06<00:03, 362.15it/s]Precomputing features (serial):  65%|██████▍   | 2449/3785 [00:06<00:03, 376.89it/s]Precomputing features (serial):  66%|██████▌   | 2489/3785 [00:06<00:03, 382.40it/s]Precomputing features (serial):  67%|██████▋   | 2529/3785 [00:07<00:03, 384.23it/s]Precomputing features (serial):  68%|██████▊   | 2569/3785 [00:07<00:03, 386.76it/s]Precomputing features (serial):  69%|██████▉   | 2610/3785 [00:07<00:03, 390.75it/s]Precomputing features (serial):  70%|███████   | 2651/3785 [00:07<00:02, 393.81it/s]Precomputing features (serial):  71%|███████   | 2691/3785 [00:07<00:02, 391.00it/s]Precomputing features (serial):  72%|███████▏  | 2732/3785 [00:07<00:02, 395.85it/s]Precomputing features (serial):  73%|███████▎  | 2774/3785 [00:07<00:02, 401.31it/s]Precomputing features (serial):  74%|███████▍  | 2815/3785 [00:07<00:02, 402.67it/s]Precomputing features (serial):  75%|███████▌  | 2856/3785 [00:07<00:02, 387.96it/s]Precomputing features (serial):  77%|███████▋  | 2898/3785 [00:07<00:02, 394.46it/s]Precomputing features (serial):  78%|███████▊  | 2938/3785 [00:08<00:02, 394.14it/s]Precomputing features (serial):  79%|███████▊  | 2978/3785 [00:08<00:02, 391.95it/s]Precomputing features (serial):  80%|███████▉  | 3018/3785 [00:08<00:01, 385.48it/s]Precomputing features (serial):  81%|████████  | 3058/3785 [00:08<00:01, 389.57it/s]Precomputing features (serial):  82%|████████▏ | 3098/3785 [00:08<00:01, 391.73it/s]Precomputing features (serial):  83%|████████▎ | 3138/3785 [00:08<00:01, 392.42it/s]Precomputing features (serial):  84%|████████▍ | 3178/3785 [00:08<00:01, 390.74it/s]Precomputing features (serial):  85%|████████▌ | 3219/3785 [00:08<00:01, 395.90it/s]Precomputing features (serial):  86%|████████▌ | 3259/3785 [00:08<00:01, 392.63it/s]Precomputing features (serial):  87%|████████▋ | 3299/3785 [00:09<00:01, 393.91it/s]Precomputing features (serial):  88%|████████▊ | 3341/3785 [00:09<00:01, 399.83it/s]Precomputing features (serial):  89%|████████▉ | 3381/3785 [00:09<00:01, 393.99it/s]Precomputing features (serial):  90%|█████████ | 3421/3785 [00:09<00:01, 207.50it/s]Precomputing features (serial):  91%|█████████▏| 3460/3785 [00:09<00:01, 239.96it/s]Precomputing features (serial):  92%|█████████▏| 3500/3785 [00:09<00:01, 270.56it/s]Precomputing features (serial):  94%|█████████▎| 3540/3785 [00:09<00:00, 299.18it/s]Precomputing features (serial):  95%|█████████▍| 3582/3785 [00:10<00:00, 326.95it/s]Precomputing features (serial):  96%|█████████▌| 3621/3785 [00:10<00:00, 342.55it/s]Precomputing features (serial):  97%|█████████▋| 3662/3785 [00:10<00:00, 358.35it/s]Precomputing features (serial):  98%|█████████▊| 3704/3785 [00:10<00:00, 372.75it/s]Precomputing features (serial):  99%|█████████▉| 3745/3785 [00:10<00:00, 381.46it/s]Precomputing features (serial): 100%|██████████| 3785/3785 [00:10<00:00, 382.47it/s]Precomputing features (serial): 100%|██████████| 3785/3785 [00:10<00:00, 358.95it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=47` in the `DataLoader` to improve performance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│         test_MAE          │    0.03165378421545029    │
+└───────────────────────────┴───────────────────────────┘

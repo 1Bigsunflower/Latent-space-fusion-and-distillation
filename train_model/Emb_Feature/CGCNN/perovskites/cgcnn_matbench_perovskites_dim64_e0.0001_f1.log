@@ -1,0 +1,56 @@
+Seed set to 42
+2025-12-29 15:06:23 INFO     Initialized benchmark 'matbench_v0.1' with 1 tasks: 
+['matbench_perovskites']
+2025-12-29 15:06:23 INFO     Loading dataset 'matbench_perovskites'...
+2025-12-29 15:06:26 INFO     Dataset 'matbench_perovskites loaded.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3080') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+2025-12-29 15:06:27.864480: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-12-29 15:06:27.898853: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-12-29 15:06:28.622953: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+
+  | Name                | Type                | Params
+------------------------------------------------------------
+0 | crystalGraphConvNet | CrystalGraphConvNet | 87.2 K
+------------------------------------------------------------
+87.2 K    Trainable params
+0         Non-trainable params
+87.2 K    Total params
+0.349     Total estimated model params size (MB)
+/home/ubuntu/anaconda3/envs/pl/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (89) is smaller than the logging interval Trainer(log_every_n_steps=1000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Metric val_MAE improved. New best score: 0.266
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.257
+Metric val_MAE improved by 0.089 >= min_delta = 0.0. New best score: 0.168
+Metric val_MAE improved by 0.001 >= min_delta = 0.0. New best score: 0.167
+Metric val_MAE improved by 0.008 >= min_delta = 0.0. New best score: 0.159
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.155
+Metric val_MAE improved by 0.013 >= min_delta = 0.0. New best score: 0.142
+Metric val_MAE improved by 0.009 >= min_delta = 0.0. New best score: 0.133
+Metric val_MAE improved by 0.003 >= min_delta = 0.0. New best score: 0.130
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.129
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.129
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.122
+Metric val_MAE improved by 0.010 >= min_delta = 0.0. New best score: 0.112
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.111
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.106
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.104
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.102
+Metric val_MAE improved by 0.002 >= min_delta = 0.0. New best score: 0.100
+Metric val_MAE improved by 0.005 >= min_delta = 0.0. New best score: 0.095
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.094
+Metric val_MAE improved by 0.006 >= min_delta = 0.0. New best score: 0.089
+Metric val_MAE improved by 0.007 >= min_delta = 0.0. New best score: 0.082
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.081
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080
+Metric val_MAE improved by 0.000 >= min_delta = 0.0. New best score: 0.080

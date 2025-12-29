@@ -214,7 +214,7 @@ if __name__ == '__main__':
             filename='{epoch:04d}-train_loss{train_MAE:.4f}-val_loss{val_MAE:.4f}',
         )
         # Training
-        trainer = pl.Trainer(max_epochs=10000, enable_progress_bar=True,
+        trainer = pl.Trainer(max_epochs=10000, enable_progress_bar=False,
                              callbacks=[early_stop_callback, checkpoint_callback],
                              strategy='ddp_find_unused_parameters_true',
                              log_every_n_steps=1000)

@@ -4,7 +4,7 @@ log_dir="eform"
 mkdir -p "$log_dir"
 
 # 可用的GPU设备
-declare -a gpus=("0" "1") # "2" "3")  #
+declare -a gpus=("0" "1" "2" "3")  #
 # 每个GPU上最大并行任务数
 max_per_gpu=7  #
 
