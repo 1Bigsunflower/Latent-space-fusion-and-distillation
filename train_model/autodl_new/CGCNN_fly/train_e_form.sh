@@ -6,7 +6,9 @@ mkdir -p "$log_dir"
 # 可用的GPU设备
 declare -a gpus=("0" "1" "2" "3")
 # 每个GPU上最大并行任务数
-max_per_gpu=7
+max_per_gpu=8
+# 全局最大并行任务数
+max_total_jobs=30
 
 # 数据集和fold配置
 subset="matbench_mp_e_form"
@@ -53,6 +55,17 @@ get_available_slot() {
 # 函数：等待任意一个任务完成
 wait_for_slot() {
     while true; do
+        # 当前后台总任务数
+        total_running=$(jobs -p | wc -l)
+
+        # 如果超过全局上限，直接等
+        if [ "$total_running" -ge "$max_total_jobs" ]; then
+            sleep 1
+            wait -n 2>/dev/null || true
+            continue
+        fi
+
+        # 检查是否有GPU槽位
         for gpu in "${gpus[@]}"; do
             running_on_gpu=$(jobs -p | xargs -I {} ps -o args= {} 2>/dev/null | grep -c "cuda_devices $gpu" || true)
 
@@ -61,13 +74,12 @@ wait_for_slot() {
             fi
         done
 
-        # 如果没有可用槽位，等待1秒后重试
+        # 没有GPU槽位，等
         sleep 1
-
-        # 清理已完成的作业
         wait -n 2>/dev/null || true
     done
 }
+
 
 # 按fold顺序执行
 for fold in "${folds[@]}"; do

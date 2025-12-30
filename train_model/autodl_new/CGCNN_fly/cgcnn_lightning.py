@@ -2,6 +2,9 @@ import argparse
 import gc
 import os
 import sys
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
 
 import lightning.pytorch as pl
 import numpy as np
@@ -217,7 +220,10 @@ def main():
             auto_insert_metric_name=False)
         trainer = pl.Trainer(max_epochs=10000, callbacks=[early_stop_callback, checkpoint_callback],
                              enable_progress_bar=False,
+                             # accumulate_grad_batches=4,
                              log_every_n_steps=1000,
+                             # enable_model_summary=False,
+                             # benchmark=False,
                              )
         trainer.fit(model, train_dataloaders=train_loader, val_dataloaders=val_loader)
 
