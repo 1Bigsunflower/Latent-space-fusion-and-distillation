@@ -12,7 +12,7 @@ from data import StruData, get_train_loader, collate_pool_matbench
 
 parser = argparse.ArgumentParser(description='gen and dump')
 parser.add_argument('--fold', type=int, default=0, help='')
-parser.add_argument('--subset', default='matbench_perovskites', type=str,
+parser.add_argument('--subset', default='matbench_mp_e_form', type=str,
                     choices=['matbench_mp_gap', 'matbench_mp_e_form', 'matbench_perovskites'],
                     help='subset dataset to use')
 args = parser.parse_args()
@@ -36,24 +36,6 @@ def gen_and_dump(name, dataset, folder):
             io_buffer.clear()
     print("文件数量：", io_cnt)
 
-
-def gen_and_dump(name, dataset, folder):
-    io_buffer = []  # 用于存储生成的数据字典的缓冲区
-    io_cnt = 0  # 计数生成的文件数量
-    for i in range(len(dataset)):
-        io_buffer.append(dataset[i])
-        if len(io_buffer) > 100 or i == len(dataset) - 1:
-            for data in io_buffer:
-                save_path = "{}/{}/{}.pth".format(folder, name, io_cnt)
-                # Check if the directory exists, and create it if not
-                if not os.path.exists(os.path.dirname(save_path)):
-                    os.makedirs(os.path.dirname(save_path))
-
-                # Save the data to the specified path
-                torch.save(data, save_path)
-                io_cnt += 1
-            io_buffer.clear()
-    print("文件数量：", io_cnt)
 
 def main():
     init_seed = 42
@@ -115,8 +97,11 @@ def main():
                                                         train_ratio=0.75,
                                                         val_ratio=0.25
                                                         )
-            train_dataset = train_loader.dataset
-            val_dataset = val_loader.dataset
+            train_indices = train_loader.sampler.indices
+            val_indices = val_loader.sampler.indices
+
+            train_dataset = [dataset[i] for i in train_indices]
+            val_dataset = [dataset[i] for i in val_indices]
 
             test_inputs, test_outputs = task.get_test_data(
                 args.fold,
