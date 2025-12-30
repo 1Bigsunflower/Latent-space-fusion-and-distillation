@@ -82,7 +82,7 @@ def main():
                 train_inputs, train_outputs,
                 max_num_nbr=12, radius=8, dmin=0, step=0.2,
                 precompute=True,
-                precompute_workers=8,
+                precompute_workers=16,
                 precompute_backend="process",  # 进程并行
                 cache_path=cache_path,
                 rebuild_cache=False,
@@ -107,7 +107,8 @@ def main():
                 args.fold,
                 include_target=True
             )
-            test_dataset = StruData(test_inputs, test_outputs)
+            test_dataset = StruData(test_inputs, test_outputs, precompute=True,
+                                    precompute_workers=16, chunksize=32, )
 
             gen_and_dump(name='train', dataset=train_dataset, folder=folder)
             gen_and_dump(name='val', dataset=val_dataset, folder=folder)

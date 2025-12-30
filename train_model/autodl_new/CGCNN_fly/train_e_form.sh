@@ -4,9 +4,9 @@ log_dir="eform"
 mkdir -p "$log_dir"
 
 # 可用的GPU设备
-declare -a gpus=("0" "1" "2")  #
+declare -a gpus=("0" "1" "2" "3")
 # 每个GPU上最大并行任务数
-max_per_gpu=7  #
+max_per_gpu=7
 
 # 数据集和fold配置
 subset="matbench_mp_e_form"
@@ -138,40 +138,9 @@ for fold in "${folds[@]}"; do
         sleep 1
     done
 
-    # 等待当前fold的所有训练任务完成（只等待当前fold的PID）
-    echo "=============================================="
-    echo "Waiting for all training tasks in fold $fold to complete..."
-    echo "=============================================="
-
-    # 方法1：使用进程组等待（更安全）
-    for pid in "${current_fold_pids[@]}"; do
-        if kill -0 "$pid" 2>/dev/null; then
-            wait "$pid" 2>/dev/null || true
-        fi
-    done
-
-    # 方法2：或者使用jobs命令（但需要确保在当前shell中）
-    # wait "${current_fold_pids[@]}" 2>/dev/null || true
-
     # 清空PID数组，为下一个fold做准备
     unset current_fold_pids
 
-    # 删除当前fold的数据文件夹
-    echo "Cleaning up dataset for fold $fold..."
-
-    if [ -d "$dataset_path" ]; then
-        echo "Removing dataset directory: $dataset_path"
-        rm -rf "$dataset_path"
-    else
-        echo "Dataset directory not found: $dataset_path"
-    fi
-    echo ""
-
-    # 检查是否是最后一个fold，如果不是则继续
-    if [ "$fold" != "${folds[-1]}" ]; then
-        echo "Fold $fold processing completed. Ready for next fold."
-        sleep 3
-    fi
 done
 
 echo "=============================================="
