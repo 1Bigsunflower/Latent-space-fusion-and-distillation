@@ -10,7 +10,7 @@ max_per_gpu=7  #
 
 # 数据集和fold配置
 subset="matbench_mp_e_form"
-declare -a folds=("0" "1" "2" "3" "4")
+declare -a folds=("1" "2" "3" "4")  # ("0" "1" "2" "3" "4")
 
 # 参数组合
 declare -a combinations=(
@@ -177,3 +177,5 @@ done
 echo "=============================================="
 echo "All tasks for all folds finished!"
 echo "=============================================="
+
+# fold0 dim32 e1 f0.01
