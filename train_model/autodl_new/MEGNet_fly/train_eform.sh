@@ -75,7 +75,7 @@ for fold in "${folds[@]}"; do
     echo "Starting fold $fold"
     echo "=============================================="
 
-    dataset_path="../../MEGNet_dataset/${subset}/${fold}"
+    dataset_path="../MEGNet_dataset/${subset}/${fold}"
 
     # 第一步：生成当前fold的数据集
     if [ -d "$dataset_path" ]; then
@@ -122,7 +122,7 @@ for fold in "${folds[@]}"; do
             --dim_node_embed "$dim" \
             --a "$a" \
             --b "$b" \
-            --data_root "../../MEGNet_dataset" \
+            --data_root "../MEGNet_dataset" \
             --cuda_devices "$available_gpu" > "$log_path" 2>&1 &
 
         # 保存当前任务的PID
