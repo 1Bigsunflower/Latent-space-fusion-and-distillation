@@ -358,7 +358,9 @@ if __name__ == '__main__':
         "dielectric",
         "log_gvrh",
         "log_kvrh",
-        "perovskites"
+        "perovskites",
+        "mp_gap",
+        "mp_e_form"
     ]
 
     results = []
@@ -577,7 +579,7 @@ if __name__ == '__main__':
 
         elems, D = build_normalized_distance(
             emb_df,
-            metric="cosine",  # 或 "cosine"
+            metric="euclidean",  # 或 "cosine" "euclidean"
             l2_norm=True
         )
 
@@ -596,28 +598,28 @@ if __name__ == '__main__':
     print("距离矩阵形状：", D_avg.shape)
 
     X32, evals32 = classical_mds(D_avg, dim=32)
-    save_embedding_csv(global_elements, X32, "all6_CMDS_32d_cos_l2.csv")
+    save_embedding_csv(global_elements, X32, "CMDS_32_euc.csv")
 
     X64, evals64 = classical_mds(D_avg, dim=64)
-    save_embedding_csv(global_elements, X64, "all6_CMDS_64d_cos_l2.csv")
+    save_embedding_csv(global_elements, X64, "CMDS_64_euc.csv")
 
     X32_s, stress32 = smacof_mds(D_avg, dim=32)
-    save_embedding_csv(global_elements, X32_s, "all6_MDS_32d_cos_l2.csv")
+    save_embedding_csv(global_elements, X32_s, "MDS_32_euc.csv")
     print("stress =", stress32)
 
     X64_s, stress64 = smacof_mds(D_avg, dim=64)
-    save_embedding_csv(global_elements, X64_s, "all6_MDS_64d_cos_l2.csv")
+    save_embedding_csv(global_elements, X64_s, "MDS_64_euc.csv")
     print("stress =", stress64)
 
 
-    # gram
-    global_elements, G_avg, C = average_gram_matrices(all_G, all_elements)
-    print("全局 Gram 矩阵形状：", G_avg.shape)
-    X32, evals32 = gram_to_embedding(G_avg, dim=32)
-    save_embedding_csv(global_elements, X32, "all6_Gram_32d.csv")
-
-    X64, evals64 = gram_to_embedding(G_avg, dim=64)
-    save_embedding_csv(global_elements, X64, "all6_Gram_64d.csv")
+    # # gram
+    # global_elements, G_avg, C = average_gram_matrices(all_G, all_elements)
+    # print("全局 Gram 矩阵形状：", G_avg.shape)
+    # X32, evals32 = gram_to_embedding(G_avg, dim=32)
+    # save_embedding_csv(global_elements, X32, "all6_Gram_32d.csv")
+    #
+    # X64, evals64 = gram_to_embedding(G_avg, dim=64)
+    # save_embedding_csv(global_elements, X64, "all6_Gram_64d.csv")
 
 # 0.8842451453305875
 # ===== mat2vec =====
