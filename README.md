@@ -1,169 +1,181 @@
-This repository provides training scripts and configurations for two widely used material property prediction models: CGCNN and MEGNet. It supports training with different types of embeddings, including different dimensions, nn.Embedding, and human knowledge-based embeddings.
-<!--
-## This section is hidden
-## 📁 Project Structure
+# Latent-space fusion and cross-task distillation yield transferable Mat2Vec replacements
 
-```
-.
-├── requirements.txt                        # Python dependencies
-├── train_model/
-│   ├── CGCNN/
-│   │   └── train_cgcnn.sh                  # Train CGCNN with various embedding dimensions
-│   └── MEGNet/
-│       ├── MEGNet_emb/
-│       │   └── megnet_orig.sh             # Train MEGNet using nn.Embedding
-│       └── MEGNet_hm/
-│           └── megnet_hm.sh               # Train MEGNet using human knowledge-based embeddings
-├── pre-train_model/
-│   ├── cgcnn/                              # Pretrained CGCNN models
-│   ├── megnet/                             # Pretrained MEGNet models
-│   └── result/                             # MAE results corresponding to pretrained models
-├── Embedding Extraction/
-│   ├── CGCNN/
-│   │   ├── cgcnn_emb/run_cgcnn_emb.sh    
-│   │   └── cgcnn_hm/run_cgcnn_hm.sh     
-│   └── MEGNet/
-│       ├── megnet_emb/run_megnet_emb.sh  
-│       └── megnet_hm/run_megnet_hm.sh            
-├── Embedding_weight_orig/
-├── Picture/                               # paper figures
-│   ├── Fig1/
-│   │   └── 1D_order.py                    # Generates Figure 1
-│   ├── Fig3-4/
-│   │   ├── CGCNN_Bar_Chart.py            # Generates Figure 3
-│   │   └── MEGNet_Bar_Chart.py           # Generates Figure 4
-│   ├── Fig5/
-│   │   ├── RF_composition.py             # Random Forest regression results
-│   │   ├── R2_for_best_dummy.py          # R2 scores of leaderboard & dummy models
-│   │   └── Fig5_rf.py                    # Generates Figure 5
-│   └── Fig6/
-│       ├── Embedding_analysis.py         # Computes embedding structure metrics
-│       ├── norm_mae.py                   # Normalizes MAEs for each task
-│       └── Correlation_Matrix_Heatmap.py # Correlation analysis and heatmap for Fig 6
-├── Element with mpnn/                    
-└── ...
-```
--->
-## 🔧 Environment Setup
+This repository contains the code and pretrained models used for learning, extracting, and fusing element embeddings based on **CGCNN** and **MEGNet**, as well as constructing **Mat2Vec-S / Mat2Vec-L / Mat2Vec-H** embeddings for downstream materials property prediction tasks.
 
-We recommend using [Conda](https://docs.conda.io/) to manage the environment. The project requires **Python 3.10**.
+---
+
+## 1. Environment Setup
+
+All required Python dependencies are listed in `requirements.txt`.
+
+Install the environment using:
 
 ```bash
-conda create -n group_env python=3.10
-source activate group_env
+conda create -n mat_env python=3.10
+source activate mat_env
 pip install -r requirements.txt
 ```
 
-## 🚀 Quick Start
+---
 
-### Train CGCNN 
+## 2. Base Model Training (CGCNN & MEGNet)
 
-```bash
-cd train_model/CGCNN
-bash train_cgcnn.sh
+All training-related code is located in the `train_model` directory.
+
+### 2.1 CGCNN
+
+- `train_model/CGCNN/CGCNN_emb`  
+  Training code for **pure learnable element embeddings** with CGCNN.
+
+- `train_model/CGCNN/CGCNN_hm`  
+  Training code for **pure handcrafted element features** with CGCNN.
+
+- One-click training script:
+  ```bash
+  bash train_model/CGCNN/train_cgcnn.sh
+  ```
+
+### 2.2 MEGNet
+
+- `train_model/MEGNet/MEGNet_emb`  
+  Training code for **pure learnable element embeddings** with MEGNet.
+
+- `train_model/MEGNet/MEGNet_hm`  
+  Training code for **pure handcrafted element features** with MEGNet.
+
+### 2.3 Pretrained Models
+
+All pretrained models are saved in:
+
+```
+pre-train_model/
 ```
 
-### Train MEGNet
+---
 
-- Using `nn.Embedding`:
+## 3. Element Embedding Extraction
 
-  ```bash
-  cd train_model/MEGNet/MEGNet_emb
-  bash megnet_orig.sh
-  ```
+Element embeddings learned by the trained models can be extracted using scripts in the `Embedding Extraction` directory.
 
-- Using human knowledge-based embeddings:
-
-  ```bash
-  cd train_model/MEGNet/MEGNet_hm
-  bash megnet_hm.sh
-  ```
-
-## 🧠 Pretrained Models & Results
-
-Pretrained models from this study are saved in the `pre-train_model/` directory:
-
-- `pre-train_model/cgcnn/` and `pre-train_model/megnet/`: store pretrained weights.
-- `pre-train_model/result/`: contains corresponding MAE values for each model.
-
-## 📦 Embedding Extraction
-
-Element embeddings can be extracted using scripts under the `Embedding Extraction/` folder.
-
-For example:
-
-- Extract CGCNN nn.Embedding:
-
-  ```bash
-  bash Embedding Extraction/CGCNN/cgcnn_emb/run_cgcnn_emb.sh
-  ```
-
-Extracted embeddings are saved in `Embedding_weight_orig/`.
-
-## 📊 Paper Figures
-
-Scripts used to generate figures in the paper are located in the `Picture/` and `Element with mpnn/` directories:
-
-- **Figure 1** (`Picture/Fig1/`):  
-  Run `1D_order.py` to generate the ordering visualization.
-
-- **Figures 3 & 4** (`Picture/Fig3-4/`):  
-  - Run `CGCNN_Bar_Chart.py` for Figure 3  
-  - Run `MEGNet_Bar_Chart.py` for Figure 4
-
-- **Figure 5** (`Picture/Fig5/`):  
-  1. Run `RF_composition.py` to compute random forest regression results  
-  2. Run `R2_for_best_dummy.py` for leaderboard and dummy R² scores  
-  3. Run `Fig5_rf.py` to generate the final plot
-
-- **Figure 6** (`Picture/Fig6/`):  
-  1. Run `Embedding_analysis.py` to calculate various embedding structure metrics  
-  2. Run `norm_mae.py` to normalize MAE for each task  
-  3. Run `Correlation_Matrix_Heatmap.py` to compute correlations and plot the heatmap
-
-`Element with mpnn/` contains scripts for analyzing how element embeddings evolve across message passing layers in both CGCNN and MEGNet architectures.
-
-To extract embeddings at each message passing layer, run the following scripts:
+Run the following scripts:
 
 ```bash
-# CGCNN - nn.Embedding
-cd Element with mpnn/CGCNN-emb
-bash run_cgcnn_emb.sh
-
-# CGCNN - Human Knowledge
-cd ../CGCNN-human
 bash run_cgcnn_hm.sh
-
-# MEGNet - nn.Embedding
-cd ../MEGNet-emb
-bash run_megnet_emb.sh
-
-# MEGNet - Human Knowledge
-cd ../MEGNet-human
+bash run_cgcnn_emb.sh
 bash run_megnet_hm.sh
+bash run_megnet_emb.sh
 ```
 
-These scripts save intermediate embeddings for each model configuration, which are later used for visualization and clustering analysis.
+The extracted embeddings are saved in:
 
-`Element with mpnn/ari_score.sh`: Computes Adjusted Rand Index (ARI) between learned embeddings and traditional element groups.
+```
+Embedding_weight_orig/
+```
 
-`Element with mpnn/s_score.sh`: Computes silhouette scores for cluster separation.
+---
 
-`Element with mpnn/kmeans.sh`: Performs k-means clustering on the embeddings.
-  
-- **Figure 7**(`Element with mpnn/Fig7/`):  
-  - Run `run_picture.sh` to generate 2D projections (t-SNE) of element embeddings across message passing layers.
+## 4. Embedding Fusion with Different Ratios
 
-- **Figure 8**(`Element with mpnn/Fig8/ari/`):  
-  - Run `Fig8.py` to plot how the ARI scores change across message passing layers for different tasks.
+### 4.1 Fusion Model Training
 
-- **Figure 9**:(`Element with mpnn/`)
-  - Run `GA_cluster.py` to perform multi-task clustering using a genetic algorithm, producing a **general-purpose periodic table-based clustering**.
-  - Results are saved in the `GA_cluster_result/` folder.
-  - Visualize the generalized clustering by running:
+Code for fusing learnable and handcrafted element embeddings with different ratios is located in:
 
-  ```bash
-  python Fig_p_table.py
+```
+train_model/Model_emb_fusion/
+```
+
+- CGCNN fusion models:
+  ```
+  train_model/Model_emb_fusion/CGCNN_fly/
   ```
 
+- MEGNet fusion models:
+  ```
+  train_model/Model_emb_fusion/MEGNet_fly/
+  ```
+
+To train the fusion model, enter the corresponding directory and run:
+
+```bash
+bash train_e_form.sh
+```
+
+> For other datasets, only the `subset` parameter in the script needs to be modified.
+
+### 4.2 Fusion Model Checkpoints
+
+- CGCNN fusion models:
+  ```
+  get_embedding/cgcnn_ef_model/
+  ```
+
+- MEGNet fusion models:
+  ```
+  get_embedding/megnet_ef_model/
+  ```
+
+### 4.3 Fused Element Embedding Extraction
+
+- CGCNN fused embeddings:
+  ```bash
+  python get_embedding/CGCNN_ef_get_embedding/get_embedding_ef.py
+  ```
+
+- MEGNet fused embeddings:
+  ```bash
+  python get_embedding/MEGNet_ef_get_embedding/get_embedding_ef.py
+  ```
+
+---
+
+## 5. Mat2Vec-S / Mat2Vec-L / Mat2Vec-H Construction and CrabNet Training
+
+### 5.1 Mat2Vec Embedding Generation
+
+The following scripts are used to obtain **Mat2Vec-S**, **Mat2Vec-L**, and **Mat2Vec-H** embeddings reported in the paper:
+
+```bash
+python get_embedding/get_min_model.py
+python get_embedding/get_min_model_L_H.py
+```
+
+### 5.2 Post-processing
+
+The generated embeddings are post-processed using z-score normalization:
+
+```bash
+python 8task_embedding_result/zscore.py
+```
+
+### 5.3 CrabNet Training
+
+- The processed embeddings are stored in:
+  ```
+  crabnet/data/element_properties/
+  ```
+
+- CrabNet can be trained directly using:
+  ```bash
+  bash train_matbench_emb.sh
+  ```
+
+---
+
+## 6. Reproducing Figures in the Paper
+
+The scripts used to reproduce the figures in the paper are provided as follows:
+
+- **Figure 2 / Figure 3 / Figure 5**:
+  ```
+  get_embedding/fig2.py
+  get_embedding/fig3.py
+  get_embedding/fig5.py
+  ```
+
+- **Figure 4**:
+  ```
+  get_embedding/check_cos/fig4/
+  ```
+
+---
 
