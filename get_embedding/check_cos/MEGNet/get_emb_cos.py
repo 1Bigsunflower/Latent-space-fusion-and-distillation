@@ -19,7 +19,7 @@ from matgl.utils.training import ModelLightningModule
 from megnet_model import MEGNet
 from megnet_train import load_pretrain_embeddings
 from pymatgen.core import Element
-
+from sklearn.metrics.pairwise import paired_cosine_distances
 
 def model_cos(subset, fold, dim, e, f):
     init_seed = 42
@@ -84,9 +84,9 @@ def model_cos(subset, fold, dim, e, f):
     )
     # print(model_path)
     ckpt_files = list(model_path.glob("*.ckpt"))
+    print(ckpt_files)
     if not ckpt_files:
-        # print(ckpt_files)
-        raise FileNotFoundError("该目录下没有 ckpt 文件")
+        raise FileNotFoundError(f"该目录下没有ckpt文件")
     ckpt_path = ckpt_files[0]
 
     lit_module = ModelLightningModule.load_from_checkpoint(
@@ -135,11 +135,17 @@ def model_cos(subset, fold, dim, e, f):
             emb.fix_embed(Z_tensor)
         ).detach().cpu().numpy()
 
-    # cosine similarity
-    cos_sim = cosine_similarity(E_sem, E_attr)
-    cos_flat = cos_sim.flatten()
+    cos_diag = 1 - paired_cosine_distances(E_sem, E_attr)
+    angles = np.degrees(np.arccos(np.clip(cos_diag, -1, 1)))
 
-    angles = np.degrees(np.arccos(np.clip(cos_flat, -1, 1)))
+    var_angle = np.var(angles)
+    # print(round(angles.mean(), 2))
+    return round(angles.mean(), 2), round(var_angle,2)
+    # cosine similarity
+    # cos_sim = cosine_similarity(E_sem, E_attr)
+    # cos_flat = cos_sim.flatten()
+    #
+    # angles = np.degrees(np.arccos(np.clip(cos_flat, -1, 1)))
 
     # print("\n========== 正交性统计 ==========")
     # print(f"cosine 均值: {cos_flat.mean():.6f}")
@@ -150,24 +156,28 @@ def model_cos(subset, fold, dim, e, f):
     # print(f"平均夹角: {angles.mean():.2f}°")
     # print(f"夹角标准差: {angles.std():.2f}°")
     # print(f"夹角范围: [{angles.min():.2f}°, {angles.max():.2f}°]")
-
-    return round(angles.mean(), 2)
+    #
+    # return round(angles.mean(), 2)
 
 
 if __name__ == '__main__':
-    # subset = "matbench_perovskites"
+    # subset = "matbench_jdft2d"
     # fold = 0
     # dim = 8
     # e = 1.0
     # f = 1.0
     # emb_angles = model_cos(subset, fold, dim, e, f)
+
+
     subsets = [
         'matbench_jdft2d',
         'matbench_phonons',
         'matbench_dielectric',
         'matbench_log_gvrh',
         'matbench_log_kvrh',
-        'matbench_perovskites'
+        'matbench_perovskites',
+        "matbench_mp_gap",
+        "matbench_mp_e_form"
     ]
 
     dims = [8, 16, 32, 64]
@@ -177,29 +187,39 @@ if __name__ == '__main__':
     f_list = [0.0001, 0.01, 1.0, 1.0, 1.0]
 
     rows = []
-
+    vars_ = []
     for subset in subsets:
-        print(f"Processing subset: {subset}")
+        # print(f"Processing subset: {subset}")
 
         for dim in dims:
             for fold in folds:
                 row = {}
+                var_ = {}
                 row["TASK"] = f"{subset}_fold{fold}"
                 row["Dim"] = dim
 
+                var_["TASK"] = f"{subset}_fold{fold}"
+                var_["Dim"] = dim
                 # 计算五组 e,f
                 for i, (e, f) in enumerate(zip(e_list, f_list), start=1):
-                    value = model_cos(subset, fold, dim, e, f)
+                    value, var = model_cos(subset, fold, dim, e, f)
                     row[f"e{e}_f{f}"] = value
                     print(f"{subset} fold={fold} dim={dim}  e={e} f={f}  -> {value}")
-
+                    var_[f"e{e}_f{f}"] =var
                 rows.append(row)
+                vars_.append(var_)
 
         # subset 之间插一个空行
         rows.append({})
-
+        vars_.append({})
+    # print(len(vars))
+    # print(vars)
+    # print(np.mean(vars))
     df = pd.DataFrame(rows)
-
-    save_path = "MEGNet.xlsx"
+    save_path = "MEGNet_aa.xlsx"
     df.to_excel(save_path, index=False)
+
+    df2 = pd.DataFrame(vars_)
+    df2.to_excel("MEGNet_bb.xlsx", index=False)
+    print("\nSaved to MEGNet_bb.xlsx")
 
