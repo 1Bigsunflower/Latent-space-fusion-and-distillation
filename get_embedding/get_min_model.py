@@ -67,70 +67,6 @@ def build_normalized_distance(
 
     return elements, D
 
-def build_normalized_gram(emb_df, l2_norm=True):
-    """
-    给单个模型 embedding:
-    - 提取元素顺序
-    - 构造 Gram 核矩阵 G = X X^T (n x n)
-    - 做 Frobenius 归一化，保证不同模型可融合
-
-    返回:
-        elements: list[str]
-        G: (n x n) numpy array
-    """
-    assert "Element" in emb_df.columns
-    elements = emb_df["Element"].tolist()
-    X = emb_df.drop(columns=["Element"]).values.astype(float)
-
-    # ---- 可选：L2 normalize 行 ----
-    if l2_norm:
-        norm = np.linalg.norm(X, axis=1, keepdims=True)
-        norm[norm == 0] = 1.0
-        X = X / norm
-
-    # ---- Gram kernel ----
-    G = X @ X.T
-
-    # ---- 归一化，避免不同模型 scale 差异 ----
-    frob = np.linalg.norm(G)
-    if frob == 0:
-        raise ValueError("Gram Frobenius norm 为 0")
-    G = G / frob
-
-    return elements, G
-
-def average_gram_matrices(G_list, element_lists):
-    """
-    融合多个模型的 Gram 核：
-    - 对齐全局元素集合
-    - 只对覆盖到的 (i,j) 做平均
-    """
-    global_elements = sorted(set().union(*element_lists))
-    n = len(global_elements)
-
-    # 建立局部 -> 全局索引映射
-    idx_map_list = []
-    for elems in element_lists:
-        mapping = {e: i for i, e in enumerate(elems)}
-        idx_map_list.append(mapping)
-
-    G_sum = np.zeros((n, n), dtype=float)
-    C = np.zeros((n, n), dtype=int)
-
-    for (elems, G), mapping in zip(zip(element_lists, G_list), idx_map_list):
-        for i_local, ei in enumerate(elems):
-            gi = global_elements.index(ei)
-            for j_local, ej in enumerate(elems):
-                gj = global_elements.index(ej)
-                G_sum[gi, gj] += G[i_local, j_local]
-                C[gi, gj] += 1
-
-    G_avg = np.zeros_like(G_sum)
-    mask = C > 0
-    G_avg[mask] = G_sum[mask] / C[mask]
-
-    return global_elements, G_avg, C
-
 
 def average_distance_matrices(dist_list, element_lists):
     """
@@ -236,38 +172,38 @@ def infer_model_path(row):
     return path, path.exists()
 
 
-def classical_mds(D, dim=64, eps=1e-12):
-    """
-    Classical MDS:
-    输入: 距离矩阵 D (n x n)
-    输出: X (n x dim), eigenvalues
-    """
-    D = np.asarray(D, dtype=float)
-    n = D.shape[0]
-
-    # --- squared distances ---
-    D2 = D ** 2
-
-    # --- double centering ---
-    J = np.eye(n) - np.ones((n, n)) / n
-    B = -0.5 * J @ D2 @ J
-
-    # --- eigen decomposition ---
-    eigvals, eigvecs = np.linalg.eigh(B)  # ascending
-    idx = np.argsort(eigvals)[::-1]
-    eigvals = eigvals[idx]
-    eigvecs = eigvecs[:, idx]
-
-    # keep positive part
-    pos = eigvals > eps
-    eigvals_pos = eigvals[pos]
-    eigvecs_pos = eigvecs[:, pos]
-
-    d_eff = min(dim, eigvals_pos.size)
-    L = np.diag(np.sqrt(eigvals_pos[:d_eff]))
-    X = eigvecs_pos[:, :d_eff] @ L
-
-    return X, eigvals
+# def classical_mds(D, dim=64, eps=1e-12):
+#     """
+#     Classical MDS:
+#     输入: 距离矩阵 D (n x n)
+#     输出: X (n x dim), eigenvalues
+#     """
+#     D = np.asarray(D, dtype=float)
+#     n = D.shape[0]
+#
+#     # --- squared distances ---
+#     D2 = D ** 2
+#
+#     # --- double centering ---
+#     J = np.eye(n) - np.ones((n, n)) / n
+#     B = -0.5 * J @ D2 @ J
+#
+#     # --- eigen decomposition ---
+#     eigvals, eigvecs = np.linalg.eigh(B)  # ascending
+#     idx = np.argsort(eigvals)[::-1]
+#     eigvals = eigvals[idx]
+#     eigvecs = eigvecs[:, idx]
+#
+#     # keep positive part
+#     pos = eigvals > eps
+#     eigvals_pos = eigvals[pos]
+#     eigvecs_pos = eigvecs[:, pos]
+#
+#     d_eff = min(dim, eigvals_pos.size)
+#     L = np.diag(np.sqrt(eigvals_pos[:d_eff]))
+#     X = eigvecs_pos[:, :d_eff] @ L
+#
+#     return X, eigvals
 
 
 def smacof_mds(D, dim=64, max_iter=2000, n_init=8, random_state=42):
@@ -313,31 +249,8 @@ def save_embedding_csv(elements, X, path):
     df_all.to_csv(path, index=False)
     print(f"保存成功: {path}")
 
-def gram_to_embedding(G, dim=64):
-    """
-    从 PSD Gram 矩阵恢复 embedding:
-        G = XX^T
-        X = U * sqrt(Lambda)
-    """
-    eigvals, eigvecs = np.linalg.eigh(G)
-
-    # 从大到小排序
-    idx = np.argsort(eigvals)[::-1]
-    eigvals = eigvals[idx]
-    eigvecs = eigvecs[:, idx]
-
-    # 只保留正的
-    pos = eigvals > 1e-12
-    eigvals = eigvals[pos]
-    eigvecs = eigvecs[:, pos]
-
-    d_eff = min(dim, len(eigvals))
-    L = np.diag(np.sqrt(eigvals[:d_eff]))
-    X = eigvecs[:, :d_eff] @ L
-    return X, eigvals
 
 if __name__ == '__main__':
-    # 保存模型嵌入csv的文件夹
     BASE_DIR = Path(__file__).resolve().parent
 
     cgcnn_emb_dir = BASE_DIR / "cgcnn_ef_embedding"
@@ -406,9 +319,6 @@ if __name__ == '__main__':
         result_type="expand"
     )
 
-    # print(result_df)
-    # sys.exit()
-    # 模型完整性检查
     errors = []
 
     for _, row in result_df.iterrows():
@@ -462,14 +372,6 @@ if __name__ == '__main__':
                 cgcnn_get_emb(args)
 
             emb_df = pd.read_csv(csv_path)
-            # elems, D = build_normalized_distance(
-            #     emb_df,
-            #     metric="euclidean",  # 或 "cosine"
-            #     l2_norm=True
-            # )
-            #
-            # all_elements.append(elems)
-            # all_D.append(D)
 
         # ================= MEGNet EF =================
         elif model_path.startswith("megnet_ef_model"):
@@ -505,14 +407,6 @@ if __name__ == '__main__':
                 megnet_get_emb(args)
 
             emb_df = pd.read_csv(csv_path)
-            # elems, D = build_normalized_distance(
-            #     emb_df,
-            #     metric="euclidean",  # 或 "cosine"
-            #     l2_norm=True
-            # )
-            #
-            # all_elements.append(elems)
-            # all_D.append(D)
 
         # ================= Pre-train model =================
         elif model_path.startswith("..") or model_path.startswith("../pre-train_model"):
@@ -579,29 +473,35 @@ if __name__ == '__main__':
 
         elems, D = build_normalized_distance(
             emb_df,
-            metric="euclidean",  # 或 "cosine" "euclidean"
+            metric="cosine",
             l2_norm=True
         )
 
-        elems, G = build_normalized_gram(
-            emb_df,
-            l2_norm=True
-        )
 
         all_elements.append(elems)
         all_D.append(D)
-        all_G.append(G)
 
     print("共有模型数量：", len(all_D))
     global_elements, D_avg, C = average_distance_matrices(all_D, all_elements)
     print("全局元素数：", len(global_elements))
     print("距离矩阵形状：", D_avg.shape)
 
-    X32, evals32 = classical_mds(D_avg, dim=32)
-    save_embedding_csv(global_elements, X32, "CMDS_32_euc.csv")
+    # from pymatgen.core.periodic_table import Element
+    #     pt_elements = [Element.from_Z(z).symbol for z in range(1, 104)]
+    #     pt_elements = [e for e in pt_elements if e in global_elements]
+    #
+    #     df_dist = pd.DataFrame(
+    #         D_avg,
+    #         index=global_elements,
+    #         columns=global_elements
+    #     )
+    #
+    #     # 按周期表顺序重排 行 & 列
+    #     df_dist = df_dist.loc[pt_elements, pt_elements]
+    #
+    #     out_path = Path("element_cosine_distance.xlsx")
+    #     df_dist.to_excel(out_path, float_format="%.6f")
 
-    X64, evals64 = classical_mds(D_avg, dim=64)
-    save_embedding_csv(global_elements, X64, "CMDS_64_euc.csv")
 
     X32_s, stress32 = smacof_mds(D_avg, dim=32)
     save_embedding_csv(global_elements, X32_s, "MDS_32_euc.csv")
@@ -612,18 +512,3 @@ if __name__ == '__main__':
     print("stress =", stress64)
 
 
-    # # gram
-    # global_elements, G_avg, C = average_gram_matrices(all_G, all_elements)
-    # print("全局 Gram 矩阵形状：", G_avg.shape)
-    # X32, evals32 = gram_to_embedding(G_avg, dim=32)
-    # save_embedding_csv(global_elements, X32, "all6_Gram_32d.csv")
-    #
-    # X64, evals64 = gram_to_embedding(G_avg, dim=64)
-    # save_embedding_csv(global_elements, X64, "all6_Gram_64d.csv")
-
-# 0.8842451453305875
-# ===== mat2vec =====
-# Mean: 0.015932
-# Std:  0.306197
-# Min:  -1.206175
-# Max:  1.319256
