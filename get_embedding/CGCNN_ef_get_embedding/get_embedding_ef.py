@@ -205,7 +205,7 @@ def get_emb(args):
         task.load()
 
         train_inputs, train_outputs = task.get_train_and_val_data(args.fold)  # 获取训练集
-        dataset = StruData(train_inputs, train_outputs)
+        dataset = StruData(train_inputs, train_outputs, precompute_workers=2)
         # collate_fn = collate_pool_matbench
         structures, train_y = get_data(train_inputs, train_outputs)
         elem_list = get_element_list(structures)
