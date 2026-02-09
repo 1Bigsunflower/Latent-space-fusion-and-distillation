@@ -26,23 +26,23 @@ PREFIXES = (
     "mp_e_form",
 )
 X_LABELS = [
-    "$H$\n$(+\infty)$",
+    "$H$\n$(-\infty)$",
     r"$-4$",
     r"$-2$",
     r"$0$",
     r"$2$",
     r"$4$",
-    "$L$\n$(-\infty)$"
+    "$L$\n$(+\infty)$"
 ]
 
 RATIO_LABELS = [
-    "$H$\n$(+\infty)$",
+    "$H$\n$(-\infty)$",
     r"$-4$",
     r"$-2$",
     r"$0$",
     r"$2$",
     r"$4$",
-    "$L$\n$(-\infty)$"
+    "$L$\n$(+\infty)$"
 ]
 
 # X_LABELS = ["$\\boldsymbol{r=H}$\n$\\boldsymbol{(+\\boldsymbol{\\infty})}$",
