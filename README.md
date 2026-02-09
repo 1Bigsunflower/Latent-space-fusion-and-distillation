@@ -130,7 +130,7 @@ bash train_e_form.sh
 
 ## 5. Mat2Vec-S / Mat2Vec-L / Mat2Vec-H Construction and CrabNet Training
 
-### 5.1 Mat2Vec Embedding Generation
+### 5.1 Mat2Vec-* Embedding Generation
 
 The following scripts are used to obtain **Mat2Vec-S**, **Mat2Vec-L**, and **Mat2Vec-H** embeddings reported in the paper:
 
