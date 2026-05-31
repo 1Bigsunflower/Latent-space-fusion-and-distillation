@@ -1,4 +1,4 @@
-# Latent-space fusion and cross-task distillation yield transferable Mat2Vec replacements
+# Distilling supervised element geometry from hybrid representations for transferable materials prediction
 
 This repository contains the code and pretrained models used for learning, extracting, and fusing element embeddings based on **CGCNN** and **MEGNet**, as well as constructing **Mat2Vec-S / Mat2Vec-L / Mat2Vec-H** embeddings for downstream materials property prediction tasks.
 
